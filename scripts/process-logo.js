@@ -7,7 +7,7 @@ const themeFile = path.join(__dirname, '../data/theme.json')
 const outputPath = path.join(__dirname, '../assets/icons/logo.svg')
 const outputPathWhite = path.join(__dirname, '../assets/icons/logo-white.svg')
 
-function loadTheme() {
+function loadTheme () {
   try {
     const content = fs.readFileSync(themeFile, 'utf8')
     return JSON.parse(content)
@@ -17,19 +17,19 @@ function loadTheme() {
   }
 }
 
-function isDataUri(str) {
+function isDataUri (str) {
   return str && str.startsWith('data:')
 }
 
-function isSvgDataUri(str) {
+function isSvgDataUri (str) {
   return str && str.startsWith('data:image/svg+xml')
 }
 
-function isUrl(str) {
+function isUrl (str) {
   return str && (str.startsWith('http://') || str.startsWith('https://'))
 }
 
-function decodeDataUri(dataUri) {
+function decodeDataUri (dataUri) {
   // Handle: data:image/svg+xml;utf8,<encoded-svg>
   // Handle: data:image/svg+xml;base64,<base64-svg>
 
@@ -57,7 +57,7 @@ function decodeDataUri(dataUri) {
   return null
 }
 
-function downloadSvg(url) {
+function downloadSvg (url) {
   return new Promise((resolve, reject) => {
     const protocol = url.startsWith('https://') ? https : http
 
@@ -73,7 +73,7 @@ function downloadSvg(url) {
       }
 
       let data = ''
-      response.on('data', chunk => { data += chunk })
+      response.on('data', (chunk) => { data += chunk })
       response.on('end', () => {
         // Verify it's SVG content
         if (!data.includes('<svg') && !data.includes('<?xml')) {
@@ -86,7 +86,7 @@ function downloadSvg(url) {
   })
 }
 
-function convertToWhite(svgContent) {
+function convertToWhite (svgContent) {
   // Replace all fill colors with white
   // Handles: fill="#xxx", fill="rgb(...)", fill: #xxx, fill: rgb(...)
   let whiteSvg = svgContent
@@ -105,7 +105,7 @@ function convertToWhite(svgContent) {
   return whiteSvg
 }
 
-function writeSvg(svgContent) {
+function writeSvg (svgContent) {
   // Ensure directory exists
   const dir = path.dirname(outputPath)
   if (!fs.existsSync(dir)) {
@@ -122,7 +122,7 @@ function writeSvg(svgContent) {
   console.log(`White logo saved to: ${outputPathWhite}`)
 }
 
-async function main() {
+async function main () {
   console.log('Processing logo from theme.json...')
 
   const theme = loadTheme()
@@ -171,7 +171,6 @@ async function main() {
 
     writeSvg(svgContent)
     console.log('Logo processing complete!')
-
   } catch (err) {
     console.error(`Error processing logo: ${err.message}`)
     // Don't exit with error - allow build to continue

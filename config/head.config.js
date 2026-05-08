@@ -21,7 +21,7 @@ export const siteHead = (meta, theme = {}) => {
       ogMeta.description && { hid: 'og:description', property: 'og:description', content: ogMeta.description },
       ogMeta.image && { hid: 'og:image', property: 'og:image', content: ogMeta.image },
       { hid: 'og:url', property: 'og:url', content: url }
-    ],
+    ].filter(Boolean),
     link: [
       { rel: 'icon', href: faviconUrl },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

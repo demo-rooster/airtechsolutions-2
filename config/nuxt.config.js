@@ -1,16 +1,30 @@
+import fs from 'fs'
+import path from 'path'
 import axios from 'axios'
 import { api } from '../resources/api'
-import { setData, setJSONData } from '../resources/utils'
+import { setJSONData } from '../resources/utils'
 import { siteHead } from './head.config.js'
 import buildConfig from './build.config.js'
 import { siteMap, setRobots } from './seo.config'
 import 'core-js/features/array/at'
-const path = require('path')
-const fs = require('fs')
 
 // Load theme.json using absolute path from project root
 const themeFile = path.join(process.cwd(), 'data', 'theme.json')
 const theme = JSON.parse(fs.readFileSync(themeFile, 'utf8'))
+
+const responseArray = (response, label) => {
+  if (response && Array.isArray(response.data)) {
+    return response.data
+  }
+
+  console.warn(`${label}: expected array response`)
+  return []
+}
+
+const totalPages = (response) => {
+  const pages = Number(response && response.headers && response.headers['x-wp-totalpages'])
+  return Number.isFinite(pages) ? pages : 0
+}
 
 // Extract Google Fonts from theme.json typography
 const systemFonts = ['helvetica', 'arial', 'sans-serif', 'serif', 'monospace', 'georgia']
@@ -30,7 +44,7 @@ if (googleFonts.length > 0) {
 console.log('Theme typography:', typography)
 console.log('Google Fonts to load:', googleFonts)
 
-export default async () => {
+export default () => {
   const meta = setJSONData('home')
   return {
     server: {
@@ -44,22 +58,22 @@ export default async () => {
 
         try {
           await axios.get(`${api}/wp/v2/posts?per_page=100`).then(async (response) => {
-            const dataPages = response.headers['x-wp-totalpages']
-            let postsArray = response.data
+            const dataPages = totalPages(response)
+            let postsArray = responseArray(response, 'Could not fetch blog posts for route generation')
             dyRoutes.push('/blog/page/1')
             for (let i = 2; i <= dataPages; i++) {
               const nextPage = await axios.get(
                 `${api}/wp/v2/posts?per_page=100&page=${i}`
               )
-              postsArray = [...postsArray, ...nextPage.data]
+              postsArray = [...postsArray, ...responseArray(nextPage, 'Could not fetch blog posts for route generation')]
               dyRoutes.push('/blog/page/' + i)
             }
-            return postsArray.map((post) => {
+            return postsArray.forEach((post) => {
               dyRoutes.push('/blog/' + post.slug)
             })
           })
         } catch (e) {
-          console.error('Could not fetch blog posts for route generation:', e.message)
+          console.warn('Could not fetch blog posts for route generation:', e.message)
         }
 
         return dyRoutes

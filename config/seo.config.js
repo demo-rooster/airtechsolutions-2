@@ -1,6 +1,20 @@
 import axios from 'axios'
 import { api, url } from '../resources/api'
 
+const responseArray = (response, label) => {
+  if (response && Array.isArray(response.data)) {
+    return response.data
+  }
+
+  console.warn(`${label}: expected array response`)
+  return []
+}
+
+const totalPages = (response) => {
+  const pages = Number(response && response.headers && response.headers['x-wp-totalpages'])
+  return Number.isFinite(pages) ? pages : 0
+}
+
 export const siteMap = {
   path: '/sitemap.xml',
   hostname: url,
@@ -53,23 +67,24 @@ export const siteMap = {
         try {
           // Get All Blog Posts
           const response = await axios.get(`${api}/wp/v2/posts?per_page=100`)
-          const dataPages = response.headers['x-wp-totalpages']
+          const dataPages = totalPages(response)
           const routes = []
-          let blogArray = response.data
+          let blogArray = responseArray(response, 'SITEMAP BLOG API')
           routes.push('/blog/page/1')
           for (let i = 2; i <= dataPages; i++) {
             const nextPage = await axios.get(
               `${api}/wp/v2/posts?per_page=100&page=${i}`
             )
-            blogArray = [...blogArray, ...nextPage.data]
+            blogArray = [...blogArray, ...responseArray(nextPage, 'SITEMAP BLOG API')]
             routes.push('/blog/page/' + i)
           }
-          blogArray.map((post) => {
+          blogArray.forEach((post) => {
             routes.push('/blog/' + post.slug)
           })
           return routes
         } catch (e) {
-          console.error('SITEMAP BLOG API: ' + e)
+          console.warn('SITEMAP BLOG API: ' + e)
+          return []
         }
       }
     }

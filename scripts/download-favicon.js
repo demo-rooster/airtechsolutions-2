@@ -9,7 +9,7 @@ const staticDir = path.join(__dirname, '../static')
 const outputPath = path.join(staticDir, 'favicon-32x32.png')
 const headConfigPath = path.join(__dirname, '../config/head.config.js')
 
-async function downloadFavicon() {
+function downloadFavicon () {
   return new Promise((resolve, reject) => {
     console.log(`Downloading favicon from: ${faviconUrl}`)
 
@@ -31,7 +31,7 @@ async function downloadFavicon() {
   })
 }
 
-function updateHeadConfig() {
+function updateHeadConfig () {
   console.log('Updating head.config.js...')
 
   let content = fs.readFileSync(headConfigPath, 'utf8')
@@ -46,7 +46,7 @@ function updateHeadConfig() {
   console.log('head.config.js updated successfully!')
 }
 
-async function main() {
+async function main () {
   try {
     await downloadFavicon()
     updateHeadConfig()

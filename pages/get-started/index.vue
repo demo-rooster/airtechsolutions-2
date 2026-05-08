@@ -16,7 +16,6 @@ export default {
   },
   // eslint-disable-next-line require-await
   async asyncData () {
-    console.log('get started')
     const props = setJSONData('get started')
     return { props }
   },
