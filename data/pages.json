@@ -609,7 +609,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Window Cleaning",
+            "href": "",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-window-cleaning",
         "component_padding": "half",
@@ -617,7 +633,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -671,7 +687,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Exterior Window Cleaning",
+            "href": "",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-exterior-window-cleaning",
         "component_padding": "half",
@@ -679,7 +711,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -732,7 +764,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Office Exterior Cleaning",
+            "href": "",
+            "path": "/commercial-office-exterior-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-office-exterior-cleaning",
         "component_padding": "half",
@@ -740,7 +788,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -793,7 +841,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Professional Exterior Cleaning",
+            "href": "",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "professional-commercial-exterior-cleaning",
         "component_padding": "half",
@@ -801,7 +865,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -854,7 +918,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Exterior Soft Washing",
+            "href": "",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-exterior-soft-washing",
         "component_padding": "half",
@@ -862,7 +942,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -915,7 +995,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Dryer Vent Cleaning",
+            "href": "",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-dryer-vent-cleaning",
         "component_padding": "half",
@@ -923,7 +1019,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -976,7 +1072,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Bathroom Exhaust Cleaning",
+            "href": "",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-bathroom-exhaust-cleaning",
         "component_padding": "half",
@@ -984,7 +1096,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1037,7 +1149,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Bathroom Exhaust Repair",
+            "href": "",
+            "path": "/commercial-bathroom-exhaust-repair-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-bathroom-exhaust-repair",
         "component_padding": "half",
@@ -1045,7 +1173,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1098,7 +1226,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Gutter Cleaning",
+            "href": "",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-gutter-cleaning",
         "component_padding": "half",
@@ -1106,7 +1250,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1160,7 +1304,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about HVAC Cleaning",
+            "href": "",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-hvac-cleaning",
         "component_padding": "half",
@@ -1168,7 +1328,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1222,7 +1382,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Air Quality Testing",
+            "href": "",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-air-quality-testing",
         "component_padding": "half",
@@ -1230,7 +1406,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1283,7 +1459,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Caulking Services",
+            "href": "",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-caulking-services",
         "component_padding": "half",
@@ -1291,7 +1483,7 @@
         "hide_component": false
       },
       "reverse": false,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1345,7 +1537,23 @@
         "type": "embedded",
         "src": ""
       },
-      "buttons": [],
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Sealing Services",
+            "href": "",
+            "path": "/commercial-sealing-services-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
       "component_options": {
         "hash": "commercial-sealing-services",
         "component_padding": "half",
@@ -1353,7 +1561,7 @@
         "hide_component": false
       },
       "reverse": true,
-      "has_buttons": false,
+      "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
       "use_video": false,
@@ -1792,6 +2000,2943 @@
             "title": "FAQ | Air Tech Solutions",
             "description": "Answers to scheduling, quoting, and service questions for Air Tech Solutions, New England's commercial exterior cleaning and property services specialists.",
             "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-window-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Window Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.webp",
+        "alt": "Commercial window cleaning in progress",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "First impressions matter on commercial properties—especially at entrances, lobbies, leasing offices, and street-facing façades. Air Tech Solutions provides commercial window cleaning and commercial window washing for property managers who want consistent results, reliable scheduling, and clean glass that supports a professional look year-round. We serve commercial properties only (including commercial multi-family communities). We do not provide single-family residential window cleaning."
+        },
+        {
+          "text": "Our commercial window cleaning service is designed to remove environmental buildup that can dull glass and make a property look neglected. We clean exterior glass with a process that prioritizes clarity and consistency, and we pay attention to the details that tenants and residents notice: frames, sills, and visible buildup around the edges of the window system. When scope allows, we also clean screens without creating unnecessary disruption—often keeping screens in place so both the glass and screen surface can be cleaned efficiently."
+        },
+        {
+          "text": "<strong>Exterior window washing (included)</strong><br>If you’re searching specifically for commercial exterior window washing, you’re in the right place. Exterior window washing is part of our commercial window cleaning scope. We match the method to your building’s access and site conditions, whether you’re managing a single office building or multiple buildings across a campus-style community."
+        },
+        {
+          "text": "<strong>Access and equipment for complex buildings</strong><br>Commercial properties often have challenging elevations, tight setbacks, or areas that are difficult to reach safely. Our team is equipped to plan access appropriately, including the use of boom lifts and rope access when needed. That means fewer delays waiting on third-party equipment and a smoother experience for your on-site team."
+        },
+        {
+          "text": "<strong>Hotel window cleaning (subsection)</strong><br>Hotels have unique visibility and guest-experience needs. For commercial hotel window cleaning, we can schedule work to reduce disruption (for example, staging by elevation, prioritizing entrances and lobby glass, and coordinating around high-traffic guest periods). The goal is to keep public-facing areas looking sharp without interrupting operations."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial window cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you clean interior glass too?",
+          "paragraphs": [
+            {
+              "text": "Our standard scopes focus on exterior window cleaning; interior cleaning can be added when access and site conditions allow."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can you service taller buildings?",
+          "paragraphs": [
+            {
+              "text": "Yes—access planning may include lifts or rope access depending on the structure and site rules."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you work on single-family homes?",
+          "paragraphs": [
+            {
+              "text": "No—Air Tech Solutions works with commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote through the “Get a Quote” form on airtechsolutions.com, and tell us your building height, access constraints, and desired cleaning frequency.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.webp",
+        "alt": "Commercial window cleaning in progress",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Window Cleaning Boston & West Newton MA",
+        "page_description": "Streak-free commercial window cleaning & exterior window washing for multi-family, offices, and hotels. Serving Boston/West Newton 100 mi.",
+        "page_keywords": "commercial window cleaning Boston MA; commercial window washing Greater Boston; exterior window washing West Newton; rope access window cleaning; commercial hotel window cleaning",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Window Cleaning Boston & West Newton MA",
+            "description": "Streak-free commercial window cleaning & exterior window washing for multi-family, offices, and hotels. Serving Boston/West Newton 100 mi.",
+            "image": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-office-exterior-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Office Exterior Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg",
+        "webp": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg?tr=f-webp",
+        "alt": "Office exterior cleaning for commercial property",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Office buildings are judged from the curb. Dirty entry glass, stained façade sections, and buildup around entrances can undermine tenant confidence and make an otherwise well-managed property look neglected. Air Tech Solutions provides commercial office exterior cleaning for property managers and facilities teams who want a reliable, professional partner focused on commercial properties only."
+        },
+        {
+          "text": "Our office exterior cleaning programs are built around the areas that matter most: primary entrances, high-visibility façade zones, exterior glass at lobbies and common areas, and exterior surfaces that collect organic growth or environmental grime over time. We tailor scope by building material and site exposure, then schedule the work in a way that respects operating hours, pedestrian flow, and tenant experience."
+        },
+        {
+          "text": "<strong>What’s typically included</strong><br>Office exterior cleaning can include a combination of the following services (based on your building’s needs):<br>• Low-pressure cleaning for exterior surfaces where organic growth, streaking, or dirt buildup is visible<br>• Exterior glass cleaning on entry doors, lobby glazing, and other high-impact windows<br>• Targeted detail cleaning around corners, ledges, columns, and entry features where buildup is most noticeable"
+        },
+        {
+          "text": "<strong>Commercial-only, property-manager friendly coordination</strong><br>Our team works closely with property managers and maintenance staff to coordinate staging, access, and onsite communication. That means clear expectations about where equipment will be positioned, how work zones will be managed, and what you can expect each day of service. If your property has multiple buildings or elevations, we can phase work by area to reduce disruption."
+        },
+        {
+          "text": "<strong>Access and equipment for real-world office sites</strong><br>Many office properties involve setbacks, tight loading areas, garages, or restricted access points. We own and operate our equipment, which allows us to respond efficiently and service large or complex sites. When needed, access planning may include boom lifts or rope access so work can be completed safely without compromising results."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial office exterior cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Can you work around tenant hours and foot traffic?",
+          "paragraphs": [
+            {
+              "text": "Yes—scheduling and staging are planned with building operations in mind."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you provide residential/single-family exterior cleaning?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will you coordinate with on-site maintenance staff?",
+          "paragraphs": [
+            {
+              "text": "Yes—coordination and clear communication are part of how we run projects."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote through airtechsolutions.com and include your building type, façade material, and any access restrictions.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg",
+        "webp": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg?tr=f-webp",
+        "alt": "Office exterior cleaning for commercial property",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Office Exterior Cleaning Boston & West Newton MA",
+        "page_description": "Commercial office exterior cleaning for clean curb appeal—soft washing, exterior glass, entries. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "office exterior cleaning Boston MA; commercial office exterior cleaning; building exterior cleaning MetroWest; façade cleaning Greater Boston; exterior maintenance for property managers",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Office Exterior Cleaning Boston & West Newton MA",
+            "description": "Commercial office exterior cleaning for clean curb appeal—soft washing, exterior glass, entries. Serving Boston/West Newton within 100 miles.",
+            "image": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "professional-commercial-exterior-cleaning-boston-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Professional Commercial Exterior Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.webp",
+        "alt": "Professional exterior cleaning for commercial properties",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Commercial properties rarely need “one-off” cleaning—they need a plan. Air Tech Solutions provides professional commercial exterior cleaning built for property managers who are responsible for curb appeal, resident/tenant experience, and long-term building upkeep across one building or an entire portfolio. We serve commercial properties only, with a specialization in commercial multi-family communities."
+        },
+        {
+          "text": "Our approach is straightforward: we scope your exterior cleaning needs based on what the property is exposed to (traffic film, organic growth, seasonal buildup), what materials you’re maintaining, and what access constraints exist on-site. Then we recommend a practical path—whether that means a single project cleaning or a repeating maintenance cadence—so your exterior doesn’t swing between “brand new” and “overdue.”"
+        },
+        {
+          "text": "<strong>What professional commercial exterior cleaning can include</strong><br>Depending on your building and goals, an exterior cleaning scope may include:<br>• Exterior soft washing for algae, mildew, and grime on appropriate surfaces<br>• Exterior window washing for clearer glass and a cleaner appearance at common areas and entrances<br>• Gutter and downspout clearing to help restore drainage and reduce overflow conditions<br>• Targeted caulking or sealing at exterior joints/penetrations when you’re addressing air or water leak pathways as part of building upkeep"
+        },
+        {
+          "text": "This “one partner” approach helps property teams reduce vendor stacking, simplify scheduling, and coordinate site access more efficiently—especially on large or complex properties."
+        },
+        {
+          "text": "<strong>Equipment and access for complex exteriors</strong><br>Exterior work often requires safely reaching difficult areas and completing the job without unnecessary delays. We own and operate our equipment, including industrial soft washing systems, high-capacity air compressors, boom lifts, and rope access capability when needed. That makes it easier to plan work around real building conditions—courtyards, tight setbacks, and taller elevations—without relying on last-minute rentals."
+        },
+        {
+          "text": "<strong>Coordination, safety, and site expectations</strong><br>We coordinate with property managers and maintenance staff to plan staging, access, and daily progress. Work areas can be phased to reduce disruption, and we take a “communicate early” approach so you’re not surprised by access needs or timing."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about professional commercial exterior cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Can you bundle multiple exterior services into one scope?",
+          "paragraphs": [
+            {
+              "text": "Yes—many properties benefit from coordinated windows + washing + drainage-related cleaning."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you work with commercial multi-family communities?",
+          "paragraphs": [
+            {
+              "text": "Yes—commercial multi-family is a primary focus area."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Are you insured?",
+          "paragraphs": [
+            {
+              "text": "Yes—Air Tech Solutions is fully insured (ask us for a certificate for your property file)."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote on airtechsolutions.com and tell us what you want to accomplish (appearance refresh, organic growth removal, drainage support, or a recurring exterior maintenance program).",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.webp",
+        "alt": "Professional exterior cleaning for commercial properties",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Professional Commercial Exterior Cleaning Boston MA",
+        "page_description": "Full-service commercial exterior cleaning: soft washing, windows, gutters, and sealing coordination. Serving Boston & West Newton within 100 miles.",
+        "page_keywords": "professional exterior cleaning Boston MA; commercial exterior cleaning services; building exterior maintenance Greater Boston; property manager exterior cleaning; commercial multi-family exterior cleaning",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Professional Commercial Exterior Cleaning Boston MA",
+            "description": "Full-service commercial exterior cleaning: soft washing, windows, gutters, and sealing coordination. Serving Boston & West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-soft-washing-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Exterior Soft Washing in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.webp",
+        "alt": "Exterior soft washing on commercial building",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "When commercial exteriors start showing algae, mildew, and environmental buildup, property managers have two competing priorities: get the building looking clean again—and avoid damaging finishes in the process. Air Tech Solutions provides commercial exterior soft washing as a low-pressure cleaning option designed to safely remove organic growth and grime from appropriate exterior surfaces. We serve commercial properties only, with a specialty in commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What soft washing is (and why it’s different)</strong><br>Soft washing is a low-pressure method that uses professionally applied cleaning solutions to break down organic growth and surface contaminants, followed by a controlled rinse. This approach is often preferred when surfaces are sensitive or when higher pressure could cause unwanted effects (like forcing water where it shouldn’t go or leaving uneven visual results)."
+        },
+        {
+          "text": "<strong>What we can soft wash</strong><br>Scope depends on your building materials and access, but commercial soft washing is commonly used on:<br>• Building façades where organic growth is visible<br>• Exterior common-area surfaces exposed to shade and moisture<br>• Garage exteriors and other large exterior surfaces that collect buildup over time"
+        },
+        {
+          "text": "We plan the approach to match what you’re maintaining—because “cleaning effectiveness” depends on surface material, age, condition, and the severity of staining or organic growth. Some stains may not fully disappear without different methods, and we’ll set expectations clearly during scoping."
+        },
+        {
+          "text": "<strong>Equipment and access for complex properties</strong><br>Large properties often require more than a hose and a ladder. We own and operate specialized equipment that supports efficient service on large and complex sites. When needed, access planning may involve boom lifts or rope access so we can safely and effectively reach higher elevations and difficult areas."
+        },
+        {
+          "text": "<strong>Coordination and disruption control</strong><br>Soft washing projects are staged to reduce disruption. We coordinate with property management on water availability, occupant notifications (as needed), and protection of sensitive areas. If certain sections can’t be accessed safely at time of service, those areas are documented and excluded rather than rushed."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial exterior soft washing for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Is soft washing safe for siding and finishes?",
+          "paragraphs": [
+            {
+              "text": "Soft washing is a low-pressure method designed to clean without the risks associated with aggressive pressure washing."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will all staining be removed?",
+          "paragraphs": [
+            {
+              "text": "Results depend on surface type and staining severity; we’ll set clear expectations during scoping."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you clean single-family homes?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote on airtechsolutions.com and include façade material, number of buildings/elevations, and any known access restrictions.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.webp",
+        "alt": "Exterior soft washing on commercial building",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Soft Washing Boston & West Newton MA",
+        "page_description": "Low-pressure commercial soft washing removes algae, mildew, and grime without damaging finishes. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial soft washing Boston MA; exterior soft washing Greater Boston; low pressure exterior cleaning; algae mildew removal commercial; building wash service West Newton",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Soft Washing Boston & West Newton MA",
+            "description": "Low-pressure commercial soft washing removes algae, mildew, and grime without damaging finishes. Serving Boston/West Newton within 100 miles.",
+            "image": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-dryer-vent-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Dryer Vent Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.webp",
+        "alt": "Commercial dryer vent cleaning service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Commercial multi-family properties depend on dryer exhaust systems that move air efficiently and safely. When lint and debris accumulate inside dryer exhaust ducts, airflow can drop, equipment can work harder, and risk can increase. Air Tech Solutions provides commercial dryer vent cleaning for property managers who want a structured approach, clear coordination, and a scope that matches how the building is actually vented. We serve commercial properties only (including commercial multi-family communities)."
+        },
+        {
+          "text": "<strong>Methods of cleaning (matched to your building design)</strong><br>Dryer exhaust systems vary widely from property to property—so we align the method to the layout:"
+        },
+        {
+          "text": "<strong>Exterior access cleaning</strong><br>When ducts are accessible from the building exterior, we can clean from the outside using compressed air and hose-based equipment inserted through the exterior termination. This approach dislodges lint and debris from interior duct surfaces and conveys material through the system—often without requiring unit-by-unit interior access."
+        },
+        {
+          "text": "<strong>Interior access cleaning</strong><br>When interior access is required or preferred, dryer exhaust ducts can be cleaned from within individual units using high-pressure air sweeps and negative-air capture. This method is intended to clean the full length of the exhaust pathway (from the dryer connection point toward the exterior termination) while capturing lint and particulate buildup. During service, the dryer-to-exhaust connection can be visually checked for obvious issues such as loose attachment or visible leakage."
+        },
+        {
+          "text": "<strong>Central duct / shared shaft cleaning</strong><br>Some buildings use shared or centrally vented dryer systems (often terminating at roof ducts/shafts). In these cases, central ducts can be cleaned as part of the scope. Technicians may access the central duct by removing the exhaust fan assembly as needed, then use compressed-air agitation combined with high-powered vacuum capture to remove accumulated lint and debris. Once cleaning is complete, the fan assembly is reinstalled and secured."
+        },
+        {
+          "text": "<strong>Resident/tenant coordination (when interior access is needed)</strong><br>For interior-access projects, coordination is everything. Air Tech Solutions can support scheduling workflows in coordination with property management, including resident/tenant communications and appointment scheduling when authorized. Unit access requirements and any per-unit billing/collection process (if applicable) are handled according to the property’s rules and the approved proposal—no pricing is published or assumed without authorization."
+        },
+        {
+          "text": "<strong>Safety, documentation, and exclusions</strong><br>If a unit/system cannot be accessed or safely serviced at the scheduled time, it is documented and excluded. Repairs, modifications, or code corrections are not performed unless separately authorized in writing."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial dryer vent cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you clean from the exterior or the interior?",
+          "paragraphs": [
+            {
+              "text": "Both—method depends on vent design, access, and the approved scope."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can you clean shared central dryer ducts/roof shafts?",
+          "paragraphs": [
+            {
+              "text": "Yes—central duct cleaning can be included when systems are centrally vented."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will you handle resident scheduling?",
+          "paragraphs": [
+            {
+              "text": "When approved by property management, we can support resident/tenant scheduling workflows for interior access."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote at airtechsolutions.com and include number of units, venting type (exterior vs central), and whether interior access is available.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.webp",
+        "alt": "Commercial dryer vent cleaning service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Dryer Vent Cleaning Boston & West Newton MA",
+        "page_description": "Commercial dryer vent cleaning (exterior, interior, central ducts) to restore airflow and reduce fire risk. Serving Boston/West Newton 100 mi.",
+        "page_keywords": "commercial dryer vent cleaning Boston MA; multi-family dryer exhaust cleaning; central dryer duct cleaning roof shafts; dryer vent airflow restoration; property manager dryer vent vendor",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Dryer Vent Cleaning Boston & West Newton MA",
+            "description": "Commercial dryer vent cleaning (exterior, interior, central ducts) to restore airflow and reduce fire risk. Serving Boston/West Newton 100 mi.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-bathroom-exhaust-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Bathroom Exhaust Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "alt": "Bathroom exhaust cleaning and ventilation service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Bathrooms generate moisture—and exhaust systems are the first line of defense for moving that moisture out of the building. When bathroom exhaust fans and ductwork become clogged or underperform, humidity can linger, odors can persist, and moisture issues can escalate. Air Tech Solutions provides commercial bathroom exhaust cleaning to restore airflow, support moisture management, and keep exhaust systems functioning the way they’re intended. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What commercial bathroom exhaust cleaning includes</strong><br>Scope varies by building design, but a typical cleaning project focuses on the fan assembly and associated ductwork where debris buildup restricts airflow. Our goal is to remove accumulated dust and buildup that can impair performance over time. When we identify minor issues that can be addressed within scope, we’ll coordinate with property management on next steps."
+        },
+        {
+          "text": "<strong>Why property managers schedule exhaust cleaning proactively</strong><br>Exhaust issues often show up first as complaints: lingering humidity, odors, or bathrooms that never feel like they “dry out.” A planned cleaning program helps property teams reduce reactive calls and supports a more consistent resident/tenant experience—especially in larger buildings where small issues can repeat across many units."
+        },
+        {
+          "text": "<strong>Equipment and access planning</strong><br>Commercial properties often involve shared ducts, ceiling access points, and constrained mechanical spaces. We plan access with your maintenance team and use the equipment needed to complete work efficiently. Because we own and operate high-capacity equipment (including air-moving and access solutions), we can scope work based on real site conditions rather than a one-size approach."
+        },
+        {
+          "text": "<strong>Coordination, disruption control, and safety</strong><br>We coordinate scheduling with property management to reduce disruption, especially for common areas, amenity restrooms, or high-traffic corridors. If any area cannot be accessed or safely serviced during the visit, it is documented rather than rushed."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial bathroom exhaust cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you clean both the fan and the ductwork?",
+          "paragraphs": [
+            {
+              "text": "Yes—scope can include fan assemblies and connected duct sections where buildup affects airflow."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can you work in occupied buildings?",
+          "paragraphs": [
+            {
+              "text": "Yes—work is scheduled and staged to reduce disruption."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you work on residential single-family homes?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote on airtechsolutions.com and include fan count/locations, building layout, and any known airflow concerns.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "alt": "Bathroom exhaust cleaning and ventilation service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Bathroom Exhaust Cleaning Boston & West Newton",
+        "page_description": "Commercial bathroom exhaust fan & duct cleaning to restore airflow and manage moisture. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial bathroom exhaust cleaning; exhaust fan duct cleaning Boston MA; moisture control ventilation service; multi-family exhaust cleaning; property manager exhaust maintenance",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Bathroom Exhaust Cleaning Boston & West Newton",
+            "description": "Commercial bathroom exhaust fan & duct cleaning to restore airflow and manage moisture. Serving Boston/West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-bathroom-exhaust-repair-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Bathroom Exhaust Repair in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "alt": "Bathroom exhaust repair service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "When exhaust systems fail, cleaning alone may not solve the problem. If a bathroom exhaust fan is not operating reliably—or airflow remains poor even after buildup is addressed—repair becomes a maintenance priority. Air Tech Solutions provides commercial bathroom exhaust repair to help property managers restore functional ventilation, reduce recurring complaints, and support moisture control in bathrooms and shared spaces. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>Signs you may need bathroom exhaust repair</strong><br>Many properties first notice issues through occupant feedback or routine inspections. Common indicators include: fans that are noisy or intermittent, bathrooms that stay damp for long periods, persistent odors, or weak airflow at grilles. In multi-unit environments, a single failing component can indicate a broader pattern across the building—so it’s important to evaluate consistently."
+        },
+        {
+          "text": "<strong>How we approach exhaust repair</strong><br>We start by understanding the symptoms and the system layout: what type of fan, where the duct runs, and whether the issue is localized (one fan) or systemic (multiple points). Repair work may involve restoring secure connections, addressing fan performance issues, or replacing components that are no longer working as intended, depending on what’s accessible and approved."
+        },
+        {
+          "text": "<strong>Coordination with property management</strong><br>Repair work often requires access planning (units, common ceilings, mechanical rooms, roof access, or scheduled shutdown windows). We coordinate with property managers and maintenance teams to set expectations upfront—what access is required, what areas will be impacted, and how work will be phased to reduce disruption."
+        },
+        {
+          "text": "<strong>Safety and operational notes</strong><br>Commercial repair work is handled with site-specific safety planning. If conditions are unsafe or access is not available at the scheduled time, the affected area is documented and excluded until access can be safely provided. Repairs outside the approved scope (or code corrections) are not undertaken unless separately authorized."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial bathroom exhaust repair for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you repair exhaust issues discovered during cleaning?",
+          "paragraphs": [
+            {
+              "text": "Minor repairs may be addressed when appropriate; larger repairs require separate authorization."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can repairs be scheduled around occupancy?",
+          "paragraphs": [
+            {
+              "text": "Yes—repair can be phased and scheduled to reduce disruption."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you service residential single-family properties?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote at airtechsolutions.com and tell us what symptoms you’re seeing, how many fans are affected, and what access is available.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "alt": "Bathroom exhaust repair service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Bathroom Exhaust Repair Boston & West Newton MA",
+        "page_description": "Commercial bathroom exhaust repair to fix failing fans, poor airflow, and moisture issues. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial bathroom exhaust repair; exhaust fan repair Boston MA; fix bathroom ventilation airflow; multi-family exhaust fan service; property manager mechanical exhaust repair",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Bathroom Exhaust Repair Boston & West Newton MA",
+            "description": "Commercial bathroom exhaust repair to fix failing fans, poor airflow, and moisture issues. Serving Boston/West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-gutter-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Gutter Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.webp",
+        "alt": "Commercial gutter cleaning service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Clogged gutters and downspouts can create outsized problems on commercial properties: overflow, staining, ice-related concerns, and water where you don’t want it. Air Tech Solutions provides commercial gutter cleaning for property managers who want a consistent, documented approach to roof-edge drainage maintenance. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What’s included in commercial gutter cleaning</strong><br>Our gutter service focuses on clearing debris and obstructions from gutters and downspouts so water can drain properly. We also look for obvious issues that affect performance—visible damage, sections that appear unsafe to service, or drainage limitations that should be addressed by a repair scope. Removed debris is collected and removed from the work area upon completion."
+        },
+        {
+          "text": "<strong>Why this service matters for property upkeep</strong><br>Gutter cleaning isn’t just a seasonal “nice to have.” It supports drainage performance during heavy rain and reduces the likelihood of overflow conditions that can stain exteriors or create slip hazards near entries and walkways. For multi-building communities, routine gutter maintenance is one of the simplest ways to reduce repeated water-related complaints and preserve exterior appearance."
+        },
+        {
+          "text": "<strong>Access planning and safety</strong><br>Commercial gutter cleaning often requires lift access, roof-edge safety planning, and careful staging to minimize disruption. We plan access with property management and take a safety-first approach—especially where rooflines are high, conditions are deteriorated, or access is restricted. Sections that cannot be accessed or safely serviced during the scheduled work are documented and excluded."
+        },
+        {
+          "text": "<strong>Coordination with property managers</strong><br>We coordinate scheduling, site access, and staging to reduce disruption to residents/tenants and on-site operations. If roof access is required, property management is expected to coordinate and provide access per the agreed scope."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial gutter cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you clean downspouts too?",
+          "paragraphs": [
+            {
+              "text": "Yes—downspout clearing can be included to restore drainage performance."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "What if a gutter section is unsafe or deteriorated?",
+          "paragraphs": [
+            {
+              "text": "Unsafe/inaccessible sections may be excluded and documented to avoid damage and safety risk."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you service non-commercial homes?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote on airtechsolutions.com and include building count, roofline type, and any known drainage issues.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.webp",
+        "alt": "Commercial gutter cleaning service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Gutter Cleaning Boston & West Newton MA",
+        "page_description": "Commercial gutter and downspout cleaning to restore drainage and reduce overflow risk. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial gutter cleaning Boston MA; downspout cleaning commercial; gutter cleaning for condos apartments; drainage maintenance Greater Boston; property manager gutter vendor",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Gutter Cleaning Boston & West Newton MA",
+            "description": "Commercial gutter and downspout cleaning to restore drainage and reduce overflow risk. Serving Boston/West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-hvac-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial HVAC Cleaning in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.webp",
+        "alt": "HVAC system cleaning and maintenance service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "679981251"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "HVAC systems move air through buildings every day. When dust and debris accumulate in ductwork or HVAC components, it can contribute to performance issues and complicate indoor air quality management—especially on multi-unit commercial properties. Air Tech Solutions provides commercial HVAC cleaning for property managers who want a responsibly scoped service focused on airflow support, cleanliness, and practical coordination. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What commercial HVAC cleaning can include</strong><br>Because HVAC systems vary significantly by building and design, our scopes are built around what’s accessible, what’s needed, and what supports your maintenance goals. Depending on system configuration, an HVAC cleaning scope may include targeted cleaning of duct sections and accessible HVAC components where dust and debris accumulate. We use equipment and methods that support containment and capture, rather than simply moving debris from one place to another."
+        },
+        {
+          "text": "<strong>Aligning scope to best practices (without overpromising)</strong><br>HVAC cleaning should be defensible and properly scoped. The right approach starts with assessment (what’s present, where it’s present, and how it’s affecting performance) and continues with a cleaning plan that targets the areas that matter. If moisture or mold is suspected, underlying moisture sources must be addressed as part of an effective plan—cleaning alone is not a substitute for fixing a water problem."
+        },
+        {
+          "text": "<strong>Coordination and disruption control</strong><br>Commercial HVAC cleaning often affects occupied spaces and requires planning around access, mechanical room scheduling, and tenant/resident experience. We coordinate with property management and maintenance teams to plan access and minimize disruption. Where needed, work can be phased by wing, building, or system segment."
+        },
+        {
+          "text": "<strong>Equipment and access capability</strong><br>Complex properties require more than basic tools. Our capabilities include high-capacity air compressors and access solutions for challenging areas when needed. This supports more reliable scheduling and a smoother onsite experience."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial hvac cleaning for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you clean ductwork and HVAC components?",
+          "paragraphs": [
+            {
+              "text": "Scope can include both, depending on access and your maintenance goals."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will HVAC cleaning “solve” all air quality issues?",
+          "paragraphs": [
+            {
+              "text": "IAQ is multifactorial; cleaning supports maintenance goals but must be paired with proper ventilation and moisture control."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you service single-family residential HVAC systems?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote at airtechsolutions.com and tell us your HVAC configuration, the issue you’re trying to solve (post-construction dust, airflow concerns, visible buildup), and any access constraints.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.webp",
+        "alt": "HVAC system cleaning and maintenance service",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "679981251"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial HVAC Cleaning Boston & West Newton MA",
+        "page_description": "Commercial HVAC cleaning for ducts and components to support airflow and cleaner circulation. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial HVAC cleaning Boston MA; commercial duct cleaning services; HVAC system cleaning property managers; NADCA-aligned HVAC cleaning; commercial multi-family HVAC maintenance",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial HVAC Cleaning Boston & West Newton MA",
+            "description": "Commercial HVAC cleaning for ducts and components to support airflow and cleaner circulation. Serving Boston/West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-air-quality-testing-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Air Quality Testing in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.webp",
+        "alt": "Air quality testing in commercial property",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "1690463432"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Indoor air questions can turn into operational headaches fast—especially when you manage multiple buildings, multiple stakeholders, and limited time to troubleshoot. Air Tech Solutions provides commercial air quality testing to help property managers and facility teams move from “we think something’s wrong” to actionable data. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What air quality testing is for</strong><br>Commercial air quality testing is most valuable when it supports a decision: confirming baseline conditions, investigating a complaint pattern, documenting conditions around a maintenance event, or prioritizing next steps for ventilation and cleaning. The outcome isn’t just “numbers”—it’s clarity about where to focus your time and budget."
+        },
+        {
+          "text": "<strong>When property managers typically request testing</strong><br>Air quality testing is commonly requested after events or conditions such as:<br>• Persistent odor or comfort complaints in a recurring area<br>• Dust concerns that don’t resolve with normal cleaning<br>• Moisture events or suspected ventilation underperformance<br>• “Before/after” documentation for maintenance and cleaning projects"
+        },
+        {
+          "text": "<strong>How we keep the process practical</strong><br>Commercial properties need a plan that respects operations. We coordinate testing locations and timing with property management to minimize disruption, then document what was tested and where. Results are presented in a way that supports maintenance decisions—so you can determine whether next steps should focus on HVAC maintenance, exhaust system performance, source control, filtration, or targeted cleaning."
+        },
+        {
+          "text": "<strong>Coordination and expectations</strong><br>Every site is different. Before testing begins, we align on the purpose of the testing, sampling locations, access requirements, and what decisions the results will support. If additional lab work or expanded investigation is required, that is handled as a separate scope."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial air quality testing for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Do you test commercial offices and multi-family buildings?",
+          "paragraphs": [
+            {
+              "text": "Yes—commercial properties only, including commercial multi-family communities."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will testing tell us exactly what to fix?",
+          "paragraphs": [
+            {
+              "text": "Testing helps prioritize next steps; remediation actions depend on findings and building conditions."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can you coordinate testing with onsite staff?",
+          "paragraphs": [
+            {
+              "text": "Yes—testing plans are coordinated with property management and maintenance teams."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote on airtechsolutions.com and describe what you’re seeing (where, when it started, and whether it’s isolated or building-wide).",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.webp",
+        "alt": "Air quality testing in commercial property",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "1690463432"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Air Quality Testing Boston & West Newton MA",
+        "page_description": "Commercial air quality testing for particulates and contaminants—data to guide maintenance decisions. Serving Boston/West Newton 100 mi.",
+        "page_keywords": "commercial air quality testing Boston MA; indoor air quality testing offices; IAQ testing for property managers; building air quality assessment; commercial multi-family air testing",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Air Quality Testing Boston & West Newton MA",
+            "description": "Commercial air quality testing for particulates and contaminants—data to guide maintenance decisions. Serving Boston/West Newton 100 mi.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-caulking-services-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Caulking Services in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.webp",
+        "alt": "Commercial caulking and sealing services",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Small gaps can cause big problems on commercial properties. When exterior caulking fails at joints and transitions, water intrusion and air leakage become more likely—and the longer it’s left unaddressed, the more expensive the downstream consequences can be. Air Tech Solutions provides commercial caulking services for property managers who want practical, well-coordinated exterior maintenance on commercial buildings and commercial multi-family communities. We work with commercial properties only."
+        },
+        {
+          "text": "<strong>What commercial caulking addresses</strong><br>Caulking targets exterior joints, seams, and penetrations where sealant has cracked, separated, or deteriorated over time. A properly scoped caulking project helps reduce unwanted air movement and helps limit pathways for water intrusion at common weak points in the building envelope. It’s particularly valuable when you’re seeing staining, minor leaks, drafts, or visible sealant failure during routine inspections."
+        },
+        {
+          "text": "<strong>How we plan caulking projects</strong><br>Commercial caulking is not just “apply more sealant.” Results depend on correct surface preparation, selecting the right material for the condition, and installing it correctly. We coordinate scope with property management so the work is focused on the problem areas that matter—not a vague “touch-up” that leaves critical joints unaddressed."
+        },
+        {
+          "text": "<strong>Access capability for higher elevations</strong><br>Many exterior joints are not reachable from the ground safely. Our access capability allows caulking work to be planned for real-world building conditions. When required, we can coordinate lift access or rope access strategies so work can be completed on higher elevations and difficult-to-reach areas."
+        },
+        {
+          "text": "<strong>Coordination and expectations</strong><br>We coordinate staging and scheduling to reduce disruption. If any area cannot be accessed safely at the time of service, it is documented and excluded. Repairs outside an approved caulking scope (or broader envelope corrections) are handled only when separately authorized."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial caulking services for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Is caulking the same as sealing?",
+          "paragraphs": [
+            {
+              "text": "Caulking is one type of sealing focused on joints/gaps; broader sealing scopes may include additional envelope details."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Can you caulk higher elevations?",
+          "paragraphs": [
+            {
+              "text": "Yes—access may involve lifts or rope access depending on the site."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you provide residential home caulking?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote at airtechsolutions.com and tell us where you’re seeing sealant failure (photos help), building height, and any access restrictions.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.webp",
+        "alt": "Commercial caulking and sealing services",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Caulking Services Boston & West Newton MA",
+        "page_description": "Commercial caulking services to seal joints and penetrations and reduce air/water leaks. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial caulking services Boston MA; exterior caulking contractor commercial; building joint caulking West Newton; air leak sealing exterior; water intrusion prevention caulking",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Caulking Services Boston & West Newton MA",
+            "description": "Commercial caulking services to seal joints and penetrations and reduce air/water leaks. Serving Boston/West Newton within 100 miles.",
+            "image": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "commercial-sealing-services-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Commercial Sealing Services in Boston & West Newton, MA",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.webp",
+        "alt": "Commercial sealing and waterproofing services",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "1653425043"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "",
+      "paragraphs": [
+        {
+          "text": "Commercial buildings expand, contract, and weather year after year. Over time, exterior joints and penetrations can open up, sealants can fail, and small pathways can allow air and water to move where they shouldn’t. Air Tech Solutions provides commercial sealing services to help property managers protect building exteriors, reduce preventable water intrusion, and support more consistent building performance. We work with commercial properties only, including commercial multi-family communities."
+        },
+        {
+          "text": "<strong>What “sealing services” typically covers</strong><br>Commercial sealing services focus on exterior envelope details—especially joints, seams, and penetrations that become vulnerable over time. While caulking is one common sealing method, sealing services are often scoped more broadly to fit the building’s conditions and the specific leak pathways you’re trying to address."
+        },
+        {
+          "text": "<strong>When sealing becomes a priority</strong><br>Property teams often call us when they see recurring signs such as localized staining, minor water intrusion indicators, drafts, or visibly deteriorated sealant conditions around penetrations and transitions. Addressing these issues early can reduce the chance that a small envelope weakness becomes a bigger repair project later."
+        },
+        {
+          "text": "<strong>A coordinated, property-manager-first approach</strong><br>Sealing work should be planned—not improvised. We coordinate scope with property management and on-site maintenance staff to identify priority details and confirm access requirements. Work is staged to minimize disruption, especially on occupied properties where entrances, sidewalks, and parking areas must remain functional."
+        },
+        {
+          "text": "<strong>Access and equipment for commercial exteriors</strong><br>Sealing often requires working at height or reaching difficult exterior conditions. Our equipment and access capability supports safer, more efficient service on complex buildings. Where necessary, lift or rope access strategies can be incorporated into the work plan."
+        },
+        {
+          "text": "<strong>Exclusions and expectations</strong><br>If any area cannot be accessed or safely serviced at the scheduled time, it is documented and excluded. Repairs, modifications, or code corrections outside the approved sealing scope are not performed unless separately authorized in writing."
+        },
+        {
+          "text": "<strong>Service area</strong><br>We service commercial properties within a 100-mile radius of Boston/West Newton, including Newton, Cambridge, Brookline, Watertown, Waltham, Somerville, Medford, Dedham, Needham, Norwood, Quincy, Woburn, Burlington, Lexington, Framingham, and Marlborough (and surrounding areas)."
+        }
+      ],
+      "component_options": {
+        "hash": "service-details",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "FAQs",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Common questions about commercial sealing services for commercial properties."
+        }
+      ],
+      "accordion": [
+        {
+          "header": "Can sealing help with minor water intrusion issues?",
+          "paragraphs": [
+            {
+              "text": "Sealing can reduce pathways for water intrusion; the right scope depends on the underlying cause and location."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you handle complex, multi-building communities?",
+          "paragraphs": [
+            {
+              "text": "Yes—commercial multi-family communities are a key focus area."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you provide residential sealing for single-family homes?",
+          "paragraphs": [
+            {
+              "text": "No—commercial properties only."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to get started?",
+      "content_block": "text_block",
+      "text": "Request a free quote at airtechsolutions.com and include the building type, areas of concern, and any known access restrictions.",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "FREE ESTIMATE",
+        "aria_label": "Get a free estimate",
+        "href": "",
+        "path": "/contact",
+        "hash": "#form",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.webp",
+        "alt": "Commercial sealing and waterproofing services",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services",
+          "istock_id": "1653425043"
+        }
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Sealing Services Boston & West Newton MA",
+        "page_description": "Commercial sealing services for exterior joints and penetrations to help prevent water intrusion. Serving Boston/West Newton within 100 miles.",
+        "page_keywords": "commercial sealing services Boston MA; building envelope sealing contractor; exterior joint sealing West Newton; water intrusion prevention sealing; air leakage reduction commercial",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Sealing Services Boston & West Newton MA",
+            "description": "Commercial sealing services for exterior joints and penetrations to help prevent water intrusion. Serving Boston/West Newton within 100 miles.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.jpeg"
           }
         }
       }

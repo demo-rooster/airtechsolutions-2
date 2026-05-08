@@ -42,6 +42,54 @@ export const siteMap = {
           priority: 0.9
         },
         {
+          url: '/commercial-window-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-office-exterior-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/professional-commercial-exterior-cleaning-boston-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-soft-washing-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-dryer-vent-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-bathroom-exhaust-repair-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-gutter-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-hvac-cleaning-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-air-quality-testing-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-caulking-services-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
+          url: '/commercial-sealing-services-boston-west-newton-ma',
+          priority: 0.9
+        },
+        {
           url: '/contact',
           priority: 0.9
         },

@@ -188,6 +188,7 @@ export const setJSONData = (slug, customPostType = 'pages') => {
 
     const item = {
       title: slug,
+      slug: normalizedSlug === 'home' ? '' : normalizedSlug.replace(/^\/+/, ''),
       sections: pageSections,
       meta: seoData
     }

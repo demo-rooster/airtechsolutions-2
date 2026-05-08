@@ -17,55 +17,51 @@ const router = [
     children: [
       {
         name: 'Window Cleaning',
-        path: '#commercial-window-cleaning'
-      },
-      {
-        name: 'Exterior Window Cleaning',
-        path: '#commercial-exterior-window-cleaning'
+        path: '/commercial-window-cleaning-boston-west-newton-ma'
       },
       {
         name: 'Office Exterior Cleaning',
-        path: '#commercial-office-exterior-cleaning'
+        path: '/commercial-office-exterior-cleaning-boston-west-newton-ma'
       },
       {
         name: 'Professional Exterior Cleaning',
-        path: '#professional-commercial-exterior-cleaning'
+        path: '/professional-commercial-exterior-cleaning-boston-ma'
       },
       {
         name: 'Exterior Soft Washing',
-        path: '#commercial-exterior-soft-washing'
+        path: '/commercial-soft-washing-boston-west-newton-ma'
       },
       {
         name: 'Dryer Vent Cleaning',
-        path: '#commercial-dryer-vent-cleaning'
+        path: '/commercial-dryer-vent-cleaning-boston-west-newton-ma'
       },
       {
         name: 'Bathroom Exhaust Cleaning',
-        path: '#commercial-bathroom-exhaust-cleaning'
+        path: '/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma'
       },
       {
         name: 'Bathroom Exhaust Repair',
-        path: '#commercial-bathroom-exhaust-repair'
+        path: '/commercial-bathroom-exhaust-repair-boston-west-newton-ma'
       },
       {
         name: 'Gutter Cleaning',
-        path: '#commercial-gutter-cleaning'
+        path: '/commercial-gutter-cleaning-boston-west-newton-ma'
       },
       {
         name: 'HVAC Cleaning',
-        path: '#commercial-hvac-cleaning'
+        path: '/commercial-hvac-cleaning-boston-west-newton-ma'
       },
       {
         name: 'Air Quality Testing',
-        path: '#commercial-air-quality-testing'
+        path: '/commercial-air-quality-testing-boston-west-newton-ma'
       },
       {
         name: 'Caulking Services',
-        path: '#commercial-caulking-services'
+        path: '/commercial-caulking-services-boston-west-newton-ma'
       },
       {
         name: 'Sealing Services',
-        path: '#commercial-sealing-services'
+        path: '/commercial-sealing-services-boston-west-newton-ma'
       }
     ]
   },

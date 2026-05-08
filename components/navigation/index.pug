@@ -23,7 +23,7 @@ header.navigation(:class="{ 'navigation--floating': !isScrolling && props.nav.fl
               @key.enter='closeDropdown') {{ link.name }}
             BaseIcon.navigation__caret(v-if='link.children' name='caret', :class="{ 'navigation__caret--active': currentDropdown === i }")
             .navigation__subnav(v-if='link.children' :class='{ "navigation__subnav--active": i === currentDropdown }')
-              nuxt-link.navigation__subnav-link(v-for='(sublink, j) in link.children', :key='`nav-sublink-${j}`', tabindex='0', :to='link.path + sublink.path' v-html='sublink.name' @click.native='closeDropdown')
+              nuxt-link.navigation__subnav-link(v-for='(sublink, j) in link.children', :key='`nav-sublink-${j}`', tabindex='0', :to='subnavPath(link, sublink)' v-html='sublink.name' @click.native='closeDropdown')
 
     .navigation__nav-secondary(v-if='props.nav.cta_buttons && windowWidth > 1280' ref='navSecondary')
       .navigation__cta-container(v-for='(cta, i) in props.nav.buttons', :key='`nav-cta-${i}`')
@@ -55,7 +55,7 @@ header.navigation(:class="{ 'navigation--floating': !isScrolling && props.nav.fl
                 button.navigation__mobile-link-button(v-if='link.children', :aria-expanded="currentDropdown === i ? 'true' : 'false'" @click='toggleDropdown(i, $event)')
                   BaseIcon.navigation__mobile-caret(name='caret', :class="{ 'navigation__mobile-caret--active': currentDropdown === i }")
               .navigation__mobile-dropdown(v-if='link.children && currentDropdown === i', :class="{ 'navigation__mobile-dropdown--active': currentDropdown === i }", :aria-expanded="currentDropdown === i ? 'true' : 'false'")
-                nuxt-link.navigation__mobile-sublink(v-for='(sublink, j) in link.children', :key='`nav-sublink-${j}`', :to='link.path + sublink.path' v-html='sublink.name' @click.native='closeDrawer')
+                nuxt-link.navigation__mobile-sublink(v-for='(sublink, j) in link.children', :key='`nav-sublink-${j}`', :to='subnavPath(link, sublink)' v-html='sublink.name' @click.native='closeDrawer')
 
           .navigation__drawer-cta
             .navigation__mobile-cta-container(v-for='(cta, j) in props.nav.buttons', :key='`mobile-cta-${j}`')

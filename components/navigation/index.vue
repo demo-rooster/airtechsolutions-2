@@ -92,6 +92,13 @@ export default {
     setWindowWidth () {
       this.windowWidth = window.innerWidth
     },
+    subnavPath (link, sublink) {
+      if (sublink.path && sublink.path.charAt(0) === '/') {
+        return sublink.path
+      }
+
+      return `${link.path}${sublink.path}`
+    },
     toggleDropdown (i, e) {
       this.currentDropdown === i ? this.currentDropdown = null : this.currentDropdown = i
       if (this.currentDropdown !== null) {
