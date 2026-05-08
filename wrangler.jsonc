@@ -1,8 +1,5 @@
 {
   "name": "airtechsolutions-2",
   "compatibility_date": "2026-01-22",
-  "pages_build_output_dir": "./dist",
-  "build": {
-    "command": "npm run generate"
-  }
+  "pages_build_output_dir": "./dist"
 }
