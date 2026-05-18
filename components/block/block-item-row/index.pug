@@ -3,7 +3,8 @@
     h2.block-item-row__title(v-html='props.title' v-if='props.title', :class="{ 'block-item-row__title--large': props.large_title, 'block-item-row__title--left': props.left_aligned, 'block-item-row__title--primary': props.alt_color }" ref='theTitle')
     .block-item-row__row(:class="{ 'block-item-row__row--large': props.items.length > 3 }")
       .block-item-row__item(v-for='(item, i) in props.items', :key='`item-row-${i}`', :class="{ 'block-item-row__item--left': props.left_aligned }", :data-items='props.items.length', ref='item')
-        BaseIcon.block-item-row__icon(v-if="props.media_type === 'icon' && item.icon" :name='item.icon')
+        BaseImage.block-item-row__icon-image(v-if='item.icon_image && item.icon_image.src' v-bind='item.icon_image')
+        BaseIcon.block-item-row__icon(v-else-if="props.media_type === 'icon' && item.icon" :name='item.icon')
         .block-item-row__item-title-container
           h3.block-item-row__item-title(v-html='item.title', v-if='item.title' ref='itemTitle')
         .block-item-row__content

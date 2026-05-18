@@ -68,7 +68,8 @@ const router = [
   {
     name: 'Blog',
     path: '/blog',
-    navigation: true
+    navigation: false,
+    footer: true
   },
   {
     name: 'Contact',

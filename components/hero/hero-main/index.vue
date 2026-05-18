@@ -23,6 +23,11 @@ export default {
       threshold: [ 0.01 ]
     }
   }),
+  computed: {
+    hasHeroLogo () {
+      return Boolean(this.props.logo && this.props.logo.name)
+    }
+  },
   mounted () {
     if (this.$refs.image) {
       this.loadImage()
@@ -77,16 +82,26 @@ export default {
       const heroBtn = this.$refs.heroBtn
 
       /* eslint-disable */
-      const titleSplit = new this.$SplitText(heroTitle, { type: 'lines' })
+      if (this.hasHeroLogo) {
+        tl.from(heroTitle, {
+          y: '32',
+          opacity: 0,
+          duration: 1.25,
+          delay: 0.25,
+          ease: 'customEaseOut'
+        })
+      } else {
+        const titleSplit = new this.$SplitText(heroTitle, { type: 'lines' })
 
-      tl.from(titleSplit.lines, {
-        y: '32',
-        opacity: 0,
-        duration: 1.25,
-        stagger: 0.115,
-        delay: 0.25,
-        ease: 'customEaseOut'
-      })
+        tl.from(titleSplit.lines, {
+          y: '32',
+          opacity: 0,
+          duration: 1.25,
+          stagger: 0.115,
+          delay: 0.25,
+          ease: 'customEaseOut'
+        })
+      }
       if (heroText) {
         tl.from(heroText, {
           y: '24',

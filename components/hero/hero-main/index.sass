@@ -142,6 +142,35 @@
     .hero-main--no-image &
       color: var(--primary)
 
+    &--logo
+      line-height: 0
+
+  &__title-logo
+    display: block
+    margin: 0 auto
+    width: 21rem
+    max-width: 56vw
+    height: auto
+    @include phone-lg
+      width: 16rem
+      max-width: 68vw
+
+    svg
+      display: block
+      width: 100%
+      height: auto
+
+  &__title-fallback
+    position: absolute
+    margin: -1px
+    border: 0
+    padding: 0
+    width: 1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    white-space: nowrap
+
   &__text
     @extend %hero-text
     max-width: calc((4/12) * #{$width})

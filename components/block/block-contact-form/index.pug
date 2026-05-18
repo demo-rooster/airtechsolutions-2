@@ -1,7 +1,7 @@
 .block-contact-form(v-if='selectedForm')
   .block-contact-form__container(:class='{ "block-contact-form__container--stacked": props.stack }')
     .block-contact-form__content
-      h2.block-contact-form__title(v-if='selectedForm.content.content.header' v-html='selectedForm.content.content.header')
+      h2.block-contact-form__title(v-if='formHeading' v-html='formHeading')
       .block-contact-form__text(v-if='selectedForm.content.content.body')
         p Get a free estimate by filling out this form and someone from our office will get back to you shortly.
     .block-contact-form__form-container

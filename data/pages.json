@@ -39,7 +39,11 @@
         "webm": "",
         "title": ""
       },
-      "small": false
+      "small": false,
+      "logo": {
+        "name": "ATS-Logo-White",
+        "alt": "Air Tech Solutions"
+      }
     },
     {
       "acf_fc_layout": "block_text_fh",
@@ -84,7 +88,7 @@
               "istock_id": "1926807062"
             }
           },
-          "text": "Our skilled professionals ensure every project is completed with precision, efficiency, and long-term reliability.",
+          "text": "Our skilled professionals complete every project with precision, efficiency, and dependable long-term results.",
           "add_button": false,
           "button": {
             "button_type": "button",
@@ -114,7 +118,7 @@
               "istock_id": "961462955"
             }
           },
-          "text": "Our team delivers a full portfolio of services customized to meet the demands of commercial properties of all sizes.",
+          "text": "Our team provides comprehensive services tailored to meet the needs of commercial properties of every size.",
           "add_button": false,
           "button": {
             "button_type": "button",
@@ -127,7 +131,7 @@
         },
         {
           "title": "Trusted Since 2012",
-          "icon": "2012",
+          "icon": "",
           "image": {
             "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/1665656983_trusted_service.jpg",
             "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/1665656983_trusted_service.webp",
@@ -144,7 +148,7 @@
               "istock_id": "1665656983"
             }
           },
-          "text": "We provide professional exterior cleaning, ventilation, and air quality services for New England properties, delivering dependable solutions you can trust.",
+          "text": "We deliver trusted exterior cleaning, ventilation, and air quality services for commercial properties across New England.",
           "add_button": false,
           "button": {
             "button_type": "button",
@@ -153,11 +157,27 @@
             "href": "",
             "label": "",
             "aria": ""
+          },
+          "icon_image": {
+            "src": "/air-tech-images/AdobeStock_2017608031-icon.jpeg",
+            "webp": "/air-tech-images/AdobeStock_2017608031-icon.webp",
+            "alt": "Handshake icon representing trusted service since 2012",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "center",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": {
+              "context_category": "Why Choose Us Icon",
+              "adobe_stock_id": "2017608031"
+            }
           }
         },
         {
           "title": "Insured & Compliant",
-          "icon": "insured",
+          "icon": "compliance-management",
           "image": {
             "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/265958166_Group_of_medical_doctors_at_clinic_Unity_concept.jpg",
             "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/265958166_Group_of_medical_doctors_at_clinic_Unity_concept.webp",
@@ -171,7 +191,7 @@
             "loading_mask": "",
             "image_selection_hints": null
           },
-          "text": "We maintain full insurance coverage and strict compliance with all applicable regulations to ensure safe and reliable service.",
+          "text": "We maintain full insurance coverage and regulatory compliance to provide safe, reliable, and professional service.",
           "add_button": false,
           "button": {
             "button_type": "button",
@@ -1658,18 +1678,19 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/hero/652764051_Medical_staff_and_nurse_Receptionist_talking_to_co.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/hero/652764051_Medical_staff_and_nurse_Receptionist_talking_to_co.webp",
-        "alt": "Contact Air Tech Solutions for a free estimate",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_162975640.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_162975640.webp",
+        "alt": "Contact Air Tech Solutions for a commercial property quote",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
         "addLoader": false,
-        "objectPosition": "",
+        "objectPosition": "center",
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Contact Hero"
+          "context_category": "Contact Hero",
+          "adobe_stock_id": "162975640"
         }
       },
       "video": {
@@ -1681,7 +1702,7 @@
     },
     {
       "acf_fc_layout": "map",
-      "title": "Get a Quote!",
+      "title": "Proudly Serving New England",
       "component_options": {
         "hash": "",
         "component_padding": "half",
@@ -1703,7 +1724,8 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "stack": false
+      "stack": false,
+      "title": "Get a Quote!"
     },
     {
       "seo": {
@@ -2008,7 +2030,7 @@
   "commercial-window-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Window Cleaning in Boston & West Newton, MA",
+      "title": "Window Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -2025,9 +2047,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.webp",
-        "alt": "Commercial window cleaning in progress",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_1955299917.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_1955299917.webp",
+        "alt": "Rope access technician cleaning windows on a modern office building",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -2036,7 +2058,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "1955299917"
         }
       },
       "video": {
@@ -2251,7 +2274,7 @@
   "commercial-office-exterior-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Office Exterior Cleaning in Boston & West Newton, MA",
+      "title": "Office Exterior Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -2494,7 +2517,7 @@
   "professional-commercial-exterior-cleaning-boston-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Professional Commercial Exterior Cleaning in Boston & West Newton, MA",
+      "title": "Professional Exterior Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -2740,7 +2763,7 @@
   "commercial-soft-washing-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Exterior Soft Washing in Boston & West Newton, MA",
+      "title": "Exterior Soft Washing",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -2757,9 +2780,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.webp",
-        "alt": "Exterior soft washing on commercial building",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_48870887.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_48870887.webp",
+        "alt": "Commercial building exterior soft washing service",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -2768,7 +2791,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "48870887"
         }
       },
       "video": {
@@ -2986,7 +3010,7 @@
   "commercial-dryer-vent-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Dryer Vent Cleaning in Boston & West Newton, MA",
+      "title": "Commercial Dryer Vent Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -3003,9 +3027,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.webp",
-        "alt": "Commercial dryer vent cleaning service",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_297678759.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_297678759.webp",
+        "alt": "Commercial ventilation vents on a building exterior",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -3014,7 +3038,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "297678759"
         }
       },
       "video": {
@@ -3235,7 +3260,7 @@
   "commercial-bathroom-exhaust-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Bathroom Exhaust Cleaning in Boston & West Newton, MA",
+      "title": "Bathroom Exhaust Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -3252,18 +3277,19 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
-        "alt": "Bathroom exhaust cleaning and ventilation service",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_2003053194.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_2003053194.webp",
+        "alt": "Commercial bathroom exhaust cleaning service",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
         "addLoader": false,
-        "objectPosition": "center",
+        "objectPosition": "left center",
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "2003053194"
         }
       },
       "video": {
@@ -3478,7 +3504,7 @@
   "commercial-bathroom-exhaust-repair-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Bathroom Exhaust Repair in Boston & West Newton, MA",
+      "title": "Bathroom Exhaust Repair",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -3495,9 +3521,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
-        "alt": "Bathroom exhaust repair service",
+        "src": "/air-tech-images/AdobeStock_1875552050.jpeg",
+        "webp": "/air-tech-images/AdobeStock_1875552050.webp",
+        "alt": "Technician repairing ceiling ventilation equipment",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -3506,7 +3532,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "1875552050"
         }
       },
       "video": {
@@ -3721,7 +3748,7 @@
   "commercial-gutter-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Gutter Cleaning in Boston & West Newton, MA",
+      "title": "Gutter Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -3964,7 +3991,7 @@
   "commercial-hvac-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial HVAC Cleaning in Boston & West Newton, MA",
+      "title": "HVAC Cleaning",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -3981,9 +4008,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.webp",
-        "alt": "HVAC system cleaning and maintenance service",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_168555889.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_168555889.webp",
+        "alt": "Worker repairing ceiling air conditioning unit",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -3992,8 +4019,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services",
-          "istock_id": "679981251"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "168555889"
         }
       },
       "video": {
@@ -4209,7 +4236,7 @@
   "commercial-air-quality-testing-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Air Quality Testing in Boston & West Newton, MA",
+      "title": "Air Quality Testing",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -4454,7 +4481,7 @@
   "commercial-caulking-services-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Caulking Services in Boston & West Newton, MA",
+      "title": "Caulking Services",
       "text": "",
       "button": {
         "type": "nuxt",
@@ -4471,9 +4498,9 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.webp",
-        "alt": "Commercial caulking and sealing services",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_342961620.jpeg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_342961620.webp",
+        "alt": "Exterior vent and sealant caulking detail",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -4482,7 +4509,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Service Hero",
+          "adobe_stock_id": "342961620"
         }
       },
       "video": {
@@ -4697,7 +4725,7 @@
   "commercial-sealing-services-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
-      "title": "Commercial Sealing Services in Boston & West Newton, MA",
+      "title": "Sealing Services",
       "text": "",
       "button": {
         "type": "nuxt",

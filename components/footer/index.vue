@@ -8,7 +8,7 @@ export default {
   mixins: [removeFocus],
   computed: {
     links () {
-      return router.filter(link => link.navigation || link.mobile)
+      return router.filter(link => link.navigation || link.mobile || link.footer)
     }
   }
 }

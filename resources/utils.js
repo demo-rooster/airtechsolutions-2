@@ -67,27 +67,11 @@ export const getAllPages = async () => {
 }
 
 // gets data for all forms
-export const getForms = async () => {
+export const getForms = () => {
   try {
-    const response = await axios.get(
-      `${api}/wp/v2/forms?per_page=100`
-    )
-    const dataPages = totalPages(response)
-    let dataArray = responseArray(response, 'ERROR getting FORMS posts')
-    for (let i = 2; i <= dataPages; i++) {
-      const nextPage = await axios.get(
-        `${api}/wp/v2/forms?per_page=100&page=${i}`
-      )
-      dataArray = [...dataArray, ...responseArray(nextPage, 'ERROR getting FORMS posts')]
-    }
-    return dataArray.map(item => ({
-      id: item.id,
-      title: item.title,
-      slug: item.slug,
-      ...item.acf
-    }))
+    return require('../data/forms.json')
   } catch (e) {
-    console.warn(`ERROR getting FORMS posts: ${e}`)
+    console.warn(`ERROR loading local forms data: ${e}`)
     return []
   }
 }

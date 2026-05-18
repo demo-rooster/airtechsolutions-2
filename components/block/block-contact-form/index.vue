@@ -19,6 +19,16 @@ export default {
   computed: {
     storeForms () {
       return this.$store.state.forms
+    },
+    formHeading () {
+      const header = this.selectedForm?.content?.content?.header || ''
+      if (this.props.title) {
+        return this.props.title
+      }
+      if (header.toLowerCase().includes('we want to hear from you')) {
+        return 'Get a Quote!'
+      }
+      return header
     }
   },
   watch: {

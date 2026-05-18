@@ -114,6 +114,24 @@
     svg path
       fill: var(--primary) !important
 
+    svg [stroke]
+      stroke: var(--primary) !important
+
+  &__icon-image
+    display: block
+    margin: 0 auto 1.5rem
+    width: rem-calc(120)
+    height: rem-calc(120)
+    @include desktop
+      width: rem-calc(130)
+      height: rem-calc(130)
+    @include tablet-lg
+      width: 6rem
+      height: 6rem
+
+    .base-image__image
+      object-fit: contain
+
   &__image
     display: block
     margin: 1rem auto 1.5rem
