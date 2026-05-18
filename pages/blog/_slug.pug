@@ -1,2 +1,2 @@
 .pages-blog-post
-  BlockPost(:props='props')
+  BlockPost(:props='props', :blogs='$store.state.posts && $store.state.posts.posts ? $store.state.posts.posts : []')

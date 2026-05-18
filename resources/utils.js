@@ -28,6 +28,47 @@ const totalPages = (response) => {
   return Number.isFinite(pages) ? pages : 0
 }
 
+const getLocalPosts = () => {
+  try {
+    return require('../data/posts.json')
+  } catch (e) {
+    return []
+  }
+}
+
+const mapPost = item => ({
+  id: item.id,
+  title: item.title,
+  path: `/blog/${item.slug}`,
+  slug: item.slug,
+  category: item.categories ? item.categories[0] : null,
+  date: item.date,
+  post: item.acf
+})
+
+const buildPostsData = (posts, total = 100) => {
+  const perPage = Math.max(Number(total) || 100, 1)
+  const sortedDataArr = posts.map(mapPost).sort((a, b) => {
+    const aDate = new Date(a.date)
+    const bDate = new Date(b.date)
+    return bDate - aDate
+  })
+  const currentPosts = {}
+  sortedDataArr.forEach((post, index) => {
+    const page = `${Math.floor(index / perPage) + 1}`
+    if (!currentPosts[page]) {
+      currentPosts[page] = []
+    }
+    currentPosts[page].push(post)
+  })
+
+  return {
+    posts: sortedDataArr,
+    postsPerPage: currentPosts,
+    pageCount: Math.ceil(sortedDataArr.length / perPage)
+  }
+}
+
 export const getAllPages = async () => {
   try {
     const getPath = (str) => {
@@ -78,6 +119,13 @@ export const getForms = () => {
 
 // gets data for all custom posts of a specific type
 export const getCustomPosts = async (customPostType, total = 100) => {
+  if (customPostType === 'posts') {
+    const localPosts = getLocalPosts()
+    if (localPosts.length) {
+      return buildPostsData(localPosts, total)
+    }
+  }
+
   try {
     const response = await axios.get(
       `${api}/wp/v2/${customPostType}?per_page=${total}`
@@ -185,6 +233,24 @@ export const setJSONData = (slug, customPostType = 'pages') => {
 }
 
 export const setData = async (slug, customPostType = 'pages') => {
+  if (customPostType === 'posts') {
+    const localPost = getLocalPosts().find(post => post.slug === slug)
+    if (localPost) {
+      return {
+        title: localPost.title.rendered,
+        slug: localPost.slug,
+        ...localPost.acf
+      }
+    }
+  }
+
+  if (customPostType === 'pages') {
+    const localPage = setJSONData(slug)
+    if (localPage.sections.length || Object.keys(localPage.meta || {}).length) {
+      return localPage
+    }
+  }
+
   try {
     const response = await axios.get(
       `${api}/wp/v2/${customPostType}?slug=${slug}`

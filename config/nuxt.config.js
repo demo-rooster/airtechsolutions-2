@@ -26,6 +26,20 @@ const totalPages = (response) => {
   return Number.isFinite(pages) ? pages : 0
 }
 
+const getLocalPosts = () => {
+  const postsFile = path.join(process.cwd(), 'data', 'posts.json')
+  if (!fs.existsSync(postsFile)) {
+    return []
+  }
+
+  try {
+    return JSON.parse(fs.readFileSync(postsFile, 'utf8'))
+  } catch (e) {
+    console.warn('Could not read local blog posts for route generation:', e.message)
+    return []
+  }
+}
+
 // Extract Google Fonts from theme.json typography
 const systemFonts = ['helvetica', 'arial', 'sans-serif', 'serif', 'monospace', 'georgia']
 const typography = (theme.default && theme.default.typography) || []
@@ -55,6 +69,20 @@ export default () => {
     generate: {
       async routes () {
         const dyRoutes = []
+        const localPosts = getLocalPosts()
+
+        if (localPosts.length) {
+          const postsPerPage = 2
+          const pageCount = Math.ceil(localPosts.length / postsPerPage)
+          for (let i = 1; i <= pageCount; i++) {
+            dyRoutes.push('/blog/page/' + i)
+          }
+          localPosts.forEach((post) => {
+            dyRoutes.push('/blog/' + post.slug)
+          })
+
+          return dyRoutes
+        }
 
         try {
           await axios.get(`${api}/wp/v2/posts?per_page=100`).then(async (response) => {

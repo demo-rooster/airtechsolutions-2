@@ -1658,6 +1658,35 @@
       }
     }
   ],
+  "Blog": [
+    {
+      "acf_fc_layout": "blog_posts",
+      "title": "Blog",
+      "component_padding": "full",
+      "hide_component": false,
+      "component_options": {
+        "hash": "",
+        "component_padding": "full",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Property Maintenance Blog | Air Tech Solutions",
+        "page_description": "Insights for New England property managers on exterior cleaning, dryer vent cleaning, bathroom exhaust systems, air quality testing, and commercial property maintenance.",
+        "page_keywords": "commercial property maintenance blog, property manager maintenance tips, New England exterior cleaning, dryer vent cleaning, bathroom exhaust cleaning, air quality testing",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Property Maintenance Blog | Air Tech Solutions",
+            "description": "Insights for New England property managers on exterior cleaning, dryer vent cleaning, bathroom exhaust systems, air quality testing, and commercial property maintenance.",
+            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg"
+          }
+        }
+      }
+    }
+  ],
   "Contact": [
     {
       "acf_fc_layout": "hero",
