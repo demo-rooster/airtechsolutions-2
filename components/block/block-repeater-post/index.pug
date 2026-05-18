@@ -7,7 +7,7 @@ section.block-repeater-post(:style='{ minHeight: `${elemMinHeight}px` }')
     .block-repeater-post__posts(v-if='props && havePosts')
       .block-repeater-post__post.block-repeater-post__post--row(v-for='(post, i) in $store.state.posts.postsPerPage[$route.params.page]',  :key=`$route.name + ' post ' + i` ref='posts')
         .block-repeater-post__post-image-container
-          BaseImage.block-repeater-post__post-image(v-if='post.post.blog_post.thumbnail_image', v-bind='post.post.blog_post.thumbnail_image')
+          BaseImage.block-repeater-post__post-image(v-if='post.post.blog_post.thumbnail_image', v-bind='post.post.blog_post.thumbnail_image' forceVisible)
         .block-repeater-post__post-text
           h2.block-repeater-post__post-title(v-html='post.post.blog_post.title')
           p.block-repeater-post__post-excerpt(v-html='post.post.blog_post.excerpt')

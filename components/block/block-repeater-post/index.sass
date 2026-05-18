@@ -1,6 +1,11 @@
 .block-repeater-post
   background: $white
-  padding: 1rem
+  padding-right: 1rem
+  padding-left: 1rem
+
+  &.component-padding--full
+    @include max-width(1280px)
+      padding-top: rem-calc(89)
 
   &__loading
     text-align: center
@@ -8,12 +13,14 @@
   &__container
     @include container
     flex-direction: column
-    justify-content: center
+    justify-content: flex-start
 
   &__title
     position: relative
-    margin-bottom: rem-calc(64)
+    margin-bottom: rem-calc(48)
     color: var(--primary)
+    @include tablet
+      margin-bottom: rem-calc(32)
 
   &__body
     @extend %body
