@@ -31,7 +31,7 @@ export default {
   },
   async fetch () {
     this.forms = await getForms()
-    this.posts = await getCustomPosts('posts', 2)
+    this.posts = await getCustomPosts('posts', 5)
     this.global = await setJSONData('global', 'globalData')
     const theme = await getThemeJSON()
     this.theme = theme.default

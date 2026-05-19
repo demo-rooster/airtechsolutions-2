@@ -72,7 +72,7 @@ export default () => {
         const localPosts = getLocalPosts()
 
         if (localPosts.length) {
-          const postsPerPage = 2
+          const postsPerPage = 5
           const pageCount = Math.ceil(localPosts.length / postsPerPage)
           for (let i = 1; i <= pageCount; i++) {
             dyRoutes.push('/blog/page/' + i)
