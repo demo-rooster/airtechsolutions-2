@@ -1,4 +1,4 @@
-header.navigation(:class="{ 'navigation--floating': !isScrolling && props.nav.floating && !$store.state.noFloatTop && !$route.path.includes('/blog') && !$route.path.includes('/privacy-policy') && !$route.path.includes('/404') && !$route.path.includes('/accessibility'), 'navigation--dark': isDarkVariant && (isScrolling || !props.nav.floating || $store.state.noFloatTop), 'navigation--loaded': $store.state.siteLoaded, 'navigation--text-logo': !hasLogo }" ref='theNav')
+header.navigation(:class="{ 'navigation--floating': !isScrolling && props.nav.floating && !$store.state.noFloatTop && !forceScrolledNav && !$route.path.includes('/privacy-policy') && !$route.path.includes('/404') && !$route.path.includes('/accessibility'), 'navigation--dark': isDarkVariant && (isScrolling || !props.nav.floating || $store.state.noFloatTop || forceScrolledNav), 'navigation--loaded': $store.state.siteLoaded, 'navigation--text-logo': !hasLogo }" ref='theNav')
   
   Topbar.navigation__topbar(v-if='props.top_bar.enable_top_bar', :props='props.top_bar')
 

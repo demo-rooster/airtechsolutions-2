@@ -68,6 +68,9 @@ export default {
       } else {
         return null
       }
+    },
+    forceScrolledNav () {
+      return this.$route.path.includes('/blog')
     }
   },
   // watch: {
