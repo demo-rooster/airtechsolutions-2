@@ -72,6 +72,12 @@ const router = [
     footer: true
   },
   {
+    name: 'Service Guides',
+    path: '/service-guides',
+    navigation: false,
+    footer: true
+  },
+  {
     name: 'Contact',
     path: '/contact',
     navigation: true

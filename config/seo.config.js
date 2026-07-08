@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import axios from 'axios'
 import { api, url } from '../resources/api'
 
@@ -13,6 +15,20 @@ const responseArray = (response, label) => {
 const totalPages = (response) => {
   const pages = Number(response && response.headers && response.headers['x-wp-totalpages'])
   return Number.isFinite(pages) ? pages : 0
+}
+
+const getLocalServiceGuides = () => {
+  const guidesFile = path.join(process.cwd(), 'data', 'service-guides.json')
+  if (!fs.existsSync(guidesFile)) {
+    return []
+  }
+
+  try {
+    return JSON.parse(fs.readFileSync(guidesFile, 'utf8'))
+  } catch (e) {
+    console.warn('SITEMAP SERVICE GUIDES LOCAL: ' + e)
+    return []
+  }
 }
 
 export const siteMap = {
@@ -100,6 +116,10 @@ export const siteMap = {
         {
           url: '/blog',
           priority: 0.8
+        },
+        {
+          url: '/service-guides',
+          priority: 0.8
         }
       ]
     },
@@ -134,6 +154,30 @@ export const siteMap = {
           console.warn('SITEMAP BLOG API: ' + e)
           return []
         }
+      }
+    },
+    {
+      path: '/service-guides/sitemap-service-guides.xml',
+      defaults: {
+        changefreq: 'daily',
+        priority: 0.1,
+        lastmod: new Date()
+      },
+      exclude: ['/**'],
+      routes: () => {
+        const guides = getLocalServiceGuides()
+        const routes = []
+        const postsPerPage = 5
+        const pageCount = Math.ceil(guides.length / postsPerPage)
+
+        for (let i = 1; i <= pageCount; i++) {
+          routes.push('/service-guides/page/' + i)
+        }
+        guides.forEach((guide) => {
+          routes.push('/service-guides/' + guide.slug)
+        })
+
+        return routes
       }
     }
   ]

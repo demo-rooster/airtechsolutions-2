@@ -4,7 +4,7 @@ section.block-post
       h3 Loading...
   .block-post__container(v-if='props')
 
-    BaseImage.block-post__image(v-if='props.blog_post.main_image' v-bind='props.blog_post.main_image' forceVisible ref='image')
+    BaseImage.block-post__image(v-if='props.blog_post.main_image && props.blog_post.main_image.src' v-bind='props.blog_post.main_image' forceVisible ref='image')
 
     .block-post__text
 

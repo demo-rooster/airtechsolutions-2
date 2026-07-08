@@ -14,10 +14,22 @@ export default {
   },
   data: () => ({
     mapLoading: true,
+    useGoogleMap: false,
+    googleMapsApiKey: '',
+    mapImage: {
+      src: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-area.jpg',
+      webp: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-area.webp',
+      alt: 'Air Tech Solutions service area map'
+    }
   }),
   mounted () {
+    if (!this.useGoogleMap || !this.googleMapsApiKey) {
+      this.mapLoading = false
+      return
+    }
+
     const loadMap = new Loader ({
-      apiKey: 'AIzaSyDZACTJZaObfFPVKCr4309ty6E5YqlrCBg'
+      apiKey: this.googleMapsApiKey
     })
     loadMap.load().then(()=> {
       this.createMap()

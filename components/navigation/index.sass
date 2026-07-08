@@ -315,6 +315,8 @@
 
   &__nav-secondary
     display: flex
+    align-items: center
+    gap: rem-calc(10)
     width: fit-content
     height: 100%
 
@@ -322,6 +324,50 @@
     width: 100%
     height: 100%
     white-space: nowrap
+
+  &__contact-cta
+    @include hover-focus
+      transform: translateY(-1px)
+      background: var(--primary)
+      color: $white
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease
+    box-shadow: 0 8px 18px rgba($black, .12)
+    border-radius: 50%
+    background: var(--accent)
+    width: rem-calc(46)
+    height: rem-calc(46)
+    color: $white
+    text-decoration: none
+
+    .navigation--floating &
+      background: $white
+      color: var(--primary)
+
+      @include hover-focus
+        background: var(--accent)
+        color: $white
+
+    &--drawer
+      width: rem-calc(56)
+      height: rem-calc(56)
+
+  &__contact-cta-icon
+    width: rem-calc(22)
+    height: rem-calc(22)
+
+    &--phone
+      svg
+        transform: translateX(18%)
+
+    svg
+      width: 100%
+      height: 100%
+
+      path, circle, rect, line, polyline, polygon
+        fill: currentColor
 
   &__hamburger
     @include focus

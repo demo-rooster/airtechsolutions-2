@@ -1,35 +1,43 @@
 .block-contact-location
   .block-contact-location__map-container
-    .block-contact-location__map(ref='theMap')
+    .block-contact-location__map(v-if='useGoogleMap' ref='theMap')
+    BaseImage.block-contact-location__map-image(
+      v-else
+      :src='mapImage.src'
+      :webp='mapImage.webp'
+      :alt='mapImage.alt'
+      imageBackground
+      forceVisible
+    )
   
   .block-contact-location__divider
   
   .block-contact-location__content-container
     .block-contact-location__content
-      .block-contact-location__info
-        
-        .block-contact-location__info-left
-          p.block-contact-location__location(v-if='$store.state.global.location.length <= 1' v-html='props.title || $store.state.global.company_name')
-          p.block-contact-location__location(v-else-if='props.title' v-html='props.title')
-          a.block-contact-location__address(:href='props.directions_link.href' :aria-label='props.directions_link.label', target='_blank')
-            p.block-contact-location__street(v-html='props.address.street')
-            p.block-contact-location__suite(v-html='props.address.suite')
-            p.block-contact-location__city-state(v-html='props.address.city_state')
-          BaseButtonSimple.block-contact-location__directions(:props='props.directions_link' noArrow)
-          .block-contact-location__contact
-            a.block-contact-location__phone(:href='props.phone.href || $store.state.global.phone.href' v-if='props.phone.href || $store.state.global.phone.href', :aria-label='`Call us at ${props.phone.number || $store.state.global.phone.number}`')
-              BaseIcon.block-contact-location__icon(name='phone')
-              span.block-contact-location__label(v-html='props.phone.number || $store.state.global.phone.number')
-            a.block-contact-location__email(:href='`mailto:${props.email || $store.state.global.email}`' :aria-label='`email ${props.email || $store.state.global.email}`')
-              BaseIcon.block-contact-location__icon(name='envelope')
-              span.block-contact-location__label(v-html='props.email || $store.state.global.email')
-        
-        .block-contact-location__info-right
-          .block-contact-location__hours-container(v-if='props.hours')
-            .block-contact-location__hours-title Hours:
-            ul.block-contact-location__hours-list
-              li.block-contact-location__row(v-for='(item, i) in props.hours', :key='`contact-hours-${i}`')
-                p.block-contact-location__day(v-html='item.day')
-                p.block-contact-location__hours(v-html='item.time')
-          .block-contact-location__special-note(v-if='props.special_note', :data-bg-alt='props.background')
-            p.block-contact-location__note-text(v-html='props.special_note')
+      .block-contact-location__service-area
+        p.block-contact-location__radius 100 MILE RADIUS
+        p.block-contact-location__origin FROM WEST NEWTON, MA
+        .block-contact-location__rule
+        .block-contact-location__legend
+          span.block-contact-location__legend-box(aria-hidden='true')
+          span.block-contact-location__legend-label AREAS WE SERVE
+        .block-contact-location__pin-row
+          BaseIcon.block-contact-location__pin(name='map-pin')
+          span.block-contact-location__pin-label WEST NEWTON, MA
+        .block-contact-location__description
+          ul.block-contact-location__description-list
+            li Massachusetts, Rhode Island, Northern Connecticut
+            li Southern Regions of New Hampshire, Maine and Vermont
+        .block-contact-location__contact
+          a.block-contact-location__phone(:href='props.phone.href || $store.state.global.phone.href' v-if='props.phone.href || $store.state.global.phone.href', :aria-label='`Call us at ${props.phone.number || $store.state.global.phone.number}`')
+            BaseIcon.block-contact-location__icon(name='phone')
+            span.block-contact-location__label(v-html='props.phone.number || $store.state.global.phone.number')
+          a.block-contact-location__email(:href='`mailto:${props.email || $store.state.global.email}`' :aria-label='`email ${props.email || $store.state.global.email}`')
+            BaseIcon.block-contact-location__icon(name='envelope')
+            span.block-contact-location__label(v-html='props.email || $store.state.global.email')
+        .block-contact-location__hours-container(v-if='props.hours')
+          .block-contact-location__hours-title Hours:
+          ul.block-contact-location__hours-list
+            li.block-contact-location__row(v-for='(item, i) in props.hours', :key='`contact-hours-${i}`')
+              p.block-contact-location__day(v-html='item.day')
+              p.block-contact-location__hours(v-html='item.time')

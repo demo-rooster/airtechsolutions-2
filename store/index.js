@@ -6,6 +6,7 @@ export const state = () => ({
   devTools: false,
   forms: null,
   posts: null,
+  serviceGuides: null,
   global: null,
   isPhoneLandLg: false,
   isPhoneLg: false,

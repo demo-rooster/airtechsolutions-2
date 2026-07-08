@@ -53,10 +53,6 @@
             "checked": false
           },
           {
-            "label": "Text",
-            "checked": false
-          },
-          {
             "label": "Email",
             "checked": false
           }

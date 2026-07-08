@@ -24,6 +24,23 @@
       height: 70vw
       min-height: 0
 
+  &__map-image
+    display: block
+    position: relative
+    background: $gray
+    width: 100%
+    height: 100%
+    min-height: rem-calc(380)
+    overflow: hidden
+    @include desktop
+      min-height: rem-calc(420)
+    @include phone-lg
+      height: 70vw
+      min-height: 0
+
+    &.base-image
+      position: relative
+
   &__divider
     @include col (1)
     @include tablet-lg
@@ -53,9 +70,95 @@
   &__content
     width: 100%
 
+  &__service-area
+    width: 100%
+    color: var(--text)
+
   &__title
     margin-bottom: 2rem
     width: 100%
+
+  &__radius
+    margin-bottom: .35rem
+    line-height: .95
+    color: var(--primary)
+    font-size: rem-calc(48)
+    font-weight: 700
+    @include desktop
+      font-size: rem-calc(58)
+    @include tablet-lg
+      font-size: rem-calc(42)
+    @include tablet
+      font-size: rem-calc(44)
+    @include phone-lg
+      font-size: rem-calc(36)
+
+  &__origin
+    line-height: 1.1
+    color: #3285cb
+    font-size: rem-calc(32)
+    font-weight: 700
+    @include desktop
+      font-size: rem-calc(38)
+    @include tablet-lg
+      font-size: rem-calc(29)
+    @include phone-lg
+      font-size: rem-calc(24)
+
+  &__rule
+    margin: rem-calc(22) 0 rem-calc(24)
+    background: #3285cb
+    width: 100%
+    height: 2px
+
+  &__legend,
+  &__pin-row
+    display: flex
+    align-items: center
+
+  &__legend
+    margin-bottom: rem-calc(22)
+
+  &__legend-box
+    flex-shrink: 0
+    margin-right: rem-calc(12)
+    background: #3285cb
+    width: rem-calc(22)
+    height: rem-calc(22)
+
+  &__legend-label,
+  &__pin-label
+    line-height: 1.1
+    color: var(--primary)
+    font-weight: 700
+
+  &__legend-label
+    font-size: rem-calc(18)
+
+  &__pin-row
+    margin-bottom: rem-calc(20)
+
+  &__pin
+    flex-shrink: 0
+    margin-right: rem-calc(10)
+    width: rem-calc(26)
+    height: rem-calc(26)
+
+    svg path
+      fill: #3285cb
+
+  &__pin-label
+    color: #3285cb
+    font-size: rem-calc(18)
+
+  &__description
+    max-width: rem-calc(520)
+    line-height: 1.5
+    color: var(--text)
+
+  &__description-list
+    margin: .25rem 0 0
+    padding-left: 1.2rem
 
   &__info
     display: flex
@@ -111,6 +214,8 @@
     width: 1.5rem
     height: 1.5rem
 
+  &__hours-container
+    margin-top: rem-calc(32)
 
   &__hours-title
     color: var(--text)

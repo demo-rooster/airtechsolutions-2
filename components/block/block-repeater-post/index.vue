@@ -19,6 +19,22 @@ export default {
     props: {
       type: Object,
       default: () => ({})
+    },
+    storeKey: {
+      type: String,
+      default: 'posts'
+    },
+    basePath: {
+      type: String,
+      default: '/blog'
+    },
+    postField: {
+      type: String,
+      default: 'blog_post'
+    },
+    buttonLabel: {
+      type: String,
+      default: 'Read More'
     }
   },
   data () {
@@ -32,8 +48,20 @@ export default {
       elemMinHeight: 0
     }
   },
+  computed: {
+    postsData () {
+      return this.$store.state[this.storeKey] || {}
+    },
+    currentPosts () {
+      const page = this.$route.params.page || '1'
+      return this.postsData.postsPerPage && this.postsData.postsPerPage[page] ? this.postsData.postsPerPage[page] : []
+    },
+    pageCount () {
+      return Number(this.postsData.pageCount || 0)
+    }
+  },
   mounted () {
-    if (this.$store.state.posts.posts) {
+    if (this.postsData.posts) {
       this.havePosts = true
     }
     this.handleResize()
@@ -70,7 +98,7 @@ export default {
         if (this.props.header) {
           this.$_fadeUpIn(this.$refs.header, 24, 'top+=58')
         }
-        if (this.posts && this.$store.state.posts.postsPerPage[this.$route.params.page]) {
+        if (this.currentPosts.length && this.$refs.posts) {
           this.$refs.posts.forEach((post, i) => {
             this.$CustomEase.create('customEaseOut', '0.23, 1, 0.32, 1')
             const posttl = this.$gsap.timeline({
@@ -90,6 +118,15 @@ export default {
           })
         }
       })
+    },
+    getPostContent (post) {
+      return post && post.post && post.post[this.postField] ? post.post[this.postField] : {}
+    },
+    hasImage (image) {
+      return image && image.src
+    },
+    getPostPath (post) {
+      return post.path || `${this.basePath}/${post.slug}`
     }
   }
 }

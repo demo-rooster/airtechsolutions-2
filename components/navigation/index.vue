@@ -56,6 +56,22 @@ export default {
     companyName () {
       return this.$store.state.global?.company_name || 'Practice Name'
     },
+    navContactCtas () {
+      const email = this.props?.email
+
+      return [
+        {
+          href: this.props?.phone?.href,
+          ariaLabel: this.props?.phone?.aria || `Call ${this.companyName}`,
+          icon: 'phone'
+        },
+        {
+          href: email ? `mailto:${email}` : '',
+          ariaLabel: `Email ${this.companyName}`,
+          icon: 'message'
+        }
+      ].filter(cta => cta.href)
+    },
     logoVariant () {
       return this.theme?.logo_config?.variant || 'light'
     },
@@ -70,7 +86,7 @@ export default {
       }
     },
     forceScrolledNav () {
-      return this.$route.path.includes('/blog')
+      return this.$route.path.includes('/blog') || this.$route.path.includes('/service-guides')
     }
   },
   // watch: {

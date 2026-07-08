@@ -8,6 +8,7 @@ import {
   IS_TABLET_MD,
   SET_FORMS,
   SET_BLOG,
+  SET_SERVICE_GUIDES,
   SET_GLOBAL,
   VIDEO_LOADING,
   VIEW_SITE,
@@ -42,6 +43,9 @@ const stateMutations = () => ({
   },
   [SET_BLOG] (state, data) {
     state.posts = data
+  },
+  [SET_SERVICE_GUIDES] (state, data) {
+    state.serviceGuides = data
   },
   [SET_GLOBAL] (state, data) {
     state.global = data

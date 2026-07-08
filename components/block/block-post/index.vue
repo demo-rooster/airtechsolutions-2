@@ -34,7 +34,7 @@ export default {
   computed: {
     blogLinks () {
       const linkArr = this.blogs.map((post) => {
-        return post.link
+        return post.path || post.link
       })
       return linkArr
     }

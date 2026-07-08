@@ -26,8 +26,9 @@ const totalPages = (response) => {
   return Number.isFinite(pages) ? pages : 0
 }
 
-const getLocalPosts = () => {
-  const postsFile = path.join(process.cwd(), 'data', 'posts.json')
+const getLocalPosts = (customPostType = 'posts') => {
+  const fileName = customPostType === 'service-guides' ? 'service-guides.json' : 'posts.json'
+  const postsFile = path.join(process.cwd(), 'data', fileName)
   if (!fs.existsSync(postsFile)) {
     return []
   }
@@ -35,9 +36,19 @@ const getLocalPosts = () => {
   try {
     return JSON.parse(fs.readFileSync(postsFile, 'utf8'))
   } catch (e) {
-    console.warn('Could not read local blog posts for route generation:', e.message)
+    console.warn(`Could not read local ${customPostType} for route generation:`, e.message)
     return []
   }
+}
+
+const addLocalPostRoutes = (routes, posts, basePath, postsPerPage = 5) => {
+  const pageCount = Math.ceil(posts.length / postsPerPage)
+  for (let i = 1; i <= pageCount; i++) {
+    routes.push(`/${basePath}/page/` + i)
+  }
+  posts.forEach((post) => {
+    routes.push(`/${basePath}/` + post.slug)
+  })
 }
 
 // Extract Google Fonts from theme.json typography
@@ -70,38 +81,34 @@ export default () => {
       async routes () {
         const dyRoutes = []
         const localPosts = getLocalPosts()
+        const localServiceGuides = getLocalPosts('service-guides')
 
         if (localPosts.length) {
-          const postsPerPage = 5
-          const pageCount = Math.ceil(localPosts.length / postsPerPage)
-          for (let i = 1; i <= pageCount; i++) {
-            dyRoutes.push('/blog/page/' + i)
+          addLocalPostRoutes(dyRoutes, localPosts, 'blog')
+        } else {
+          try {
+            await axios.get(`${api}/wp/v2/posts?per_page=100`).then(async (response) => {
+              const dataPages = totalPages(response)
+              let postsArray = responseArray(response, 'Could not fetch blog posts for route generation')
+              dyRoutes.push('/blog/page/1')
+              for (let i = 2; i <= dataPages; i++) {
+                const nextPage = await axios.get(
+                  `${api}/wp/v2/posts?per_page=100&page=${i}`
+                )
+                postsArray = [...postsArray, ...responseArray(nextPage, 'Could not fetch blog posts for route generation')]
+                dyRoutes.push('/blog/page/' + i)
+              }
+              return postsArray.forEach((post) => {
+                dyRoutes.push('/blog/' + post.slug)
+              })
+            })
+          } catch (e) {
+            console.warn('Could not fetch blog posts for route generation:', e.message)
           }
-          localPosts.forEach((post) => {
-            dyRoutes.push('/blog/' + post.slug)
-          })
-
-          return dyRoutes
         }
 
-        try {
-          await axios.get(`${api}/wp/v2/posts?per_page=100`).then(async (response) => {
-            const dataPages = totalPages(response)
-            let postsArray = responseArray(response, 'Could not fetch blog posts for route generation')
-            dyRoutes.push('/blog/page/1')
-            for (let i = 2; i <= dataPages; i++) {
-              const nextPage = await axios.get(
-                `${api}/wp/v2/posts?per_page=100&page=${i}`
-              )
-              postsArray = [...postsArray, ...responseArray(nextPage, 'Could not fetch blog posts for route generation')]
-              dyRoutes.push('/blog/page/' + i)
-            }
-            return postsArray.forEach((post) => {
-              dyRoutes.push('/blog/' + post.slug)
-            })
-          })
-        } catch (e) {
-          console.warn('Could not fetch blog posts for route generation:', e.message)
+        if (localServiceGuides.length) {
+          addLocalPostRoutes(dyRoutes, localServiceGuides, 'service-guides')
         }
 
         return dyRoutes

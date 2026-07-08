@@ -103,11 +103,11 @@
         "button": {
           "type": "nuxt",
           "style": "primary",
-          "label": "FREE ESTIMATE",
-          "aria_label": "Get a free estimate",
+          "label": "Contact Us",
+          "aria_label": "Contact Air Tech Solutions",
           "href": "",
           "path": "/contact",
-          "hash": "#form",
+          "hash": "",
           "external": false,
           "include_icon": false,
           "icon": "",
@@ -118,9 +118,9 @@
     "floating": true
   },
   "primary_cta": {
-    "label": "FREE ESTIMATE",
+    "label": "Contact Us",
     "path": "/contact",
-    "hash": "#form",
+    "hash": "",
     "external": false,
     "href": ""
   },

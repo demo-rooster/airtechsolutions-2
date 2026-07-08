@@ -8,6 +8,7 @@ import {
   IS_TABLET_MD,
   SET_FORMS,
   SET_BLOG,
+  SET_SERVICE_GUIDES,
   SET_GLOBAL,
   VIDEO_LOADING,
   VIEW_SITE,
@@ -42,6 +43,9 @@ const stateActions = () => ({
   },
   SET_BLOG ({ commit }, data) {
     commit(SET_BLOG, data)
+  },
+  SET_SERVICE_GUIDES ({ commit }, data) {
+    commit(SET_SERVICE_GUIDES, data)
   },
   SET_GLOBAL ({ commit }, data) {
     commit(SET_GLOBAL, data)

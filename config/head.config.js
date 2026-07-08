@@ -2,6 +2,7 @@ import { url } from '../resources/api'
 
 export const siteHead = (meta, theme = {}) => {
   const faviconUrl = theme?.default?.favicon_url || '/favicon.ico'
+  const faviconType = faviconUrl.endsWith('.svg') ? 'image/svg+xml' : faviconUrl.endsWith('.ico') ? 'image/x-icon' : undefined
   const seo = meta.seo || (meta.meta && meta.meta.seo) || {}
   const socialMeta = seo.social_meta || {}
   const ogMeta = socialMeta.og_meta || {}
@@ -23,7 +24,7 @@ export const siteHead = (meta, theme = {}) => {
       { hid: 'og:url', property: 'og:url', content: url }
     ].filter(Boolean),
     link: [
-      { rel: 'icon', href: faviconUrl },
+      { rel: 'icon', type: faviconType, href: faviconUrl },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
       { hid: 'canonical', rel: 'canonical', href: url }
