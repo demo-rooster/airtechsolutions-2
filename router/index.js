@@ -78,13 +78,40 @@ const router = [
     footer: true
   },
   {
-    name: 'Contact',
-    path: '/contact',
-    navigation: true
+    name: 'Properties We Serve',
+    path: '/services-for-multi-family-properties',
+    navigation: true,
+    children: [
+      {
+        name: 'Multi-family Properties',
+        path: '/services-for-multi-family-properties'
+      },
+      {
+        name: 'Office Properties',
+        path: '/services-for-office-properties'
+      },
+      {
+        name: 'Hotels',
+        path: '/services-for-hotels'
+      },
+      {
+        name: 'Hospitals & Healthcare Facilities',
+        path: '/services-for-hospitals-and-healthcare-facilities'
+      },
+      {
+        name: 'Industrial Properties',
+        path: '/services-for-industrial-properties'
+      }
+    ]
   },
   {
     name: 'FAQ',
     path: '/faq',
+    navigation: true
+  },
+  {
+    name: 'Contact',
+    path: '/contact',
     navigation: true
   }
 ]

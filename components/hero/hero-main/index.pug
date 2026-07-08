@@ -1,4 +1,4 @@
-.hero-main(:class="{ 'hero-main--no-image': !props.image.src && !props.video.src, 'hero-main--small-height': props.small }")
+.hero-main(:class="{ 'hero-main--no-image': !props.image.src && !props.video.src, 'hero-main--small-height': props.small, 'hero-main--has-service-icons': hasServiceIcons }")
   .hero-main__overlay
   .hero-main__image-container(v-if='props.media_type === "image"')
     picture.hero-main__picture(ref='image')
@@ -37,5 +37,10 @@
           BaseIcon.hero-main__title-logo(:name='props.logo.name' aria-hidden='true')
         template(v-else)
           span(v-html='props.title')
-    .hero-main__down(v-if="$route.path === '/'")
+    .hero-main__service-icons(v-if='hasServiceIcons' aria-label='Commercial services')
+      .hero-main__service-icons-track
+        button.hero-main__service-icon(v-for='service in serviceIcons' :key='service.label' type='button' :aria-label='`View ${service.label}`' @click='handleServiceIconClick(service)')
+          span.hero-main__service-icon-image(:style='{ "--service-icon-src": `url(${service.src})` }' aria-hidden='true')
+          span.hero-main__service-icon-label(v-html='service.label')
+    .hero-main__down(v-if="$route.path === '/' && !hasServiceIcons")
       BaseIcon.hero-main__down-icon(name='mouse')                 

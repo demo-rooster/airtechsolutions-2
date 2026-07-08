@@ -68,6 +68,14 @@
       @include tablet-lg
         justify-content: space-around
 
+      .block-item-row--service-icons &
+        display: grid
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+        gap: 2.5rem 1.5rem
+        justify-content: stretch
+        @include phone-lg
+          grid-template-columns: 1fr
+
   &__item
     @include col (4)
     margin-top: 2rem
@@ -75,6 +83,23 @@
 
     &--left
       text-align: left
+
+    .block-item-row--service-icons &
+      animation: none
+      margin-top: 0
+      border-radius: rem-calc(12)
+      padding: rem-calc(28) rem-calc(22) rem-calc(32)
+      width: auto
+      @include tablet-lg
+        padding: rem-calc(24) rem-calc(18) rem-calc(28)
+
+    .block-item-row--service-icons &.block-item-row__item--is-highlighted
+      animation: serviceItemHighlight .9s ease
+      box-shadow: inset 0 0 0 rem-calc(2) rgba(var(--primary-rgb), .45), 0 rem-calc(18) rem-calc(42) rgba(var(--primary-rgb), .22)
+      background: rgba(var(--primary-rgb), .13)
+
+      .block-item-row__service-icon
+        background: var(--accent)
 
   &__item[data-items='3']
     width: 30%
@@ -132,6 +157,21 @@
     .base-image__image
       object-fit: contain
 
+  &__service-icon
+    display: block
+    margin: 0 auto 1.5rem
+    background: var(--primary)
+    width: rem-calc(92)
+    height: rem-calc(92)
+    -webkit-mask: var(--service-icon-src) center / contain no-repeat
+    mask: var(--service-icon-src) center / contain no-repeat
+    @include desktop
+      width: rem-calc(104)
+      height: rem-calc(104)
+    @include tablet-lg
+      width: rem-calc(86)
+      height: rem-calc(86)
+
   &__image
     display: block
     margin: 1rem auto 1.5rem
@@ -178,3 +218,11 @@
     display: flex
     justify-content: center
     margin-top: 5rem
+
+@keyframes serviceItemHighlight
+  0%
+    transform: scale(1)
+  45%
+    transform: scale(1.045)
+  100%
+    transform: scale(1)

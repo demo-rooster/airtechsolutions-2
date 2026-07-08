@@ -21,6 +21,25 @@ export default {
     itemWidth: null,
     maxHeight: null
   }),
+  computed: {
+    isServiceIcons () {
+      return this.props.variant === 'service_icons'
+    },
+    itemRows () {
+      if (!this.props.items || !this.props.items.length) {
+        return []
+      }
+
+      if (!this.isServiceIcons) {
+        return this.props.items
+      }
+
+      return this.props.items.map(item => ({
+        ...item,
+        serviceIconSrc: item.service_icon ? require(`~/assets/service-icons/${item.service_icon}`) : null
+      }))
+    }
+  },
   mounted () {
     this.getMaxHeight()
     window.addEventListener('resize', this.getMaxHeight)
@@ -47,6 +66,10 @@ export default {
       console.log('click CTA')
     },
     getMaxHeight () {
+      if (!this.$refs.itemTitle || !this.$refs.itemTitle.length) {
+        return
+      }
+
       const newArr = []
       this.$refs.itemTitle.map(el => newArr.push(el.clientHeight))
       this.maxHeight = (Math.max(...newArr) / 16) + 'rem'

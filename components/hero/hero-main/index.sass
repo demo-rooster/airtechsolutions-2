@@ -107,6 +107,15 @@
       bottom: 20%
       text-align: center
 
+    .hero-main--has-service-icons &
+      bottom: 29%
+
+      @include tablet-md
+        bottom: 26%
+
+      @include phone-lg
+        bottom: 30%
+
     &--title-only
       @include col (12)
       position: absolute
@@ -120,6 +129,15 @@
         padding: 0 2rem
       @include phone-lg
         padding: 0 1rem
+
+      .hero-main--has-service-icons &
+        top: 55%
+
+        @include tablet-md
+          top: 53%
+
+        @include phone-lg
+          top: 51%
 
     &--pages
       // bottom: 35%
@@ -190,6 +208,81 @@
 
     .base-button__cta
       color: $white
+
+  &__service-icons
+    position: absolute
+    right: 0
+    bottom: 2rem
+    left: 0
+    z-index: 4
+    width: 100%
+    color: $white
+    @include tablet-md
+      bottom: 1.5rem
+    @include phone-lg
+      bottom: 1rem
+
+  &__service-icons-track
+    display: grid
+    grid-template-columns: repeat(9, minmax(0, 1fr))
+    gap: 1rem
+    @include tablet-md
+      gap: .75rem
+      overflow-x: auto
+      padding: 0 1rem .5rem
+      scroll-padding: 1rem
+      -webkit-overflow-scrolling: touch
+      scrollbar-width: none
+
+      &::-webkit-scrollbar
+        display: none
+    @include phone-lg
+      grid-auto-columns: rem-calc(118)
+      grid-auto-flow: column
+      grid-template-columns: none
+
+  &__service-icon
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: .55rem
+    transition: transform .2s ease
+    border: 0
+    background: transparent
+    cursor: pointer
+    padding: 0
+    min-width: 0
+    text-align: center
+    color: $white
+    font: inherit
+    @include hover-supported
+      transform: translateY(rem-calc(-3))
+
+    &:focus-visible
+      outline: rem-calc(2) solid $white
+      outline-offset: rem-calc(6)
+
+  &__service-icon-image
+    display: block
+    background: $white
+    width: rem-calc(54)
+    height: rem-calc(54)
+    -webkit-mask: var(--service-icon-src) center / contain no-repeat
+    mask: var(--service-icon-src) center / contain no-repeat
+    filter: drop-shadow(0 .25rem .5rem rgba(0, 0, 0, .28))
+    @include tablet-md
+      width: rem-calc(48)
+      height: rem-calc(48)
+
+  &__service-icon-label
+    text-transform: uppercase
+    text-shadow: 0 rem-calc(2) rem-calc(8) rgba(0, 0, 0, .55)
+    line-height: 1.2
+    letter-spacing: .02em
+    font-size: rem-calc(13)
+    font-weight: 700
+    @include tablet-md
+      font-size: rem-calc(12)
 
   &__down
     position: absolute
