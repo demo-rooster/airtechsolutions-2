@@ -293,16 +293,16 @@
       "title": "Expert Services for Commercial Properties",
       "paragraphs": [
         {
-          "text": "From exterior window cleaning to HVAC maintenance and air quality testing, we deliver targeted services that improve safety, efficiency, and building performance for commercial properties. Learn more about the properties we serve."
+          "text": "From multi-family communities and office buildings to hotels, hospitals, and industrial facilities, we deliver exterior cleaning, ventilation, and air quality services built around the properties we serve."
         }
       ],
       "button": {
         "type": "nuxt",
         "style": "secondary",
         "label": "Learn More",
-        "aria_label": "Learn more about our services",
+        "aria_label": "Learn more about the properties we serve",
         "href": "",
-        "path": "/services",
+        "path": "/services-for-multi-family-properties",
         "hash": "",
         "external": false,
         "include_icon": false,
@@ -314,87 +314,88 @@
       "items": [
         {
           "image": {
-            "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.jpeg",
-            "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.webp",
-            "alt": "Professional exterior window cleaning on commercial building",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family.webp",
+            "alt": "Multi-family apartment and condominium property",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
             "addLoader": false,
             "objectPosition": "",
             "forceAlt": "",
-            "loading_mask": "",
-            "image_selection_hints": {
-              "context_category": "Services Grid",
-              "istock_id": "1510744999"
-            }
+            "loading_mask": ""
           },
-          "title": "Exterior Window Cleaning",
-          "path": "/services",
-          "hash": "#commercial-exterior-window-cleaning"
+          "title": "Multi-family",
+          "path": "/services-for-multi-family-properties",
+          "hash": ""
         },
         {
           "image": {
-            "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg",
-            "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.webp",
-            "alt": "HVAC system cleaning and maintenance",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-office-building.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-office-building.webp",
+            "alt": "Office building property",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
             "addLoader": false,
             "objectPosition": "",
             "forceAlt": "",
-            "loading_mask": "",
-            "image_selection_hints": {
-              "context_category": "Services Grid",
-              "istock_id": "679981251"
-            }
+            "loading_mask": ""
           },
-          "title": "HVAC Cleaning",
-          "path": "/services",
-          "hash": "#commercial-hvac-cleaning"
+          "title": "Office",
+          "path": "/services-for-office-properties",
+          "hash": ""
         },
         {
           "image": {
-            "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.jpeg",
-            "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/air-quality-testing.webp",
-            "alt": "Air quality testing equipment in commercial building",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hotel.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hotel.webp",
+            "alt": "Hotel property",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
             "addLoader": false,
             "objectPosition": "",
             "forceAlt": "",
-            "loading_mask": "",
-            "image_selection_hints": {
-              "context_category": "Services Grid",
-              "istock_id": "1690463432"
-            }
+            "loading_mask": ""
           },
-          "title": "Air Quality Testing",
-          "path": "/services",
-          "hash": "#commercial-air-quality-testing"
+          "title": "Hotel",
+          "path": "/services-for-hotels",
+          "hash": ""
         },
         {
           "image": {
-            "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.jpeg",
-            "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/sealing-service.webp",
-            "alt": "Professional caulking and sealing services",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hospital.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hospital.webp",
+            "alt": "Hospital and healthcare facility property",
             "aria_hidden": false,
             "bgColor": "",
             "imageBackground": false,
             "addLoader": false,
             "objectPosition": "",
             "forceAlt": "",
-            "loading_mask": "",
-            "image_selection_hints": {
-              "context_category": "Services Grid",
-              "istock_id": "1653425043"
-            }
+            "loading_mask": ""
           },
-          "title": "Sealing Services",
-          "path": "/services",
-          "hash": "#commercial-sealing-services"
+          "title": "Hospital",
+          "path": "/services-for-hospitals-and-healthcare-facilities",
+          "hash": ""
+        },
+        {
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.webp",
+            "alt": "Industrial building property",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": ""
+          },
+          "title": "Industrial",
+          "path": "/services-for-industrial-properties",
+          "hash": ""
         }
       ],
       "component_options": {
