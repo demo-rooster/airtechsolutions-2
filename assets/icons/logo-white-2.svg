@@ -7,7 +7,7 @@
       <stop offset="1" stop-color="#4f7f22"/>
     </linearGradient>
     <linearGradient id="ats-logo-wave-green-reveal" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#d0e99b">
+      <stop offset="0" stop-color="#8ab73d">
         <animate attributeName="offset" values="0;1" dur="1s" begin="0.25s" fill="freeze"/>
       </stop>
       <stop offset="0" stop-color="#fff">
@@ -16,7 +16,7 @@
       <stop offset="1" stop-color="#fff"/>
     </linearGradient>
     <linearGradient id="ats-logo-wave-blue-reveal" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#65b0e6">
+      <stop offset="0" stop-color="#02437f">
         <animate attributeName="offset" values="0;1" dur="1s" begin="0.25s" fill="freeze"/>
       </stop>
       <stop offset="0" stop-color="#fff">
