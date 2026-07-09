@@ -41,7 +41,7 @@
       },
       "small": false,
       "logo": {
-        "name": "ATS-Logo-White",
+        "name": "logo-white-2",
         "alt": "Air Tech Solutions"
       },
       "service_icons": [
@@ -410,7 +410,7 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
       "text": "",
       "social_links": [],
@@ -1034,7 +1034,7 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
       "text": "",
       "social_links": [],
@@ -2144,7 +2144,7 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
       "text": "",
       "social_links": [],
@@ -2651,7 +2651,7 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
       "text": "",
       "social_links": [],
@@ -2733,8 +2733,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_1955299917.jpeg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_1955299917.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/window-washing.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/window-washing.webp",
         "alt": "Rope access technician cleaning windows on a modern office building",
         "aria_hidden": false,
         "bgColor": "",
@@ -2893,9 +2893,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote through the “Get a Quote” form on airtechsolutions.com, and tell us your building height, access constraints, and desired cleaning frequency.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -3136,9 +3136,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote through airtechsolutions.com and include your building type, façade material, and any access restrictions.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -3382,9 +3382,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote on airtechsolutions.com and tell us what you want to accomplish (appearance refresh, organic growth removal, drainage support, or a recurring exterior maintenance program).",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -3629,9 +3629,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote on airtechsolutions.com and include façade material, number of buildings/elevations, and any known access restrictions.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -3879,9 +3879,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote at airtechsolutions.com and include number of units, venting type (exterior vs central), and whether interior access is available.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -4123,9 +4123,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote on airtechsolutions.com and include fan count/locations, building layout, and any known airflow concerns.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -4367,9 +4367,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote at airtechsolutions.com and tell us what symptoms you’re seeing, how many fans are affected, and what access is available.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -4610,9 +4610,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote on airtechsolutions.com and include building count, roofline type, and any known drainage issues.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -4854,9 +4854,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote at airtechsolutions.com and tell us your HVAC configuration, the issue you’re trying to solve (post-construction dust, airflow concerns, visible buildup), and any access constraints.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -5099,9 +5099,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote on airtechsolutions.com and describe what you’re seeing (where, when it started, and whether it’s isolated or building-wide).",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -5344,9 +5344,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote at airtechsolutions.com and tell us where you’re seeing sealant failure (photos help), building height, and any access restrictions.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -5591,9 +5591,9 @@
     },
     {
       "acf_fc_layout": "multi_use_banner",
-      "title": "Ready to get started?",
+      "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Request a free quote at airtechsolutions.com and include the building type, areas of concern, and any known access restrictions.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {

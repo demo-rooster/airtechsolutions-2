@@ -34,6 +34,9 @@ export default {
     isPropertyPage () {
       return /^\/services-for-/.test(this.$route.path)
     },
+    isAboutPage () {
+      return this.$route.path === '/about'
+    },
     serviceIcons () {
       if (!this.props.service_icons || !this.props.service_icons.length) {
         return []
