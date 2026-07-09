@@ -116,19 +116,68 @@
       @include phone-lg
         bottom: 30%
 
+    &--home
+      --hero-home-edge-space: clamp(3rem, 10vw, 12rem)
+      left: calc(((100vw - 100%) / -2) + var(--hero-home-edge-space))
+      align-items: flex-start
+      transform: none
+      margin-left: 0
+      padding: 0 calc(#{$gutter} / 2)
+      width: 50vw
+      max-width: calc(100vw - (var(--hero-home-edge-space) * 2))
+      text-align: left
+      @include tablet
+        --hero-home-edge-space: 2rem
+        padding: 0 2rem
+        width: 70vw
+        max-width: 70vw
+      @include phone-lg
+        --hero-home-edge-space: 1rem
+        padding: 0 1rem
+        width: calc(100% - (var(--hero-home-edge-space) * 2))
+        max-width: calc(100% - (var(--hero-home-edge-space) * 2))
+
+      .hero-main__title,
+      .hero-main__text
+        width: 100%
+        max-width: none
+        text-align: left
+
+      .hero-main__title-logo
+        margin: 0
+
+      .hero-main__cta
+        align-self: flex-start
+
     &--title-only
-      @include col (12)
       position: absolute
       top: 66%
-      left: 50%
-      transform: translate(-50%, -50%)
+      left: calc((100vw - 100%) / -2)
+      align-items: flex-start
+      transform: translateY(-50%)
       margin-left: 0
-      text-align: center
+      padding: 0 calc(#{$gutter} / 2)
+      width: rem-calc(420)
+      max-width: 56vw
+      text-align: left
       color: $white
       @include tablet
         padding: 0 2rem
+        max-width: 70vw
       @include phone-lg
         padding: 0 1rem
+        width: 100%
+        max-width: 100%
+
+      .hero-main__title
+        width: 100%
+        text-align: left
+
+      .hero-main__title-logo
+        margin: 0
+
+      .hero-main__cta
+        align-self: flex-start
 
       .hero-main--has-service-icons &
         top: 55%
@@ -175,6 +224,7 @@
 
     svg
       display: block
+      filter: drop-shadow(0 rem-calc(4) rem-calc(10) rgba($black, .45)) drop-shadow(0 rem-calc(1) rem-calc(2) rgba($black, .55))
       width: 100%
       height: auto
 
@@ -194,8 +244,12 @@
     max-width: calc((4/12) * #{$width})
     text-align: center
     color: $white
+    .hero-main--property-page &
+      max-width: calc((6/12) * #{$width})
     @include desktop
       max-width: calc((4/12) * #{$max-width})
+      .hero-main--property-page &
+        max-width: calc((6/12) * #{$max-width})
 
   &__cta
     display: block
@@ -209,21 +263,46 @@
     .base-button__cta
       color: $white
 
+    .block-button__button
+      border-color: #8ab73d
+      background: #8ab73d
+
+      @include hover-supported
+        background: #8ab73d
+        border-color: #8ab73d
+        color: $white
+
   &__service-icons
+    --service-icons-bottom-space: 1rem
     position: absolute
     right: 0
-    bottom: 2rem
+    bottom: var(--service-icons-bottom-space)
     left: 0
     z-index: 4
+    padding: .875rem 0
     width: 100%
     color: $white
     @include tablet-md
-      bottom: 1.5rem
+      --service-icons-bottom-space: .75rem
     @include phone-lg
-      bottom: 1rem
+      --service-icons-bottom-space: .5rem
+
+    &::before
+      position: absolute
+      top: 0
+      bottom: calc(var(--service-icons-bottom-space) * -1)
+      left: 50%
+      transform: translateX(-50%)
+      z-index: -1
+      background: rgba(var(--primary-rgb), .72)
+      backdrop-filter: blur(rem-calc(3))
+      width: 100vw
+      content: ''
+      -webkit-backdrop-filter: blur(rem-calc(3))
 
   &__service-icons-track
     display: grid
+    position: relative
     grid-template-columns: repeat(9, minmax(0, 1fr))
     gap: 1rem
     @include tablet-md
@@ -258,12 +337,16 @@
     @include hover-supported
       transform: translateY(rem-calc(-3))
 
+      .hero-main__service-icon-image
+        background: rgb(138, 183, 61)
+
     &:focus-visible
       outline: rem-calc(2) solid $white
       outline-offset: rem-calc(6)
 
   &__service-icon-image
     display: block
+    transition: background .2s ease
     background: $white
     width: rem-calc(54)
     height: rem-calc(54)

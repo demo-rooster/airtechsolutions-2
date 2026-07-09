@@ -110,6 +110,9 @@
     svg
       height: 100%
 
+      .ats-logo-text .cls-1
+        fill: url(#ats-logo-green-gradient) !important
+
     // When navigation is floating, it uses the white logo version
     .navigation--floating &
       // For URL-based logos with dark variant, use filter to make them white
@@ -117,9 +120,7 @@
       &:not(.navigation__logo--light-variant)
         filter: brightness(0) invert(1)
       svg
-        path.cls-1
-          fill: #fff !important
-        path.cls-2
+        .ats-logo-text .cls-1
           fill: #fff !important
 
   &__logo-mobile
@@ -341,6 +342,10 @@
     height: rem-calc(46)
     color: $white
     text-decoration: none
+
+    .navigation--dark &
+      background: #8ab73d
+      color: $white
 
     .navigation--floating &
       background: $white

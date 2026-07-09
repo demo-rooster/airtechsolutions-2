@@ -31,6 +31,9 @@ export default {
     hasServiceIcons () {
       return Boolean(this.serviceIcons.length)
     },
+    isPropertyPage () {
+      return /^\/services-for-/.test(this.$route.path)
+    },
     serviceIcons () {
       if (!this.props.service_icons || !this.props.service_icons.length) {
         return []

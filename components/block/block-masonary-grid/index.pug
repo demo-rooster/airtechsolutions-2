@@ -1,4 +1,4 @@
-section.block-masonary-grid
+section.block-masonary-grid(:class='props.component_options && props.component_options.component_class ? props.component_options.component_class : null')
   .block-masonary-grid__container(:class="{ 'block-masonary-grid__container--reverse': props.reverse_row}")
     
     .block-masonary-grid__col-left(:class="{ 'block-masonary-grid__col-left--small': props.items.length > 4 }")

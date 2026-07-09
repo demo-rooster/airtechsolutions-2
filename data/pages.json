@@ -19,8 +19,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/home/home-hero-3.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/home/home-hero-3.jpg",
         "alt": "Commercial property exterior showcasing Air Tech Solutions services",
         "aria_hidden": false,
         "bgColor": "",
@@ -290,7 +290,7 @@
     },
     {
       "acf_fc_layout": "block_masonary_grid",
-      "title": "Expert Services for Commercial Properties",
+      "title": "Expert Services for Your Properties",
       "paragraphs": [
         {
           "text": "From multi-family communities and office buildings to hotels, hospitals, and industrial facilities, we deliver exterior cleaning, ventilation, and air quality services built around the properties we serve."
@@ -402,7 +402,8 @@
         "hash": "",
         "component_padding": "half",
         "component_margins": "none",
-        "hide_component": false
+        "hide_component": false,
+        "component_class": "block-masonary-grid--home-properties"
       },
       "linear_gradient": "",
       "reverse_row": false
@@ -474,26 +475,92 @@
   "About": [
     {
       "acf_fc_layout": "hero",
-      "title": "About Us",
-      "text": "",
+      "title": "About Air Tech Solutions",
+      "text": "New England's exterior cleaning, ventilation, and air quality specialists since 2012.",
       "button": {
-        "type": "nuxt",
+        "type": "anchor",
         "style": "primary",
-        "label": "Contact Us",
-        "aria_label": "Contact Air Tech Solutions",
-        "href": "",
-        "path": "/contact",
+        "label": "Call Now",
+        "aria_label": "Call Air Tech Solutions at 508-441-0081",
+        "href": "tel:+15084410081",
+        "path": "",
         "hash": "",
         "external": false,
-        "include_icon": false,
-        "icon": "pencil",
+        "include_icon": true,
+        "icon": "phone",
         "color": "primary"
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hero-image-home.jpg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hero-image-home.webp",
-        "alt": "Air Tech Solutions team and commercial property services",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/about-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/about-hero.webp",
+        "alt": "Commercial property exterior cleaned by Air Tech Solutions",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Hero"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": true
+    },
+    {
+      "acf_fc_layout": "block_text_fh",
+      "title": "Our Mission",
+      "paragraphs": [
+        {
+          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2012. We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
+        },
+        {
+          "text": "We own and operate all of our equipment, allowing us to efficiently service large and complex properties. Our capabilities include industrial soft washing systems, high capacity air compressors, boom lifts, and rope access equipment, enabling our team to safely and effectively reach challenging areas and building exteriors."
+        },
+        {
+          "text": "We work closely with property managers, maintenance teams, and condominium management companies to deliver reliable service with clear communication and minimal disruption. Air Tech Solutions is fully insured, fully compliant, and committed to doing the job right the first time."
+        }
+      ],
+      "component_options": {
+        "hash": "our-mission",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "add_texture": true,
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Why Choose Us",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Property managers choose Air Tech Solutions because we make exterior cleaning and ventilation simple, safe, and reliable. We own and operate all of our own equipment, so we service large and complex properties in-house without subcontracting."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We specialize in commercial multi-family properties and understand how they work. Air Tech Solutions is fully insured and credentialed, with the documentation property managers need."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Our team is trained and certified, including rope access certification, to reach challenging areas safely. We communicate clearly, work with minimal disruption to residents and tenants, and are committed to doing the job right the first time."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.jpg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/home-hero-main.webp",
+        "alt": "Commercial exterior cleaning equipment at a property",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -502,46 +569,468 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "About Hero",
-          "istock_id": "540292744"
+          "context_category": "About Placeholder"
         }
       },
       "video": {
-        "src": "",
-        "webm": "",
-        "title": ""
+        "type": "embedded",
+        "src": ""
       },
-      "small": false
-    },
-    {
-      "acf_fc_layout": "block_text_simple",
-      "title": "Our Mission",
-      "paragraphs": [
-        {
-          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2012."
-        },
-        {
-          "text": "We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
-        },
-        {
-          "text": "We own and operate all of our equipment, allowing us to efficiently service large and complex properties. Our capabilities include industrial soft washing systems, high-capacity air compressors, boom lifts, and rope access equipment, enabling our team to safely and effectively reach challenging areas and building exteriors."
-        },
-        {
-          "text": "We work closely with property managers, maintenance teams, and condominium management companies to deliver reliable service with clear communication and minimal disruption. Air Tech Solutions is fully insured, fully compliant, and committed to doing the job right the first time."
-        }
-      ],
+      "buttons": [],
       "component_options": {
-        "hash": "",
+        "hash": "why-choose-us",
         "component_padding": "half",
         "component_margins": "none",
         "hide_component": false
       },
-      "large_title": true,
-      "center_title": false,
-      "one_column": false,
-      "add_texture": false,
+      "reverse": false,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
       "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "multi_item_row",
+      "title": "Our Services",
+      "variant": "service_icons",
+      "items": [
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "Low-pressure exterior cleaning for commercial facades and building surfaces.",
+          "add_button": false
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "Commercial glass, frames, and sill cleaning for clear, maintained properties.",
+          "add_button": false
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "Garage floors, sidewalks, and other hard surfaces cleaned with the right pressure.",
+          "add_button": false
+        },
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "Dryer exhaust cleaning that improves airflow and helps reduce fire risk.",
+          "add_button": false
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "Gutters and downspouts cleared to support proper drainage.",
+          "add_button": false
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "Dust and debris removal for HVAC systems and ductwork.",
+          "add_button": false
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "Bathroom ventilation cleaning to restore airflow and support moisture control.",
+          "add_button": false
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "Commercial air testing that gives property teams clear, useful data.",
+          "add_button": false
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "Exterior envelope maintenance for joints, penetrations, and vulnerable transitions.",
+          "add_button": false
+        }
+      ],
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "View All Services",
+        "aria_label": "View all Air Tech Solutions services",
+        "href": "",
+        "path": "/services",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "our-services",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "media_type": "image",
+      "large_title": true,
+      "left_aligned": false,
+      "alt_color": false,
       "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Insurance & Credentials",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Air Tech Solutions is fully insured and credentialed. We carry the coverage commercial property managers expect, including general liability and workers' compensation, and we can provide a certificate of insurance for your records and name your property or management company as additional insured when your process requires it."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Our team is trained and certified for the equipment and access methods we use, including rope access work to the NFPA 1006 / 2500 standard. We stay compliant with the requirements of the properties and management companies we serve, so there are no coverage gaps and no surprises."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/600329009_Man_making_an_appointment_with_medical_staffs_at_r.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/600329009_Man_making_an_appointment_with_medical_staffs_at_r.webp",
+        "alt": "Commercial property management documentation and coordination",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Placeholder"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [],
+      "component_options": {
+        "hash": "insurance-credentials",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": true,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Vendor Management Credentials",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We are set up to work within the vendor compliance and management systems that property management companies rely on. We keep our insurance, certifications, and documentation current so onboarding is fast and our approval status stays active."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We can enroll in your required vendor management system and provide whatever your process calls for, including certificates of insurance, W-9 forms, and compliance documentation, so your team spends less time managing vendor paperwork."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg",
+        "webp": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg?tr=f-webp",
+        "alt": "Commercial property exterior used as placeholder for vendor management credentials",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Placeholder"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [],
+      "component_options": {
+        "hash": "vendor-management-credentials",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": false,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "multi_item_row",
+      "title": "Equipment & Capabilities",
+      "items": [
+        {
+          "title": "Industrial Soft Washing Systems",
+          "text": "Professional low-pressure systems for large building exteriors.",
+          "add_button": false
+        },
+        {
+          "title": "High-Capacity Air Compressors",
+          "text": "Air-powered cleaning capability for ventilation and exhaust systems.",
+          "add_button": false
+        },
+        {
+          "title": "Nifty SD64 Boom Lift",
+          "text": "Safe, controlled access for work at height.",
+          "add_button": false
+        },
+        {
+          "title": "Lucid Sherpa Cleaning Drone",
+          "text": "Exterior cleaning support from the air for select applications.",
+          "add_button": false
+        },
+        {
+          "title": "MIO Rolling Roof Rig",
+          "text": "Stable rooftop work support for complex access conditions.",
+          "add_button": false
+        },
+        {
+          "title": "Rope Access Equipment",
+          "text": "NFPA 1006 / 2500 certified access methods for challenging areas.",
+          "add_button": false
+        }
+      ],
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "",
+        "aria_label": "",
+        "href": "",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "equipment-capabilities",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "media_type": "image",
+      "large_title": true,
+      "left_aligned": false,
+      "alt_color": false,
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Before & After",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "See the difference our work makes across the properties we service. "
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.webp",
+        "alt": "Placeholder for Air Tech Solutions before and after cleaning results",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Placeholder"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [],
+      "component_options": {
+        "hash": "before-after",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": true,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Areas We Serve",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We serve commercial properties within a 100-mile radius of West Newton, Massachusetts. Our service area covers all of Massachusetts and all of Rhode Island, along with northern Connecticut, southern New Hampshire, Maine, and Vermont."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.webp",
+        "alt": "Regional commercial properties served by Air Tech Solutions",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Placeholder"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [],
+      "component_options": {
+        "hash": "areas-we-serve",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": false,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Property Types We Serve",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We work with a range of commercial property types, including multi-family communities, office buildings, hotels, hospitals and healthcare facilities, and industrial properties. Multi-family properties, including apartment buildings, condominiums, and townhome communities, are our specialty."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/777737047_Industrial_building_with_large_solar_panel_install.webp",
+        "alt": "Commercial property types served by Air Tech Solutions",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "About Placeholder"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "Properties We Serve",
+            "aria_label": "View property types served by Air Tech Solutions",
+            "href": "",
+            "path": "/services-for-multi-family-properties",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "property-types-we-serve",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": true,
+      "has_buttons": true,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
     },
     {
       "acf_fc_layout": "multi_use_banner",
@@ -551,20 +1040,20 @@
       "social_links": [],
       "email": "",
       "button": {
-        "type": "nuxt",
+        "type": "anchor",
         "style": "primary",
-        "label": "Contact Us",
-        "aria_label": "Contact Air Tech Solutions",
-        "href": "",
-        "path": "/contact",
+        "label": "Call Now",
+        "aria_label": "Call Air Tech Solutions at 508-441-0081",
+        "href": "tel:+15084410081",
+        "path": "",
         "hash": "",
         "external": false,
-        "include_icon": false,
-        "icon": "",
+        "include_icon": true,
+        "icon": "phone",
         "color": ""
       },
       "component_options": {
-        "hash": "",
+        "hash": "contact-air-tech-solutions",
         "component_padding": "half",
         "component_margins": "none",
         "hide_component": false
@@ -574,9 +1063,9 @@
       "add_texture": false,
       "linear_gradient": "",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/128058665_Astronaut_waving_3d_render.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/128058665_Astronaut_waving_3d_render.webp",
-        "alt": "Air Tech Solutions team ready to assist",
+        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/600329009_Man_making_an_appointment_with_medical_staffs_at_r.jpg",
+        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/600329009_Man_making_an_appointment_with_medical_staffs_at_r.webp",
+        "alt": "Contact Air Tech Solutions for professional commercial property services",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
@@ -593,14 +1082,14 @@
     },
     {
       "seo": {
-        "page_title": "About Us | Air Tech Solutions",
-        "page_description": "Learn about Air Tech Solutions, a New England exterior cleaning and air quality company serving commercial properties with professional equipment since 2012.",
-        "page_keywords": "Exterior cleaning, Dryer vent cleaning, Air Tech Solutions, New England, Commercial property services",
+        "page_title": "About Air Tech Solutions | New England Commercial Property Services",
+        "page_description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2012.",
+        "page_keywords": "Air Tech Solutions, exterior cleaning, dryer vent cleaning, air quality testing, commercial property services, New England, West Newton MA",
         "additional_settings": false,
         "social_meta": {
           "og_meta": {
-            "title": "About Us | Air Tech Solutions",
-            "description": "Learn about Air Tech Solutions, a New England exterior cleaning and air quality company serving commercial properties with professional equipment since 2012.",
+            "title": "About Air Tech Solutions | New England Commercial Property Services",
+            "description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2012.",
             "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg"
           }
         }
@@ -627,8 +1116,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-hero-2.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-hero-2.webp",
         "alt": "Professional commercial property services by Air Tech Solutions",
         "aria_hidden": false,
         "bgColor": "",
@@ -647,7 +1136,7 @@
         "webm": "",
         "title": ""
       },
-      "small": false
+      "small": true
     },
     {
       "acf_fc_layout": "image_text",
@@ -671,8 +1160,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/564629323_Tier_III_carrier_neutral_data_center_Server_rooms.webp",
+        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.jpeg",
+        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.webp",
         "alt": "Commercial window cleaning in progress",
         "aria_hidden": false,
         "bgColor": "",
@@ -682,7 +1171,8 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services"
+          "context_category": "Services",
+          "istock_id": "1510744999"
         }
       },
       "video": {
@@ -748,8 +1238,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-exterior-window-cleaning-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-exterior-window-cleaning-portrait.webp",
         "alt": "Exterior window cleaning on a multi-story commercial building",
         "aria_hidden": false,
         "bgColor": "",
@@ -759,8 +1249,7 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services",
-          "istock_id": "1510744999"
+          "context_category": "Services"
         }
       },
       "video": {
@@ -1057,8 +1546,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-dryer-lint-trap.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-dryer-vent-cleaning-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-dryer-vent-cleaning-portrait.webp",
         "alt": "Commercial dryer vent cleaning service",
         "aria_hidden": false,
         "bgColor": "",
@@ -1134,8 +1623,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-bathroom-exhaust-cleaning-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-bathroom-exhaust-cleaning-portrait.webp",
         "alt": "Bathroom exhaust cleaning and ventilation service",
         "aria_hidden": false,
         "bgColor": "",
@@ -1211,8 +1700,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/cleaning-clogged-sink-drain.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-bathroom-exhaust-repair-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-bathroom-exhaust-repair-portrait.webp",
         "alt": "Bathroom exhaust repair service",
         "aria_hidden": false,
         "bgColor": "",
@@ -1288,8 +1777,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/man-cleaning-roof-gutters.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-gutter-cleaning-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-gutter-cleaning-portrait.webp",
         "alt": "Commercial gutter cleaning service",
         "aria_hidden": false,
         "bgColor": "",
@@ -1365,8 +1854,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hvac-cleaning.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-hvac-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-hvac-portrait.webp",
         "alt": "HVAC system cleaning and maintenance service",
         "aria_hidden": false,
         "bgColor": "",
@@ -1376,8 +1865,7 @@
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "Services",
-          "istock_id": "679981251"
+          "context_category": "Services"
         }
       },
       "video": {
@@ -1521,8 +2009,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/standard/275691085_Aerial_view_of_Lake_Merritt_and_downtown_Oakland_b.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-caulking-portrait.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-caulking-portrait.webp",
         "alt": "Commercial caulking and sealing services",
         "aria_hidden": false,
         "bgColor": "",
@@ -1720,6 +2208,46 @@
   ],
   "Blog": [
     {
+      "acf_fc_layout": "hero",
+      "title": "Blog",
+      "text": "",
+      "button": {
+        "type": "nuxt",
+        "style": "primary",
+        "label": "Contact Us",
+        "aria_label": "Contact Air Tech Solutions",
+        "href": "",
+        "path": "/contact",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "pencil",
+        "color": "primary"
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://d20dg8rmreapkm.cloudfront.net/blog/blog-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/blog/blog-hero.webp",
+        "alt": "Commercial property maintenance insights from Air Tech Solutions",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Blog Hero"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": true
+    },
+    {
       "acf_fc_layout": "blog_posts",
       "title": "Blog",
       "component_padding": "full",
@@ -1767,19 +2295,18 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hero-image-home.jpg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/hero-image-home.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/blog/blog-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/blog/blog-hero.webp",
         "alt": "Air Tech Solutions team and commercial property services",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,
         "addLoader": false,
-        "objectPosition": "",
+        "objectPosition": "center",
         "forceAlt": "",
         "loading_mask": "",
         "image_selection_hints": {
-          "context_category": "About Hero",
-          "istock_id": "540292744"
+          "context_category": "Service Guides Hero"
         }
       },
       "video": {
@@ -1787,7 +2314,7 @@
         "webm": "",
         "title": ""
       },
-      "small": false
+      "small": true
     },
     {
       "acf_fc_layout": "blog_posts",
@@ -1861,7 +2388,7 @@
     },
     {
       "acf_fc_layout": "map",
-      "title": "Proudly Serving New England",
+      "title": "Proudly Serving New&nbsp;England",
       "component_options": {
         "hash": "",
         "component_padding": "half",
@@ -5132,14 +5659,14 @@
   "services-for-multi-family-properties": [
     {
       "acf_fc_layout": "hero",
-      "title": "Services for Multi-family Properties",
+      "title": "Multi-family Properties",
       "text": "Reliable exterior and ventilation care for apartments, condos, and townhome communities.",
       "button": {
         "type": "anchor",
         "style": "primary",
         "label": "Call Now",
         "aria_label": "Call Air Tech Solutions at 508-441-0081",
-        "href": "tel:5084410081",
+        "href": "tel:+15084410081",
         "path": "",
         "hash": "",
         "external": false,
@@ -5197,32 +5724,159 @@
       "background": "",
       "linear_gradient": ""
     },
-    {
+        {
       "acf_fc_layout": "multi_item_row",
       "title": "Services We Provide",
+      "variant": "service_icons",
       "items": [
-        { "title": "Exterior Soft Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Window Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Surface Powerwashing", "icon": "", "text": "Garage floors, sidewalks, and other hard surfaces.", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Dryer Vent Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Gutter Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "HVAC Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Bathroom Exhaust Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Air Quality Testing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Sealing & Caulking Services", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } }
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "We clear lint and buildup from dryer exhaust systems to lower fire risk and improve airflow. Cleaner vents mean faster drying, lower energy costs, and safer buildings.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Dryer Vent Cleaning"
+          }
+        },
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "We remove dirt, algae, and mildew from your building's exterior using low pressure and the right cleaning solutions. It cleans safely and keeps surfaces looking better for longer.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Exterior Soft Washing"
+          }
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "We clean glass, frames, and sills to restore clarity and curb appeal, reaching every floor safely. Clear windows keep your property looking maintained and welcoming all year.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Window Washing"
+          }
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "We use high-pressure water to lift dirt, oil, and grime from garage floors, sidewalks, and concrete. Hard surfaces come back clean, safe, and looking like new.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Surface Powerwashing"
+          }
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "We clear gutters and downspouts to restore proper drainage and keep water moving away from your building. It is a simple way to prevent costly water damage.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Gutter Cleaning"
+          }
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "We remove dust and debris from HVAC systems and ductwork to improve airflow and efficiency. Cleaner systems lower energy costs and keep indoor air healthier.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about HVAC Cleaning"
+          }
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "We clean exhaust fans and ductwork to restore airflow and reduce moisture buildup. Better ventilation means fewer humidity problems, less mold, and fewer tenant complaints.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Bathroom Exhaust Cleaning"
+          }
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "We test indoor air for particulates and contaminants so you know exactly what is in your building's air. The results give you real data to act on.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Air Quality Testing"
+          }
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "We seal exterior joints and penetrations to keep water and air out where they do not belong. Proper sealing protects your building and improves energy efficiency.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Sealing and Caulking Services"
+          }
+        }
       ],
       "button": {
-        "type": "anchor",
+        "type": "nuxt",
         "style": "secondary",
-        "label": "Call Now",
-        "aria_label": "Call Air Tech Solutions at 508-441-0081",
-        "href": "tel:5084410081",
+        "label": "",
+        "aria_label": "",
+        "href": "",
         "path": "",
         "hash": "",
         "external": false,
         "include_icon": false,
-        "icon": "phone",
-        "color": ""
+        "icon": "pencil",
+        "color": "black"
       },
       "component_options": {
         "hash": "services-we-provide",
@@ -5231,16 +5885,17 @@
         "hide_component": false
       },
       "media_type": "icon",
-      "large_title": false,
+      "linear_gradient": "",
+      "add_cta": false,
       "left_aligned": false,
-      "alt_color": false,
-      "linear_gradient": ""
+      "large_title": true,
+      "alt_color": true
     },
     {
       "acf_fc_layout": "multi_use_banner",
       "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Call Air Tech Solutions to coordinate exterior cleaning and ventilation care for your multi-family community.",
+      "text": "",
       "social_links": [],
       "email": "",
       "button": {
@@ -5248,7 +5903,7 @@
         "style": "primary",
         "label": "Call Now",
         "aria_label": "Call Air Tech Solutions at 508-441-0081",
-        "href": "tel:5084410081",
+        "href": "tel:+15084410081",
         "path": "",
         "hash": "",
         "external": false,
@@ -5305,14 +5960,14 @@
   "services-for-office-properties": [
     {
       "acf_fc_layout": "hero",
-      "title": "Services for Office Properties",
+      "title": "Office Properties",
       "text": "Clean, well-maintained office buildings that make the right impression.",
       "button": {
         "type": "anchor",
         "style": "primary",
         "label": "Call Now",
         "aria_label": "Call Air Tech Solutions at 508-441-0081",
-        "href": "tel:5084410081",
+        "href": "tel:+15084410081",
         "path": "",
         "hash": "",
         "external": false,
@@ -5355,35 +6010,181 @@
       "background": "",
       "linear_gradient": ""
     },
-    {
+        {
       "acf_fc_layout": "multi_item_row",
       "title": "Services We Provide",
+      "variant": "service_icons",
       "items": [
-        { "title": "Exterior Soft Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Window Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Surface Powerwashing", "icon": "", "text": "Garage floors, sidewalks, and other hard surfaces.", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Gutter Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "HVAC Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Bathroom Exhaust Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Air Quality Testing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Sealing & Caulking Services", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } }
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "We clear lint and buildup from dryer exhaust systems to lower fire risk and improve airflow. Cleaner vents mean faster drying, lower energy costs, and safer buildings.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Dryer Vent Cleaning"
+          }
+        },
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "We remove dirt, algae, and mildew from your building's exterior using low pressure and the right cleaning solutions. It cleans safely and keeps surfaces looking better for longer.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Exterior Soft Washing"
+          }
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "We clean glass, frames, and sills to restore clarity and curb appeal, reaching every floor safely. Clear windows keep your property looking maintained and welcoming all year.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Window Washing"
+          }
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "We use high-pressure water to lift dirt, oil, and grime from garage floors, sidewalks, and concrete. Hard surfaces come back clean, safe, and looking like new.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Surface Powerwashing"
+          }
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "We clear gutters and downspouts to restore proper drainage and keep water moving away from your building. It is a simple way to prevent costly water damage.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Gutter Cleaning"
+          }
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "We remove dust and debris from HVAC systems and ductwork to improve airflow and efficiency. Cleaner systems lower energy costs and keep indoor air healthier.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about HVAC Cleaning"
+          }
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "We clean exhaust fans and ductwork to restore airflow and reduce moisture buildup. Better ventilation means fewer humidity problems, less mold, and fewer tenant complaints.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Bathroom Exhaust Cleaning"
+          }
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "We test indoor air for particulates and contaminants so you know exactly what is in your building's air. The results give you real data to act on.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Air Quality Testing"
+          }
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "We seal exterior joints and penetrations to keep water and air out where they do not belong. Proper sealing protects your building and improves energy efficiency.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Sealing and Caulking Services"
+          }
+        }
       ],
-      "button": { "type": "anchor", "style": "secondary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
-      "component_options": { "hash": "services-we-provide", "component_padding": "half", "component_margins": "none", "hide_component": false },
+      "button": {
+        "type": "nuxt",
+        "style": "secondary",
+        "label": "",
+        "aria_label": "",
+        "href": "",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "pencil",
+        "color": "black"
+      },
+      "component_options": {
+        "hash": "services-we-provide",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
       "media_type": "icon",
-      "large_title": false,
+      "linear_gradient": "",
+      "add_cta": false,
       "left_aligned": false,
-      "alt_color": false,
-      "linear_gradient": ""
+      "large_title": true,
+      "alt_color": true
     },
     {
       "acf_fc_layout": "multi_use_banner",
       "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Call Air Tech Solutions to coordinate exterior cleaning, ventilation, and air quality services around your office building's schedule.",
+      "text": "",
       "social_links": [],
       "email": "",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "component_options": { "hash": "", "component_padding": "half", "component_margins": "none", "hide_component": false },
       "background_type": "has_background",
       "background": "bg2",
@@ -5408,9 +6209,9 @@
   "services-for-hotels": [
     {
       "acf_fc_layout": "hero",
-      "title": "Services for Hotels",
+      "title": "Hotels",
       "text": "First impressions matter, inside and out.",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "media_type": "image",
       "image": { "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hotel.jpg", "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hotel.webp", "alt": "Hotel property exterior served by Air Tech Solutions", "aria_hidden": false, "bgColor": "", "imageBackground": false, "addLoader": false, "objectPosition": "center", "forceAlt": "", "loading_mask": "", "image_selection_hints": { "context_category": "Properties We Serve" } },
       "video": { "src": "", "webm": "", "title": "" },
@@ -5432,36 +6233,181 @@
       "background": "",
       "linear_gradient": ""
     },
-    {
+        {
       "acf_fc_layout": "multi_item_row",
       "title": "Services We Provide",
+      "variant": "service_icons",
       "items": [
-        { "title": "Exterior Soft Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Window Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Surface Powerwashing", "icon": "", "text": "Garage floors, sidewalks, and other hard surfaces.", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Dryer Vent Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Gutter Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "HVAC Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Bathroom Exhaust Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Air Quality Testing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Sealing & Caulking Services", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } }
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "We clear lint and buildup from dryer exhaust systems to lower fire risk and improve airflow. Cleaner vents mean faster drying, lower energy costs, and safer buildings.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Dryer Vent Cleaning"
+          }
+        },
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "We remove dirt, algae, and mildew from your building's exterior using low pressure and the right cleaning solutions. It cleans safely and keeps surfaces looking better for longer.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Exterior Soft Washing"
+          }
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "We clean glass, frames, and sills to restore clarity and curb appeal, reaching every floor safely. Clear windows keep your property looking maintained and welcoming all year.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Window Washing"
+          }
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "We use high-pressure water to lift dirt, oil, and grime from garage floors, sidewalks, and concrete. Hard surfaces come back clean, safe, and looking like new.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Surface Powerwashing"
+          }
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "We clear gutters and downspouts to restore proper drainage and keep water moving away from your building. It is a simple way to prevent costly water damage.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Gutter Cleaning"
+          }
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "We remove dust and debris from HVAC systems and ductwork to improve airflow and efficiency. Cleaner systems lower energy costs and keep indoor air healthier.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about HVAC Cleaning"
+          }
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "We clean exhaust fans and ductwork to restore airflow and reduce moisture buildup. Better ventilation means fewer humidity problems, less mold, and fewer tenant complaints.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Bathroom Exhaust Cleaning"
+          }
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "We test indoor air for particulates and contaminants so you know exactly what is in your building's air. The results give you real data to act on.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Air Quality Testing"
+          }
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "We seal exterior joints and penetrations to keep water and air out where they do not belong. Proper sealing protects your building and improves energy efficiency.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Sealing and Caulking Services"
+          }
+        }
       ],
-      "button": { "type": "anchor", "style": "secondary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
-      "component_options": { "hash": "services-we-provide", "component_padding": "half", "component_margins": "none", "hide_component": false },
+      "button": {
+        "type": "nuxt",
+        "style": "secondary",
+        "label": "",
+        "aria_label": "",
+        "href": "",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "pencil",
+        "color": "black"
+      },
+      "component_options": {
+        "hash": "services-we-provide",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
       "media_type": "icon",
-      "large_title": false,
+      "linear_gradient": "",
+      "add_cta": false,
       "left_aligned": false,
-      "alt_color": false,
-      "linear_gradient": ""
+      "large_title": true,
+      "alt_color": true
     },
     {
       "acf_fc_layout": "multi_use_banner",
       "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Call Air Tech Solutions to keep your hotel clean, safe, and guest-ready year-round.",
+      "text": "",
       "social_links": [],
       "email": "",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "component_options": { "hash": "", "component_padding": "half", "component_margins": "none", "hide_component": false },
       "background_type": "has_background",
       "background": "bg2",
@@ -5486,9 +6432,9 @@
   "services-for-hospitals-and-healthcare-facilities": [
     {
       "acf_fc_layout": "hero",
-      "title": "Services for Hospitals and Healthcare Facilities",
+      "title": "Hospitals and Healthcare Facilities",
       "text": "Clean, safe environments where they matter most.",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "media_type": "image",
       "image": { "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hospital.jpg", "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-hospital.webp", "alt": "Hospital and healthcare facility exterior served by Air Tech Solutions", "aria_hidden": false, "bgColor": "", "imageBackground": false, "addLoader": false, "objectPosition": "center", "forceAlt": "", "loading_mask": "", "image_selection_hints": { "context_category": "Properties We Serve" } },
       "video": { "src": "", "webm": "", "title": "" },
@@ -5510,35 +6456,181 @@
       "background": "",
       "linear_gradient": ""
     },
-    {
+        {
       "acf_fc_layout": "multi_item_row",
       "title": "Services We Provide",
+      "variant": "service_icons",
       "items": [
-        { "title": "Exterior Soft Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Window Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Surface Powerwashing", "icon": "", "text": "Garage floors, sidewalks, and other hard surfaces.", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Gutter Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "HVAC Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Air Quality Testing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Bathroom Exhaust Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Sealing & Caulking", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } }
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "We clear lint and buildup from dryer exhaust systems to lower fire risk and improve airflow. Cleaner vents mean faster drying, lower energy costs, and safer buildings.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Dryer Vent Cleaning"
+          }
+        },
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "We remove dirt, algae, and mildew from your building's exterior using low pressure and the right cleaning solutions. It cleans safely and keeps surfaces looking better for longer.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Exterior Soft Washing"
+          }
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "We clean glass, frames, and sills to restore clarity and curb appeal, reaching every floor safely. Clear windows keep your property looking maintained and welcoming all year.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Window Washing"
+          }
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "We use high-pressure water to lift dirt, oil, and grime from garage floors, sidewalks, and concrete. Hard surfaces come back clean, safe, and looking like new.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Surface Powerwashing"
+          }
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "We clear gutters and downspouts to restore proper drainage and keep water moving away from your building. It is a simple way to prevent costly water damage.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Gutter Cleaning"
+          }
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "We remove dust and debris from HVAC systems and ductwork to improve airflow and efficiency. Cleaner systems lower energy costs and keep indoor air healthier.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about HVAC Cleaning"
+          }
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "We clean exhaust fans and ductwork to restore airflow and reduce moisture buildup. Better ventilation means fewer humidity problems, less mold, and fewer tenant complaints.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Bathroom Exhaust Cleaning"
+          }
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "We test indoor air for particulates and contaminants so you know exactly what is in your building's air. The results give you real data to act on.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Air Quality Testing"
+          }
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "We seal exterior joints and penetrations to keep water and air out where they do not belong. Proper sealing protects your building and improves energy efficiency.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Sealing and Caulking Services"
+          }
+        }
       ],
-      "button": { "type": "anchor", "style": "secondary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
-      "component_options": { "hash": "services-we-provide", "component_padding": "half", "component_margins": "none", "hide_component": false },
+      "button": {
+        "type": "nuxt",
+        "style": "secondary",
+        "label": "",
+        "aria_label": "",
+        "href": "",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "pencil",
+        "color": "black"
+      },
+      "component_options": {
+        "hash": "services-we-provide",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
       "media_type": "icon",
-      "large_title": false,
+      "linear_gradient": "",
+      "add_cta": false,
       "left_aligned": false,
-      "alt_color": false,
-      "linear_gradient": ""
+      "large_title": true,
+      "alt_color": true
     },
     {
       "acf_fc_layout": "multi_use_banner",
       "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Call Air Tech Solutions to coordinate careful exterior, ventilation, and air quality service for your healthcare facility.",
+      "text": "",
       "social_links": [],
       "email": "",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "component_options": { "hash": "", "component_padding": "half", "component_margins": "none", "hide_component": false },
       "background_type": "has_background",
       "background": "bg2",
@@ -5563,9 +6655,9 @@
   "services-for-industrial-properties": [
     {
       "acf_fc_layout": "hero",
-      "title": "Services for Industrial Properties",
+      "title": "Industrial Properties",
       "text": "Heavy-duty cleaning for demanding environments.",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "media_type": "image",
       "image": { "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.jpg", "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.webp", "alt": "Industrial property exterior served by Air Tech Solutions", "aria_hidden": false, "bgColor": "", "imageBackground": false, "addLoader": false, "objectPosition": "center", "forceAlt": "", "loading_mask": "", "image_selection_hints": { "context_category": "Properties We Serve" } },
       "video": { "src": "", "webm": "", "title": "" },
@@ -5587,31 +6679,181 @@
       "background": "",
       "linear_gradient": ""
     },
-    {
+        {
       "acf_fc_layout": "multi_item_row",
       "title": "Services We Provide",
+      "variant": "service_icons",
       "items": [
-        { "title": "Exterior Soft Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Window Washing", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "Surface Powerwashing", "icon": "", "text": "Garage floors, sidewalks, and other hard surfaces.", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } },
-        { "title": "HVAC Cleaning", "icon": "", "text": "", "add_button": false, "button": { "button_type": "button", "path": "", "hash": "", "href": "", "label": "", "aria": "" } }
+        {
+          "title": "Dryer Vent Cleaning",
+          "service_key": "dryer-vent-cleaning",
+          "service_icon": "dryer-vent-cleaning.png",
+          "text": "We clear lint and buildup from dryer exhaust systems to lower fire risk and improve airflow. Cleaner vents mean faster drying, lower energy costs, and safer buildings.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-dryer-vent-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Dryer Vent Cleaning"
+          }
+        },
+        {
+          "title": "Exterior Soft Washing",
+          "service_key": "exterior-soft-washing",
+          "service_icon": "exterior-soft-wash.png",
+          "text": "We remove dirt, algae, and mildew from your building's exterior using low pressure and the right cleaning solutions. It cleans safely and keeps surfaces looking better for longer.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-soft-washing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Exterior Soft Washing"
+          }
+        },
+        {
+          "title": "Window Washing",
+          "service_key": "window-washing",
+          "service_icon": "window.png",
+          "text": "We clean glass, frames, and sills to restore clarity and curb appeal, reaching every floor safely. Clear windows keep your property looking maintained and welcoming all year.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-window-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Window Washing"
+          }
+        },
+        {
+          "title": "Surface Powerwashing",
+          "service_key": "surface-powerwashing",
+          "service_icon": "surface-powerwashing.png",
+          "text": "We use high-pressure water to lift dirt, oil, and grime from garage floors, sidewalks, and concrete. Hard surfaces come back clean, safe, and looking like new.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/professional-commercial-exterior-cleaning-boston-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Surface Powerwashing"
+          }
+        },
+        {
+          "title": "Gutter Cleaning",
+          "service_key": "gutter-cleaning",
+          "service_icon": "gutter.png",
+          "text": "We clear gutters and downspouts to restore proper drainage and keep water moving away from your building. It is a simple way to prevent costly water damage.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-gutter-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Gutter Cleaning"
+          }
+        },
+        {
+          "title": "HVAC Cleaning",
+          "service_key": "hvac-cleaning",
+          "service_icon": "hvac.png",
+          "text": "We remove dust and debris from HVAC systems and ductwork to improve airflow and efficiency. Cleaner systems lower energy costs and keep indoor air healthier.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-hvac-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about HVAC Cleaning"
+          }
+        },
+        {
+          "title": "Bathroom Exhaust Cleaning",
+          "service_key": "bathroom-exhaust-cleaning",
+          "service_icon": "bathroom-exhaust.png",
+          "text": "We clean exhaust fans and ductwork to restore airflow and reduce moisture buildup. Better ventilation means fewer humidity problems, less mold, and fewer tenant complaints.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Bathroom Exhaust Cleaning"
+          }
+        },
+        {
+          "title": "Air Quality Testing",
+          "service_key": "air-quality-testing",
+          "service_icon": "air-quality.png",
+          "text": "We test indoor air for particulates and contaminants so you know exactly what is in your building's air. The results give you real data to act on.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-air-quality-testing-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Air Quality Testing"
+          }
+        },
+        {
+          "title": "Sealing & Caulking Services",
+          "service_key": "sealing-caulking-services",
+          "service_icon": "caulking.png",
+          "text": "We seal exterior joints and penetrations to keep water and air out where they do not belong. Proper sealing protects your building and improves energy efficiency.",
+          "add_button": true,
+          "button": {
+            "button_type": "nuxt_link",
+            "path": "/commercial-caulking-services-boston-west-newton-ma",
+            "hash": "",
+            "href": "",
+            "label": "Learn More",
+            "aria": "Learn more about Sealing and Caulking Services"
+          }
+        }
       ],
-      "button": { "type": "anchor", "style": "secondary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
-      "component_options": { "hash": "services-we-provide", "component_padding": "half", "component_margins": "none", "hide_component": false },
+      "button": {
+        "type": "nuxt",
+        "style": "secondary",
+        "label": "",
+        "aria_label": "",
+        "href": "",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": false,
+        "icon": "pencil",
+        "color": "black"
+      },
+      "component_options": {
+        "hash": "services-we-provide",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
       "media_type": "icon",
-      "large_title": false,
+      "linear_gradient": "",
+      "add_cta": false,
       "left_aligned": false,
-      "alt_color": false,
-      "linear_gradient": ""
+      "large_title": true,
+      "alt_color": true
     },
     {
       "acf_fc_layout": "multi_use_banner",
       "title": "Ready to schedule service?",
       "content_block": "text_block",
-      "text": "Call Air Tech Solutions for heavy-duty exterior cleaning and ventilation care built around your operations.",
+      "text": "",
       "social_links": [],
       "email": "",
-      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:5084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
+      "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "component_options": { "hash": "", "component_padding": "half", "component_margins": "none", "hide_component": false },
       "background_type": "has_background",
       "background": "bg2",

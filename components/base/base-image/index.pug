@@ -6,6 +6,7 @@
       :alt='alt',
       :aria-hidden=`imageBackground && !forceAlt ? 'true' : 'false'`,
       :class=`{ 'base-image__image--bg': imageType === 'cover' }`,
+      @load='onImageLoad',
       :src='currentImg',
       :style=`{ objectPosition: objectPosition }`
     )

@@ -34,7 +34,7 @@ export default {
       return router.filter(link => link.navigation || link.mobile)
     },
     logoName () {
-      return 'logo-white'
+      return 'ATS-Logo-White'
     },
     mobileLogoName () {
       // For mobile drawer, always use the regular logo since the drawer has a white/light background

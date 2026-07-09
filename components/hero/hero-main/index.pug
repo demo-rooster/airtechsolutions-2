@@ -1,4 +1,4 @@
-.hero-main(:class="{ 'hero-main--no-image': !props.image.src && !props.video.src, 'hero-main--small-height': props.small, 'hero-main--has-service-icons': hasServiceIcons }")
+.hero-main(:class="{ 'hero-main--no-image': !props.image.src && !props.video.src, 'hero-main--small-height': props.small, 'hero-main--has-service-icons': hasServiceIcons, 'hero-main--property-page': isPropertyPage }")
   .hero-main__overlay
   .hero-main__image-container(v-if='props.media_type === "image"')
     picture.hero-main__picture(ref='image')
@@ -21,7 +21,7 @@
         template(v-else)
           span(v-html='props.title')
       BlockButton.hero-main__cta(v-if='props.button.label', :props='props.button', ref='heroBtn', @click='handleCtaClick')
-    .hero-main__content(v-else-if='props.text')
+    .hero-main__content(v-else-if='props.text' :class='{ "hero-main__content--home": $route.path === "/" }')
       h1.hero-main__title.hero-main__title--small(:class='{ "hero-main__title--logo": hasHeroLogo }' ref='heroTitle')
         template(v-if='hasHeroLogo')
           span.hero-main__title-fallback(v-html='props.title')

@@ -17,6 +17,7 @@
 
   &__container
     @include container
+    align-items: center
 
   &__col
     @include col (5)
@@ -28,7 +29,7 @@
       width: 100%
 
     &--text
-      align-self: flex-end
+      align-self: center
       margin-left: 0
       @include tablet-lg
         width: calc((7/12) * 100%)
@@ -46,7 +47,7 @@
       position: absolute
       bottom: -2rem
       left: 0
-      border-bottom: 4px solid var(--primary)
+      border-bottom: 4px solid rgb(138, 183, 61)
       width: var(--barWidth)
       max-width: rem-calc(220)
       content: ''

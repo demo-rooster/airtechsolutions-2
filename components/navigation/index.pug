@@ -7,7 +7,7 @@ header.navigation(:class="{ 'navigation--floating': !isScrolling && props.nav.fl
     .navigation__navbar(ref='navBar')
       nuxt-link.navigation__home(to='/' @click.native='closeDropdown' aria-label='Home')
         img.navigation__logo(v-if='hasLogo && useUrlLogo' :src='logoUrl' :alt='companyName + " - Home"' :class="{ 'navigation__logo--light-variant': !isDarkVariant }")
-        BaseIcon.navigation__logo(v-else-if='hasLogo' :name='logoName')
+        BaseIcon.navigation__logo.navigation__logo--light-variant(v-else-if='hasLogo' :name='logoName')
         span.navigation__logo-text(v-else) {{ companyName }}
       
       nav.navigation__nav-primary(v-if='windowWidth > 1280')

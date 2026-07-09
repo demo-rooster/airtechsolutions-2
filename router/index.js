@@ -8,7 +8,45 @@ const router = [
   {
     name: 'About',
     path: '/about',
-    navigation: true
+    navigation: true,
+    children: [
+      {
+        name: 'Our Mission',
+        path: '#our-mission'
+      },
+      {
+        name: 'Why Choose Us',
+        path: '#why-choose-us'
+      },
+      {
+        name: 'Our Services',
+        path: '#our-services'
+      },
+      {
+        name: 'Insurance & Credentials',
+        path: '#insurance-credentials'
+      },
+      {
+        name: 'Vendor Management Credentials',
+        path: '#vendor-management-credentials'
+      },
+      {
+        name: 'Equipment & Capabilities',
+        path: '#equipment-capabilities'
+      },
+      {
+        name: 'Before & After',
+        path: '#before-after'
+      },
+      {
+        name: 'Areas We Serve',
+        path: '#areas-we-serve'
+      },
+      {
+        name: 'Property Types We Serve',
+        path: '#property-types-we-serve'
+      }
+    ]
   },
   {
     name: 'Services',

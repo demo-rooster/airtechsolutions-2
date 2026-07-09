@@ -1,5 +1,6 @@
 .block-item-row
   @extend %section-padding
+  --block-item-row-highlight: #8ab73d
   position: relative
   background: #f5f5f5
 
@@ -37,7 +38,7 @@
       bottom: -1.5rem
       left: 50%
       transform: translateX(-50%)
-      border-bottom: 6px solid var(--accent)
+      border-bottom: 6px solid var(--block-item-row-highlight)
       width: 50%
       max-width: rem-calc(250)
       content: ''
@@ -99,7 +100,7 @@
       background: rgba(var(--primary-rgb), .13)
 
       .block-item-row__service-icon
-        background: var(--accent)
+        background: var(--block-item-row-highlight)
 
   &__item[data-items='3']
     width: 30%
@@ -202,7 +203,7 @@
       top: 0
       left: 50%
       transform: translateX(-50%)
-      border-top: 1px solid rgba(var(--text-rgb), .3)
+      border-top: 1px solid var(--block-item-row-highlight)
       width: 100%
       content: ''
       @include phone-lg

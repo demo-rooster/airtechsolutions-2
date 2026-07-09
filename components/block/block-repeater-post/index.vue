@@ -107,12 +107,11 @@ export default {
                 start: '-50 bottom'
               }
             })
-            const delay = 0.1 + (0.3 * i)
             posttl.from(post, {
               opacity: 0,
-              y: 24,
-              delay,
-              duration: 1,
+              y: 16,
+              delay: 0.05,
+              duration: 0.45,
               ease: 'customEaseOut'
             }, '<+=1')
           })

@@ -73,16 +73,22 @@ export default {
   },
   mounted () {
     this.loaded = true
+    if (this.forceVisible) {
+      this.setImageSources()
+    }
   },
   methods: {
-    onWaypoint ({ going, direction, el }) {
+    setImageSources () {
+      this.currentImg = this.src
+      this.currWebP = this.webp
+      this.currJp2 = this.jp2
+    },
+    onImageLoad () {
+      this.loading = false
+    },
+    onWaypoint ({ going }) {
       if (going === 'in' || this.forceVisible) {
-        this.currentImg = this.src
-        this.currWebP = this.webp
-        this.currJp2 = this.jp2
-        el.children[2].onload = () => {
-          this.loading = false
-        }
+        this.setImageSources()
       }
     }
   }

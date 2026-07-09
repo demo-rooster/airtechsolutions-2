@@ -63,6 +63,37 @@
       @include tablet
         order: 2
 
+  &--home-properties
+    .block-masonary-grid__col-left--small
+      width: calc((4/12) * 100%)
+      @include tablet-lg
+        width: 100%
+
+    .block-masonary-grid__col-right--large
+      margin-left: 0
+      @include tablet-lg
+        width: 100%
+
+    .block-masonary-grid__title
+      line-height: 1.08
+      font-size: rem-calc(42)
+      @include desktop
+        font-size: rem-calc(48)
+      @include laptop
+        font-size: rem-calc(38)
+      @include tablet
+        font-size: rem-calc(34)
+
+    .block-masonary-grid__cta
+      .block-button__button
+        border-color: #8ab73d
+        background: #8ab73d
+
+        @include hover-supported
+          border-color: #8ab73d
+          background: #8ab73d
+          color: $white
+
   &__title
     margin-bottom: 1.5rem
     @include tablet

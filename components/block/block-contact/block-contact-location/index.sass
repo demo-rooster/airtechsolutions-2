@@ -6,7 +6,7 @@
   width: 100%
 
   &__map-container
-    @include col(4)
+    @include col(5)
     @include col--offset (1)
     @include tablet-lg
       margin-left: 0
@@ -57,7 +57,7 @@
       content: ''
 
   &__content-container
-    @include col (5)
+    @include col (4)
     display: flex
     flex-wrap: wrap
     @include tablet-lg
@@ -82,33 +82,34 @@
     margin-bottom: .35rem
     line-height: .95
     color: var(--primary)
-    font-size: rem-calc(48)
+    font-size: rem-calc(36)
     font-weight: 700
     @include desktop
-      font-size: rem-calc(58)
-    @include tablet-lg
-      font-size: rem-calc(42)
-    @include tablet
       font-size: rem-calc(44)
+    @include tablet-lg
+      font-size: rem-calc(32)
+    @include tablet
+      font-size: rem-calc(34)
     @include phone-lg
-      font-size: rem-calc(36)
+      font-size: rem-calc(28)
 
   &__origin
     line-height: 1.1
     color: #3285cb
-    font-size: rem-calc(32)
+    font-size: rem-calc(22)
     font-weight: 700
     @include desktop
-      font-size: rem-calc(38)
+      font-size: rem-calc(27)
     @include tablet-lg
-      font-size: rem-calc(29)
+      font-size: rem-calc(21)
     @include phone-lg
-      font-size: rem-calc(24)
+      font-size: rem-calc(19)
 
   &__rule
     margin: rem-calc(22) 0 rem-calc(24)
     background: #3285cb
-    width: 100%
+    width: rem-calc(360)
+    max-width: 100%
     height: 2px
 
   &__legend,

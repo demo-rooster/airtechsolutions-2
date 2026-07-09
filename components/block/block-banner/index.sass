@@ -7,7 +7,7 @@
     background: var(--bg-1)
 
   &--bg2
-    background: var(--bg-2)
+    background: radial-gradient(ellipse at 12% 18%, rgba(50, 133, 203, .18) 0, rgba(50, 133, 203, .095) 30%, rgba(50, 133, 203, 0) 58%), radial-gradient(ellipse at 88% 22%, rgba(138, 183, 61, .14) 0, rgba(138, 183, 61, .065) 28%, rgba(138, 183, 61, 0) 56%), radial-gradient(ellipse at 52% 100%, rgba(50, 133, 203, .12) 0, rgba(138, 183, 61, .045) 36%, rgba(50, 133, 203, 0) 68%), var(--bg-2)
 
   &[data-image]
     min-height: rem-calc(480)
@@ -81,8 +81,8 @@
       color: var(--primary)
 
     &--centered
-      @include col (8)
-      @include col--offset (2)
+      @include col (10)
+      @include col--offset (1)
       text-align: center
       @include tablet-lg
         margin-left: 0
@@ -128,6 +128,15 @@
     margin-top: 3rem
     @include nexus
       margin-top: 2rem
+
+    .block-button__button
+      border-color: #8ab73d
+      background: #8ab73d
+
+      @include hover-supported
+        border-color: #8ab73d
+        background: #8ab73d
+        color: $white
 
     .block-banner__content--centered &
       margin: 3rem auto 0
