@@ -14,18 +14,21 @@ export default {
     global: null
   }),
   computed: {
+    displayLabel () {
+      return ['Contact Us', 'Call Now'].includes(this.props?.label) ? 'Schedule Now' : this.props?.label
+    },
     themeColors () {
       const theme = getThemeJSON()
       return theme.default?.colors || []
     },
     buttonStyles () {
       const style = this.props?.style || 'primary'
-      let bgColorLabel = 'accent'
+      let bgColorLabel = 'secondary'
 
       if (style === 'secondary') {
         bgColorLabel = 'primary'
       } else if (style === 'primary') {
-        bgColorLabel = 'accent'
+        bgColorLabel = 'secondary'
       }
 
       const bgColor = this.themeColors.find(c => c.label === bgColorLabel)

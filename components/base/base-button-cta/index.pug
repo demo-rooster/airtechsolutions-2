@@ -1,5 +1,5 @@
 //- .base-button(:class="{ 'base-button--secondary' : props.secondary }")
 .base-button(:style="buttonStyles")
-  nuxt-link.base-button__cta.base-button__cta--link(v-if='props.button_type === "nuxt_link"' v-html='props.label', :to='{ path: props.path, hash: props.hash }', :aria-label='props.aria ? props.aria : null')              
-  a.base-button__cta.base-button__cta--ext-link(v-else-if='props.button_type === "ext_link"', :href='props.href' v-html='props.label' target='_blank' rel='noopener', :aria-label='props.aria ? props.aria : null')
-  button.base-button__cta.base-button__cta--button(v-else-if='props.button_type === "button"' v-html='props.label' tabindex='0', :aria-label='props.aria ? props.aria : null', :class="{ 'openchair-widget': props.open_chair }" @click='onClick')
+  nuxt-link.base-button__cta.base-button__cta--link(v-if='props.button_type === "nuxt_link"' v-html='displayLabel', :to='{ path: props.path, hash: props.hash }', :aria-label='props.aria ? props.aria : null')              
+  a.base-button__cta.base-button__cta--ext-link(v-else-if='props.button_type === "ext_link"', :href='props.href' v-html='displayLabel' target='_blank' rel='noopener', :aria-label='props.aria ? props.aria : null')
+  button.base-button__cta.base-button__cta--button(v-else-if='props.button_type === "button"' v-html='displayLabel' tabindex='0', :aria-label='props.aria ? props.aria : null', :class="{ 'openchair-widget': props.open_chair }" @click='onClick')

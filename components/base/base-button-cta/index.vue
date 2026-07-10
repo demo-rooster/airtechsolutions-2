@@ -11,14 +11,17 @@ export default {
     },
     variant: {
       type: String,
-      default: 'accent'
+      default: 'secondary'
     }
   },
   computed: {
+    displayLabel () {
+      return ['Contact Us', 'Call Now'].includes(this.props?.label) ? 'Schedule Now' : this.props?.label
+    },
     themeColor () {
       const theme = getThemeJSON()
       const colors = theme.default?.colors || []
-      return colors.find(c => c.label === this.variant) || colors.find(c => c.label === 'accent')
+      return colors.find(c => c.label === this.variant) || colors.find(c => c.label === 'secondary')
     },
     buttonStyles () {
       if (!this.themeColor) { return {} }

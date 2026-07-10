@@ -21,18 +21,18 @@
       {
         "label": "secondary",
         "color": {
-          "red": 111,
-          "green": 129,
-          "blue": 160,
+          "red": 138,
+          "green": 183,
+          "blue": 61,
           "alpha": 1
         },
-        "hex": "#6f81a0",
+        "hex": "#8ab73d",
         "accessibility": {
-          "luminance": 0.22,
-          "luminancePercent": "22%",
-          "recommendedTextColor": "#ffffff",
-          "contrastRatio": 4.1,
-          "wcagRating": "AA"
+          "luminance": 0.39,
+          "luminancePercent": "39%",
+          "recommendedTextColor": "#000000",
+          "contrastRatio": 8.7,
+          "wcagRating": "AAA"
         }
       },
       {

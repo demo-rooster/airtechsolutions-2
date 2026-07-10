@@ -19,6 +19,9 @@ export default {
     }
   },
   computed: {
+    displayLabel () {
+      return ['Contact Us', 'Call Now'].includes(this.props?.label) ? 'Schedule Now' : this.props?.label
+    },
     themeColor () {
       const theme = getThemeJSON()
       const colors = theme.default?.colors || []

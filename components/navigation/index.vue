@@ -37,9 +37,7 @@ export default {
       return 'ATS-Logo-White'
     },
     mobileLogoName () {
-      // For mobile drawer, always use the regular logo since the drawer has a white/light background
-      // This ensures proper contrast and visibility
-      return 'logo'
+      return 'ATS-Logo-White'
     },
     hasLogo () {
       const hasUrlLogo = this.theme?.logo_url || this.theme?.logo_config?.url
@@ -68,7 +66,7 @@ export default {
         {
           href: email ? `mailto:${email}` : '',
           ariaLabel: `Email ${this.companyName}`,
-          icon: 'message'
+          icon: 'envelope'
         }
       ].filter(cta => cta.href)
     },

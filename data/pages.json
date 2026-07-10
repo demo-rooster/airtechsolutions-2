@@ -293,7 +293,10 @@
       "title": "Expert Services for Your Properties",
       "paragraphs": [
         {
-          "text": "From multi-family communities and office buildings to hotels, hospitals, and industrial facilities, we deliver exterior cleaning, ventilation, and air quality services built around the properties we serve."
+          "text": "From multi-family communities and office buildings to hotels, hospitals, and industrial facilities, we deliver exterior cleaning, ventilation, and air quality services built around the properties we serve. Every property type comes with its own demands, and we tailor our approach to fit how your building is used and what your tenants and residents expect. Because we own and operate all of our own equipment, from industrial soft washing systems to boom lifts, drones, and rope access gear, we handle large and complex properties in-house without subcontracting the work."
+        },
+        {
+          "text": "Our team is trained, certified, and fully insured, and we work with clear communication and minimal disruption to the people who live and work in your buildings. Whatever your property needs to look its best and stay well maintained, we have the equipment and expertise to get it done right the first time."
         }
       ],
       "button": {
@@ -2449,8 +2452,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/hero/1269341883_Wooden_question_mark_leaning_against_wall_in_room.jpg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/hero/1269341883_Wooden_question_mark_leaning_against_wall_in_room.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/faq/faq-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/faq/faq-hero.webp",
         "alt": "Frequently asked questions about Air Tech Solutions services",
         "aria_hidden": false,
         "bgColor": "",

@@ -81,6 +81,9 @@
     .hero-main--about-page &
       @include phone-lg
         object-position: 24% center !important
+    .pages-faq &
+      @include phone-lg
+        object-position: 75% 28% !important
 
   &__container
     @include container
@@ -194,6 +197,9 @@
     &--pages
       // bottom: 35%
       text-align: center
+      .pages-faq &
+        @include phone-lg
+          bottom: 17%
 
   &__title
     // Mobile line break control

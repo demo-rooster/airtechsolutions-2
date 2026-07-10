@@ -12,11 +12,11 @@
 
   font-weight: 700
 
-@mixin button-primary($background: var(--primary), $text: var(--bg-1), $hover: var(--accent), $hover-text: var(--text))
+@mixin button-primary($background: var(--primary), $text: var(--bg-1), $hover: var(--accent), $hover-text: var(--text), $hover-border: $hover)
   @extend %button
   @include hover-supported
     background: $hover
-    border: 2px solid $hover
+    border: 2px solid $hover-border
     color: $hover-text
   background: $background
   border: 2px solid $background

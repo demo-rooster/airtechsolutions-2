@@ -10,7 +10,7 @@
       v-if='props.include_icon',
       :name='props.icon'
     )
-    span(v-html='props.label')
+    span(v-html='displayLabel')
 
   //- Anchor Link ============================================
   a.block-button__button(
@@ -24,7 +24,7 @@
       v-if='props.include_icon',
       :name='props.icon'
     )
-    span(v-html='props.label')
+    span(v-html='displayLabel')
   
   //- Open Chair ============================================
   a.block-button__button.openchair-widget(
@@ -36,7 +36,7 @@
       v-if='props.include_icon',
       :name='props.icon'
     )
-    span(v-html='props.label')
+    span(v-html='displayLabel')
 
   //- Custom Link ============================================
   button.block-button__button(
@@ -49,7 +49,7 @@
       v-if='props.include_icon',
       :name='props.icon'
     )
-    span(v-html='props.label')
+    span(v-html='displayLabel')
 
   //- Phone Link ============================================
   a.block-button__button(
