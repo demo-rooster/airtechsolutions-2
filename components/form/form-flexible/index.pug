@@ -83,7 +83,8 @@
                 :value='option.label'
               ) {{ option.label }}
               option(v-if='field.other_support' value='Other') Other
-            label.form-flexible__label.form-flexible__label--active(
+            label.form-flexible__label(
+              :class=`{ 'form-flexible__label--active': formModels[field._id].model }`,
               :for='field._id',
               v-html='field.label && field.required ? `${field.label} *` : `${field.label}`'
             )
