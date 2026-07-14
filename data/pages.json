@@ -812,31 +812,61 @@
       "items": [
         {
           "title": "Industrial Soft Washing Systems",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/soft-washing.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/soft-washing.webp",
+            "alt": "Industrial soft washing system used by Air Tech Solutions"
+          },
           "text": "Professional low-pressure systems for large building exteriors.",
           "add_button": false
         },
         {
           "title": "High-Capacity Air Compressors",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor.webp",
+            "alt": "High-capacity air compressor equipment used by Air Tech Solutions"
+          },
           "text": "Air-powered cleaning capability for ventilation and exhaust systems.",
           "add_button": false
         },
         {
           "title": "Nifty SD64 Boom Lift",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/boom-lift.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/boom-lift.webp",
+            "alt": "Nifty SD64 boom lift used for commercial exterior access"
+          },
           "text": "Safe, controlled access for work at height.",
           "add_button": false
         },
         {
           "title": "Lucid Sherpa Cleaning Drone",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.webp",
+            "alt": "Lucid Sherpa cleaning drone used for exterior cleaning support"
+          },
           "text": "Exterior cleaning support from the air for select applications.",
           "add_button": false
         },
         {
           "title": "MIO Rolling Roof Rig",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof.webp",
+            "alt": "MIO rolling roof rig used for complex rooftop access"
+          },
           "text": "Stable rooftop work support for complex access conditions.",
           "add_button": false
         },
         {
           "title": "Rope Access Equipment",
+          "image": {
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rope-access.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rope-access.webp",
+            "alt": "Rope access equipment used for challenging exterior areas"
+          },
           "text": "NFPA 1006 / 2500 certified access methods for challenging areas.",
           "add_button": false
         }
@@ -2367,8 +2397,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_162975640.jpeg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_162975640.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/contact/contact-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/contact/contact-hero.webp",
         "alt": "Contact Air Tech Solutions for a commercial property quote",
         "aria_hidden": false,
         "bgColor": "",
