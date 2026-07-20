@@ -27,6 +27,9 @@ export default {
     currentDropdown: null
   }),
   computed: {
+    topBar () {
+      return this.$store.state.theme?.header || this.props?.top_bar || null
+    },
     links () {
       return router.filter(link => link.navigation)
     },

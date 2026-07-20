@@ -1,6 +1,9 @@
 .popup
   text-align: center
 
+  .base-modal__main
+    background: var(--popup-background, #{$white})
+
   &__container
     display: flex
     flex-direction: column
@@ -11,6 +14,10 @@
 
   &__title
     @extend %h2
+    color: var(--popup-titles, var(--headers))
+
+  &__text
+    color: var(--popup-text, var(--text))
 
   &__image
     width: 60%

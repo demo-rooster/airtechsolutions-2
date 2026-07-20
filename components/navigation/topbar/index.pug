@@ -1,9 +1,9 @@
 .topbar
-  .topbar__bar(:class='`topbar__bar--${props.theme} topbar__bar--${props.type}`' @click='props.type === "announcement" ? openModal() : null' @keyup.enter='props.type === "announcement" ? openModal() : null', :tabindex='props.type === "announcement" ? 0 : -1', :aria-label='props.type === "announcement" ? props.announcement.label : null', :aria-haspopup='props.type === "announcement" ? true : false')
+  .topbar__bar(:class='barClasses' @click='canOpenPopup ? openModal() : null' @keyup.enter='canOpenPopup ? openModal() : null', :tabindex='canOpenPopup ? 0 : -1', :aria-label='canOpenPopup ? props.announcement.label : null', :aria-haspopup='canOpenPopup ? true : false')
     .topbar__container(:class='`topbar__container--${props.content_alignment}`')
 
       .topbar__links(v-if='props.type === "links"')
-        a.topbar__link(v-for='(link, i) in props.links' :key='`link--${i}`' :href='link.href' :aria-label='link.label' :target='link.new_window ? "_blank" : "_self"' :rel='link.new_window ? "noopener noreferrer" : null') 
+        a.topbar__link(v-for='(link, i) in props.links' :key='`link--${i}`' :href='link.href' :aria-label='link.label' :target='link.new_window ? "_blank" : "_self"' :rel='link.new_window ? "noopener noreferrer" : null')
           BaseIcon.topbar__link-icon(:name='link.icon')
           .topbar__link-text(v-html='link.text')
 
@@ -11,7 +11,4 @@
         BaseIcon.topbar__announcement-icon(:name='props.announcement.icon')
         .topbar__announcement-text(v-html='windowWidth > 768 ? props.announcement.text : props.announcement.mobile_text')
 
-  transition(name='fade')
-    BaseModal.topbar__modal(v-if='props.type === "announcement" && modalOpen' :modalOpen='modalOpen' @closemodal='modalOpen = $event' role='dialog' aria-labelledby='aria-modal-title' aria-modal='true')
-      h2.topbar__modal-title#topbar-modal-title(v-html='props.announcement.modal.title')
-      p.topbar__modal-text#topbar-modal-text(v-html='props.announcement.modal.text')
+  Popup.topbar__popup(v-if='modalOpen && popupContent', :props='popupContent', @closemodal='modalOpen = $event')

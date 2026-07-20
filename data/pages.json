@@ -3,7 +3,7 @@
     {
       "acf_fc_layout": "hero",
       "title": "AIR TECH SOLUTIONS",
-      "text": "Serving New England's Commercial<br>Properties since 2012",
+      "text": "Serving New England's Commercial<br>Properties since 2010",
       "button": {
         "type": "nuxt",
         "style": "primary",
@@ -96,7 +96,7 @@
         {
           "icon": "caulking.png",
           "service_key": "sealing-caulking-services",
-          "label": "Caulking",
+          "label": "Sealing & Caulking",
           "alt": "Caulking service icon"
         }
       ]
@@ -106,7 +106,7 @@
       "title": "The Air Tech Experience",
       "paragraphs": [
         {
-          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2012. We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
+          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2010. We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
         },
         {
           "text": "We own and operate all of our equipment, allowing us to efficiently service large and complex properties. Our capabilities include industrial soft washing systems, high-capacity air compressors, boom lifts, and rope access equipment, enabling our team to safely and effectively reach challenging areas and building exteriors. We work closely with property managers and maintenance teams to deliver reliable service with clear communication and minimal disruption. Air Tech Solutions is fully insured, fully compliant, and committed to doing the job right the first time."
@@ -462,13 +462,13 @@
     {
       "seo": {
         "page_title": "Home - Air Tech Solutions",
-        "page_description": "Air Tech Solutions provides exterior cleaning, ventilation, and air quality services for commercial properties across New England since 2012.",
+        "page_description": "Air Tech Solutions provides exterior cleaning, ventilation, and air quality services for commercial properties across New England since 2010.",
         "page_keywords": "exterior cleaning, dryer vent cleaning, gutter cleaning, air quality testing, commercial services, New England, window cleaning, HVAC cleaning",
         "additional_settings": false,
         "social_meta": {
           "og_meta": {
             "title": "Home - Air Tech Solutions",
-            "description": "Air Tech Solutions provides exterior cleaning, ventilation, and air quality services for commercial properties across New England since 2012.",
+            "description": "Air Tech Solutions provides exterior cleaning, ventilation, and air quality services for commercial properties across New England since 2010.",
             "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg"
           }
         }
@@ -479,7 +479,7 @@
     {
       "acf_fc_layout": "hero",
       "title": "About Air Tech Solutions",
-      "text": "New England's exterior cleaning, ventilation, and air quality specialists since 2012.",
+      "text": "New England's exterior cleaning, ventilation, and air quality specialists since 2010.",
       "button": {
         "type": "anchor",
         "style": "primary",
@@ -521,7 +521,7 @@
       "title": "Our Mission",
       "paragraphs": [
         {
-          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2012. We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
+          "text": "Air Tech Solutions is a locally owned New England company providing professional exterior cleaning, ventilation, and air quality services since 2010. We specialize in servicing commercial multi-family properties, including apartment buildings, condominiums, and townhome communities."
         },
         {
           "text": "We own and operate all of our equipment, allowing us to efficiently service large and complex properties. Our capabilities include industrial soft washing systems, high capacity air compressors, boom lifts, and rope access equipment, enabling our team to safely and effectively reach challenging areas and building exteriors."
@@ -551,7 +551,7 @@
         {
           "has_heading": false,
           "heading": "",
-          "text": "We specialize in commercial multi-family properties and understand how they work. Air Tech Solutions is fully insured and credentialed, with the documentation property managers need."
+          "text": "We specialize in commercial multi-family, office, hotels, hospital, and industrial properties. Air Tech Solutions is fully insured and credentialed, with the documentation property managers need."
         },
         {
           "has_heading": false,
@@ -766,21 +766,32 @@
         }
       ],
       "accordion": [],
-      "image": {
-        "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg",
-        "webp": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg?tr=f-webp",
-        "alt": "Commercial property exterior used as placeholder for vendor management credentials",
-        "aria_hidden": false,
-        "bgColor": "",
-        "imageBackground": false,
-        "addLoader": false,
-        "objectPosition": "",
-        "forceAlt": "",
-        "loading_mask": "",
-        "image_selection_hints": {
-          "context_category": "About Placeholder"
+      "logos": [
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/realpage.png",
+          "alt": "RealPage logo"
+        },
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/vendorsmart.png",
+          "alt": "VendorSmart logo"
+        },
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/vive.png",
+          "alt": "VIVE logo"
+        },
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/netvendor.png",
+          "alt": "NetVendor logo"
+        },
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/revyse.png",
+          "alt": "Revyse logo"
+        },
+        {
+          "src": "https://d20dg8rmreapkm.cloudfront.net/about/vendorshield.png",
+          "alt": "VendorShield logo"
         }
-      },
+      ],
       "video": {
         "type": "embedded",
         "src": ""
@@ -823,8 +834,8 @@
         {
           "title": "High-Capacity Air Compressors",
           "image": {
-            "src": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor.jpg",
-            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor.webp",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-2.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-2.webp",
             "alt": "High-capacity air compressor equipment used by Air Tech Solutions"
           },
           "text": "Air-powered cleaning capability for ventilation and exhaust systems.",
@@ -843,8 +854,8 @@
         {
           "title": "Lucid Sherpa Cleaning Drone",
           "image": {
-            "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.jpg",
-            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.webp",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.webp",
             "alt": "Lucid Sherpa cleaning drone used for exterior cleaning support"
           },
           "text": "Exterior cleaning support from the air for select applications.",
@@ -853,8 +864,8 @@
         {
           "title": "MIO Rolling Roof Rig",
           "image": {
-            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof.jpg",
-            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof.webp",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-2.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-2.webp",
             "alt": "MIO rolling roof rig used for complex rooftop access"
           },
           "text": "Stable rooftop work support for complex access conditions.",
@@ -1116,13 +1127,13 @@
     {
       "seo": {
         "page_title": "About Air Tech Solutions | New England Commercial Property Services",
-        "page_description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2012.",
+        "page_description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2010.",
         "page_keywords": "Air Tech Solutions, exterior cleaning, dryer vent cleaning, air quality testing, commercial property services, New England, West Newton MA",
         "additional_settings": false,
         "social_meta": {
           "og_meta": {
             "title": "About Air Tech Solutions | New England Commercial Property Services",
-            "description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2012.",
+            "description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2010.",
             "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg"
           }
         }
@@ -5735,7 +5746,7 @@
       "title": "Multi-family Properties Are Our Specialty",
       "paragraphs": [
         {
-          "text": "Multi-family properties are our specialty. Apartment buildings, condominiums, and townhome communities have a lot of moving parts, and keeping them clean, safe, and well-maintained takes a partner who understands how they work. Air Tech Solutions has been serving New England's multi-family properties since 2012."
+          "text": "Multi-family properties are our specialty. Apartment buildings, condominiums, and townhome communities have a lot of moving parts, and keeping them clean, safe, and well-maintained takes a partner who understands how they work. Air Tech Solutions has been serving New England's multi-family properties since 2010."
         },
         {
           "text": "From dryer vents and gutters to soft washing and air quality, we handle the exterior cleaning and ventilation services that keep buildings safe and looking their best. We own and operate all of our equipment, so we can service every unit and every floor efficiently, even on large and complex properties."

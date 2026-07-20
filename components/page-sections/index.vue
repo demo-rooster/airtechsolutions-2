@@ -22,6 +22,12 @@ import BlockTabs from '~/components/block/block-tabs'
 import BlockTextFH from '~/components/block/block-text-fh'
 import BlockTextSimple from '~/components/block/block-text-simple'
 import TheHero from '~/components/hero/hero-main'
+import { buildSectionStyleVars } from '~/resources/theme-scheme'
+
+const sectionBackgroundLabels = {
+  bg1: 'bg-1',
+  bg2: 'bg-2'
+}
 
 export default {
   transition: 'fade',
@@ -64,6 +70,33 @@ export default {
         this.$store.dispatch('VIEW_SITE', true)
       }, 100)
     })
+  },
+  methods: {
+    sectionId (section, i) {
+      return section.component_options && section.component_options.hash
+        ? section.component_options.hash
+        : `${section.acf_fc_layout}-${i}`
+    },
+    sectionKey (section, i) {
+      return `${this.$route.path}::${this.sectionId(section, i)}`
+    },
+    sectionBackgroundLabel (section) {
+      const hasBackground = (section.has_background || section.background_type === 'has_background') && section.background
+
+      return hasBackground ? sectionBackgroundLabels[section.background] || null : null
+    },
+    sectionTitlesRole (section) {
+      return section.acf_fc_layout === 'hero' ? 'titles-dark' : null
+    },
+    sectionStyle (section, i) {
+      const theme = this.$store.state.theme
+
+      if (!theme) {
+        return {}
+      }
+
+      return buildSectionStyleVars(theme, this.sectionKey(section, i), this.sectionBackgroundLabel(section), this.sectionTitlesRole(section))
+    }
   }
 }
 </script>

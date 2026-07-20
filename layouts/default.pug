@@ -7,5 +7,7 @@
   main.main-content#main-content(tabindex='-1')
     nuxt
   TheFooter
-  Popup(v-if='popupActive' :props='global.popup')
+  Popup(v-if='popupActive && popupProps', :props='popupProps', @closemodal='popupActive = $event')
+  CustomizationToolbar(v-if='$store.state.customizationEnabled')
+  CustomizationContextMenu(v-if='$store.state.customizationEnabled')
   DevModeBanner(v-if='showDevModeBanner')

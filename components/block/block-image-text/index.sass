@@ -86,6 +86,34 @@
     @include phone-lg
       height: 70vw
 
+    &--logos
+      max-height: none
+      @include tablet
+        height: auto !important
+        min-height: 0
+
+  &__logo-column
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    gap: rem-calc(24)
+    padding: rem-calc(24) rem-calc(40)
+    width: 100%
+    height: 100%
+    min-height: rem-calc(500)
+    @include tablet
+      gap: rem-calc(28)
+      padding: 0 rem-calc(32)
+      min-height: 0
+
+  &__logo
+    display: block
+    width: 100%
+    max-width: rem-calc(250)
+    height: rem-calc(64)
+    object-fit: contain
+
   &__large-image-container
     position: absolute
     top: 0
@@ -182,7 +210,7 @@
   &__title-underline
     --itBarWidth: 50%
     margin-top: 1rem
-    background: rgb(138, 183, 61)
+    background: var(--secondary)
     width: var(--itBarWidth)
     max-width: rem-calc(220)
     height: 8px
@@ -191,13 +219,13 @@
       max-width: 100%
 
     &--primary
-      background: rgb(138, 183, 61)
+      background: var(--secondary)
     &--accent
-      background: rgb(138, 183, 61)
+      background: var(--secondary)
     &--accent-2
-      background: rgb(138, 183, 61)
+      background: var(--secondary)
     &--secondary
-      background: rgb(138, 183, 61)
+      background: var(--secondary)
 
   &__paragraph
     &:not(:last-child)

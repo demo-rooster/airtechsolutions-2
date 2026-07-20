@@ -1,141 +1,246 @@
 {
+  "enable_customization": true,
   "default": {
     "colors": [
       {
-        "label": "primary",
+        "label": "headers",
+        "name": "Titles",
+        "description": "Headings and titles site-wide",
         "color": {
           "red": 0,
           "green": 57,
           "blue": 112,
           "alpha": 1
         },
-        "hex": "#003970",
-        "accessibility": {
-          "luminance": 0.04,
-          "luminancePercent": "4%",
-          "recommendedTextColor": "#ffffff",
-          "contrastRatio": 12.2,
-          "wcagRating": "AAA"
-        }
+        "hex": "#003970"
       },
       {
-        "label": "secondary",
+        "label": "text",
+        "name": "Body",
+        "description": "Body copy, paragraphs, links",
+        "color": {
+          "red": 0,
+          "green": 57,
+          "blue": 112,
+          "alpha": 1
+        },
+        "hex": "#003970"
+      },
+      {
+        "label": "btn-background",
+        "name": "Button background",
+        "description": "CTA, form and block buttons",
         "color": {
           "red": 138,
           "green": 183,
           "blue": 61,
           "alpha": 1
         },
-        "hex": "#8ab73d",
-        "accessibility": {
-          "luminance": 0.39,
-          "luminancePercent": "39%",
-          "recommendedTextColor": "#000000",
-          "contrastRatio": 8.7,
-          "wcagRating": "AAA"
-        }
+        "hex": "#8ab73d"
+      },
+      {
+        "label": "btn-text",
+        "name": "Button text",
+        "description": "Text on buttons",
+        "color": {
+          "red": 0,
+          "green": 0,
+          "blue": 0,
+          "alpha": 1
+        },
+        "hex": "#000000"
+      },
+      {
+        "label": "btn-hover-background",
+        "name": "Hover background",
+        "description": "Button background on hover (transparent by default)",
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 255,
+          "alpha": 0
+        },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "btn-hover-text",
+        "name": "Hover text",
+        "description": "Button text and border on hover",
+        "color": {
+          "red": 0,
+          "green": 57,
+          "blue": 112,
+          "alpha": 1
+        },
+        "hex": "#003970"
+      },
+      {
+        "label": "header-footer",
+        "name": "Header & footer",
+        "description": "Navigation bar and footer background",
+        "color": {
+          "red": 0,
+          "green": 57,
+          "blue": 112,
+          "alpha": 1
+        },
+        "hex": "#003970"
+      },
+      {
+        "label": "primary",
+        "name": "Brand accent",
+        "description": "Links, icons, borders, hero overlay",
+        "color": {
+          "red": 0,
+          "green": 57,
+          "blue": 112,
+          "alpha": 1
+        },
+        "hex": "#003970"
+      },
+      {
+        "label": "secondary",
+        "name": "Highlight",
+        "description": "Green accents: banner tints, hovers, gallery highlights",
+        "color": {
+          "red": 138,
+          "green": 183,
+          "blue": 61,
+          "alpha": 1
+        },
+        "hex": "#8ab73d"
       },
       {
         "label": "accent",
+        "name": "Soft accent",
+        "description": "Light fills: cards, tags, nav hovers",
         "color": {
           "red": 173,
           "green": 200,
           "blue": 232,
           "alpha": 1
         },
-        "hex": "#adc8e8",
-        "accessibility": {
-          "luminance": 0.56,
-          "luminancePercent": "56%",
-          "recommendedTextColor": "#000000",
-          "contrastRatio": 1.8,
-          "wcagRating": "AA"
-        }
+        "hex": "#adc8e8"
       },
       {
-        "label": "text",
+        "label": "accent-2",
+        "name": "Contact accent",
+        "description": "Contact page text, buttons, icons",
         "color": {
-          "red": 0,
-          "green": 57,
-          "blue": 112,
+          "red": 50,
+          "green": 133,
+          "blue": 203,
           "alpha": 1
         },
-        "hex": "#003970",
-        "accessibility": {
-          "luminance": 0.04,
-          "luminancePercent": "4%",
-          "recommendedTextColor": "#ffffff",
-          "contrastRatio": 12.2,
-          "wcagRating": "AAA"
-        }
+        "hex": "#3285cb"
       },
       {
-        "label": "bg-1",
+        "label": "logo-base",
+        "name": "Logo base",
+        "description": "Main logo mark and light details",
         "color": {
           "red": 255,
           "green": 255,
           "blue": 255,
           "alpha": 1
         },
-        "hex": "#ffffff",
-        "accessibility": {
-          "luminance": 1,
-          "luminancePercent": "100%",
-          "recommendedTextColor": "#000000",
-          "contrastRatio": 21,
-          "wcagRating": "AAA"
-        }
+        "hex": "#ffffff"
+      },
+      {
+        "label": "logo-green-light",
+        "name": "Logo green (light)",
+        "description": "Light end of the logo text gradient",
+        "color": {
+          "red": 212,
+          "green": 239,
+          "blue": 115,
+          "alpha": 1
+        },
+        "hex": "#d4ef73"
+      },
+      {
+        "label": "logo-green",
+        "name": "Logo green",
+        "description": "Logo text and green wave",
+        "color": {
+          "red": 138,
+          "green": 183,
+          "blue": 61,
+          "alpha": 1
+        },
+        "hex": "#8ab73d"
+      },
+      {
+        "label": "logo-green-dark",
+        "name": "Logo green (dark)",
+        "description": "Dark end of the logo text gradient",
+        "color": {
+          "red": 79,
+          "green": 127,
+          "blue": 34,
+          "alpha": 1
+        },
+        "hex": "#4f7f22"
+      },
+      {
+        "label": "logo-blue",
+        "name": "Logo blue",
+        "description": "Blue logo wave",
+        "color": {
+          "red": 2,
+          "green": 67,
+          "blue": 127,
+          "alpha": 1
+        },
+        "hex": "#02437f"
+      },
+      {
+        "label": "bg-1",
+        "name": "Background 1",
+        "description": "Main page background",
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 255,
+          "alpha": 1
+        },
+        "hex": "#ffffff"
       },
       {
         "label": "bg-2",
+        "name": "Background 2",
+        "description": "Alternate section background",
         "color": {
           "red": 240,
           "green": 245,
           "blue": 250,
           "alpha": 1
         },
-        "hex": "#f0f5fa",
-        "accessibility": {
-          "luminance": 0.91,
-          "luminancePercent": "91%",
-          "recommendedTextColor": "#000000",
-          "contrastRatio": 19.26,
-          "wcagRating": "AAA"
-        }
+        "hex": "#f0f5fa"
       },
       {
         "label": "topbar-light",
+        "name": "Top bar (light)",
+        "description": "Top utility bar light background",
         "color": {
           "red": 242,
           "green": 242,
           "blue": 242,
           "alpha": 1
         },
-        "hex": "#f2f2f2",
-        "accessibility": {
-          "luminance": 0.89,
-          "luminancePercent": "89%",
-          "recommendedTextColor": "#000000",
-          "contrastRatio": 18.76,
-          "wcagRating": "AAA"
-        }
+        "hex": "#f2f2f2"
       },
       {
         "label": "topbar-dark",
+        "name": "Top bar (dark)",
+        "description": "Top utility bar dark background",
         "color": {
           "red": 0,
           "green": 57,
           "blue": 112,
           "alpha": 1
         },
-        "hex": "#003970",
-        "accessibility": {
-          "luminance": 0.04,
-          "luminancePercent": "4%",
-          "recommendedTextColor": "#ffffff",
-          "contrastRatio": 12.2,
-          "wcagRating": "AAA"
-        }
+        "hex": "#003970"
       }
     ],
     "typography": [

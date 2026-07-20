@@ -3,6 +3,7 @@
   &__bar
     padding: .5rem 0
     width: 100%
+    min-height: rem-calc(38)
     font-size: 1rem
 
     &--light
@@ -15,7 +16,7 @@
         svg
           fill: var(--primary)
 
-      &.topbar__bar--announcement
+      &.topbar__bar--clickable
         @include hover-supported
           background: rgba(var(--primary-rgb), 1)
           .topbar__announcement-text
@@ -43,7 +44,7 @@
       .topbar__announcement-icon svg
         fill: $white
     
-      &.topbar__bar--announcement
+      &.topbar__bar--clickable
           @include hover-supported
             background: rgba(var(--topbar-light-rgb), .7)
             .topbar__announcement-text
@@ -120,13 +121,3 @@
     &-text
       transition: color .3s ease
       font-weight: 600
-
-  &__modal
-    &-title
-      margin-bottom: 2rem
-      color: var(--primary)
-    
-    &-text
-
-      p:not(:last-of-type)
-        margin-bottom: 1rem

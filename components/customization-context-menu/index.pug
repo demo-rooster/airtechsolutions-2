@@ -1,0 +1,47 @@
+.customization-context-menu(
+  v-if='visible',
+  ref='menu',
+  :style='menuStyle',
+  role='menu',
+  :aria-label='`Choose a scheme color for ${roleLabel}`'
+)
+  .customization-context-menu__header
+    span.customization-context-menu__role(v-html='roleLabel')
+    span.customization-context-menu__section(v-html='sectionLabel')
+  .customization-context-menu__modes(v-if='buttonContext', role='group', aria-label='Button state')
+    button.customization-context-menu__mode(
+      type='button',
+      :class='{ "customization-context-menu__mode--active": buttonMode === "default" }',
+      :aria-pressed='buttonMode === "default"',
+      @click='buttonMode = "default"'
+    ) Default
+    button.customization-context-menu__mode(
+      type='button',
+      :class='{ "customization-context-menu__mode--active": buttonMode === "hover" }',
+      :aria-pressed='buttonMode === "hover"',
+      @click='buttonMode = "hover"'
+    ) Hover
+  .customization-context-menu__role-editor(
+    v-for='contextRole in contextRoles',
+    :key='contextRole.key'
+  )
+    .customization-context-menu__role-editor-header(v-if='buttonContext')
+      span.customization-context-menu__role-name(v-html='contextRole.name')
+      button.customization-context-menu__reset(
+        type='button',
+        :disabled='!getOverrideRef(contextRole.key)',
+        @click='resetOverride(contextRole.key)'
+      ) Reset
+    CustomizationSchemePicker(
+      :scheme='themeScheme',
+      :selected-ref='getOverrideRef(contextRole.key)',
+      :show-transparent='contextRole.allowsTransparent',
+      compact,
+      @select='applyOverride($event, contextRole.key)'
+    )
+    button.customization-context-menu__reset(
+      v-if='!buttonContext',
+      type='button',
+      :disabled='!getOverrideRef(contextRole.key)',
+      @click='resetOverride(contextRole.key)'
+    ) Reset to default

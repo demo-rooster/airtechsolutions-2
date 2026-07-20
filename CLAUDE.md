@@ -91,3 +91,7 @@ Example task breakdown for a new component:
 - [ ] Create Sass styling file
 - [ ] Test component integration
 - [ ] Run linting and fix any issues
+
+## Development Server
+- Do NOT run `npm run dev` after making changes unless explicitly asked to. Assume the developer already has the dev server running — changes hot-reload automatically.
+- To verify changes, run `npm run lint` (and Jest tests where relevant) instead of starting a dev server.

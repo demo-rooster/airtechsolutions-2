@@ -1,7 +1,7 @@
 <template lang='pug' src='./index.pug'></template>
 
 <script>
-import { setJSONData, getThemeJSON } from '~/resources/utils'
+import { setJSONData } from '~/resources/utils'
 
 export default {
   props: {
@@ -16,28 +16,6 @@ export default {
   computed: {
     displayLabel () {
       return ['Contact Us', 'Call Now'].includes(this.props?.label) ? 'Schedule Now' : this.props?.label
-    },
-    themeColors () {
-      const theme = getThemeJSON()
-      return theme.default?.colors || []
-    },
-    buttonStyles () {
-      const style = this.props?.style || 'primary'
-      let bgColorLabel = 'secondary'
-
-      if (style === 'secondary') {
-        bgColorLabel = 'primary'
-      } else if (style === 'primary') {
-        bgColorLabel = 'secondary'
-      }
-
-      const bgColor = this.themeColors.find(c => c.label === bgColorLabel)
-      if (!bgColor) { return {} }
-
-      return {
-        '--block-btn-bg': bgColor.hex,
-        '--block-btn-text': bgColor.accessibility?.recommendedTextColor || '#ffffff'
-      }
     }
   },
   async fetch () {

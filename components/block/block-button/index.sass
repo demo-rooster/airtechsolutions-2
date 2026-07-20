@@ -4,12 +4,12 @@
   &__button
     cursor: pointer
     width: fit-content
-    @include button-primary(var(--block-btn-bg, var(--secondary)), var(--block-btn-text, #ffffff), transparent, var(--text), var(--text))
-    color: var(--block-btn-text, #ffffff)
+    @include button-primary
+    color: var(--btn-text)
 
     &--secondary
-      @include button-secondary(var(--block-btn-bg, var(--primary)), var(--block-btn-text, #ffffff))
-      color: var(--block-btn-text, #ffffff) !important
+      @include button-secondary(var(--primary), $white, var(--btn-hover-background), var(--btn-hover-text))
+      color: $white !important
 
     &--underline
       @include button-underline($gray, #{var(--primary)})

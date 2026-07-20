@@ -13,9 +13,8 @@
   @include phone-land-lg
     height: rem-calc(65)
 
-  // Global protection for logo SVG colors - prevent any CSS variables from interfering
+  // Keep element color roles from overriding the logo-specific theme colors
   .navigation__logo svg, .navigation__logo-mobile svg
-    // Reset CSS variables that might affect logo fill colors
     --accent: initial !important
     --primary: initial !important
     --text: initial !important
@@ -47,7 +46,7 @@
         padding-bottom: 0.5rem
 
   &--dark
-    background: var(--topbar-dark)
+    background: var(--header-footer)
     .navigation__link
       color: $white
       &:after
@@ -111,7 +110,7 @@
       height: 100%
 
       .ats-logo-text .cls-1
-        fill: url(#ats-logo-green-gradient) !important
+        fill: url(#ats-logo-lettering-gradient) !important
 
     // When navigation is floating, it uses the white logo version
     .navigation--floating &
@@ -121,7 +120,7 @@
         filter: brightness(0) invert(1)
       svg
         .ats-logo-text .cls-1
-          fill: #fff !important
+          fill: url(#ats-logo-base-gradient) !important
 
   &__logo-mobile
     margin-left: 1rem
@@ -344,7 +343,7 @@
     text-decoration: none
 
     .navigation--dark &
-      background: #8ab73d
+      background: var(--secondary)
       color: $white
 
     .navigation--floating &
@@ -439,9 +438,9 @@
       transform: translateX(0)
 
     &--dark
-      background: var(--topbar-dark)
+      background: var(--header-footer)
       .navigation__header
-        background: var(--topbar-dark)
+        background: var(--header-footer)
         box-shadow: none
       .navigation__drawer-close
         background: transparent
@@ -450,7 +449,7 @@
           background: rgba(255, 255, 255, 0.15)
           color: $white
       .navigation__content-container
-        background: var(--topbar-dark)
+        background: var(--header-footer)
       .navigation__mobile-link
         color: $white
         &:hover, &:focus

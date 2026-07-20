@@ -1,0 +1,25 @@
+.customization-scheme-picker(:class="{ 'customization-scheme-picker--compact': compact }")
+  .customization-scheme-picker__row(v-for='variant in variants', :key='variant')
+    span.customization-scheme-picker__row-label(v-html='variantLabel(variant)')
+    button.customization-scheme-picker__swatch(
+      v-for='family in scheme',
+      :key='`${family.key}-${variant}`',
+      type='button',
+      :class='swatchClasses(family, variant)',
+      :style='swatchStyle(family, variant)',
+      :aria-label='swatchLabel(family, variant)',
+      :title='swatchLabel(family, variant)',
+      :aria-pressed='isSelected(family, variant).toString()',
+      :disabled='isDisabled(family)',
+      @click='selectSwatch(family, variant)'
+    )
+      svg.customization-scheme-picker__lock(v-if='family.locked' viewBox='0 0 12 12' aria-hidden='true')
+        path(d='M3.75 5.25V3.75a2.25 2.25 0 014.5 0v1.5' fill='none' stroke='currentColor' stroke-width='1.2' stroke-linecap='round')
+        rect(x='2.4' y='5.25' width='7.2' height='5' rx='1' fill='currentColor')
+  button.customization-scheme-picker__transparent(
+    v-if='showTransparent',
+    type='button',
+    :class="{ 'customization-scheme-picker__transparent--selected': transparentSelected }",
+    :aria-pressed='transparentSelected.toString()',
+    @click='selectTransparent'
+  ) Transparent

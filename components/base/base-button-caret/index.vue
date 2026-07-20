@@ -1,8 +1,6 @@
 <template lang="pug" src="./index.pug" ></template>
 
 <script>
-import { getThemeJSON } from '~/resources/utils'
-
 export default {
   props: {
     props: {
@@ -15,16 +13,8 @@ export default {
     }
   },
   computed: {
-    themeColor () {
-      const theme = getThemeJSON()
-      const colors = theme.default?.colors || []
-      return colors.find(c => c.label === this.variant) || colors.find(c => c.label === 'primary')
-    },
-    textColor () {
-      return this.themeColor?.hex || '#272727'
-    },
     buttonStyles () {
-      return { '--caretBtnClr': this.textColor }
+      return { '--caretBtnClr': `var(--${this.variant}, #272727)` }
     }
   },
   methods: {

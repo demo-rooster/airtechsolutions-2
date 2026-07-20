@@ -1,0 +1,499 @@
+mixin element-color-rows(rowsExpr)
+  .customization-toolbar__default(v-for=`role in ${rowsExpr}`, :key='role.key')
+    button.customization-toolbar__default-row(
+      type='button',
+      :class="{ 'customization-toolbar__default-row--active': activeRoleKey === role.key }",
+      :aria-expanded='(activeRoleKey === role.key).toString()',
+      :aria-label='`Choose a scheme color for ${role.name}`',
+      @click='toggleRolePicker(role.key)'
+    )
+      span.customization-toolbar__default-info
+        span.customization-toolbar__label-text(v-html='role.name')
+        span.customization-toolbar__description(v-if='role.description' v-html='role.description')
+      span.customization-toolbar__default-value
+        span.customization-toolbar__hex(v-if='role.isTransparent') Transparent
+        span.customization-toolbar__hex(v-else v-html='role.hex')
+        span.customization-toolbar__default-chip(
+          :class="{ 'customization-toolbar__default-chip--transparent': role.isTransparent }",
+          :style='role.chipStyle',
+          aria-hidden='true'
+        )
+    .customization-toolbar__default-picker(v-if='activeRoleKey === role.key')
+      CustomizationSchemePicker(
+        :scheme='themeScheme',
+        :selected-ref='role.ref',
+        :show-transparent='!!role.allowsTransparent',
+        compact,
+        @select='assignRole'
+      )
+
+.customization-toolbar(:class="{ 'customization-toolbar--open': isOpen }")
+  section#customization-toolbar-panel.customization-toolbar__panel(:aria-hidden='(!isOpen).toString()')
+    .customization-toolbar__header
+      .customization-toolbar__brand
+        BaseIcon.customization-toolbar__brand-logo(name='rg-logo-purple')
+        h2.customization-toolbar__title STINSON
+      .customization-toolbar__header-actions
+        button.customization-toolbar__share-button(
+          type='button',
+          :aria-label="shareThemeCopied ? 'Theme copied to your clipboard' : 'Copy the current theme to your clipboard'",
+          :title="shareThemeCopied ? 'Theme copied!' : 'Share theme'",
+          @click='shareTheme'
+        )
+          span.customization-toolbar__share-check(v-if='shareThemeCopied' aria-hidden='true') &#10003;
+          BaseIcon.customization-toolbar__share-icon(v-else name='toolbar-share')
+        button.customization-toolbar__close(
+          type='button',
+          aria-label='Close customization toolbar',
+          @click='toggleToolbar'
+        )
+          span(aria-hidden='true') &times;
+
+    .customization-toolbar__theme-controls
+      .customization-toolbar__theme-slot(v-for='themePreset in themePresetButtons', :key='themePreset.name')
+        button.customization-toolbar__theme-button(
+          type='button',
+          :class="{ 'customization-toolbar__theme-button--active': activeThemeName === themePreset.name }",
+          @click='setThemePreset(themePreset.name)',
+          v-html='themePreset.label'
+        )
+        transition(name='toolbar-fade')
+          button.customization-toolbar__save-badge(
+            v-if='activeThemeName === themePreset.name && hasUnsavedChanges',
+            type='button',
+            :aria-label='`Save changes to ${themePreset.label}`',
+            :title='`Save changes to ${themePreset.label}`',
+            @click='saveActiveThemePreset'
+          )
+            BaseIcon.customization-toolbar__save-icon(name='toolbar-save')
+
+    .customization-toolbar__history
+      button.customization-toolbar__history-button(
+        type='button',
+        aria-label='Undo last theme change',
+        :disabled='!undoStack.length',
+        @click='undoThemeChange'
+      ) Undo
+      button.customization-toolbar__history-button(
+        type='button',
+        aria-label='Redo theme change',
+        :disabled='!redoStack.length',
+        @click='redoThemeChange'
+      ) Redo
+
+    .customization-toolbar__tabs(role='tablist' aria-label='Customization sections')
+      button.customization-toolbar__tab(
+        v-for='tab in tabs',
+        :key='tab.key',
+        type='button',
+        role='tab',
+        :aria-selected='(activeTab === tab.key).toString()',
+        :class="{ 'customization-toolbar__tab--active': activeTab === tab.key }",
+        @click='activeTab = tab.key',
+        v-html='tab.label'
+      )
+
+    .customization-toolbar__colors(v-if="activeTab === 'colors'")
+      .customization-toolbar__scheme
+        h3.customization-toolbar__section-title Color scheme
+        p.customization-toolbar__hint Pick a swatch to edit it. Elements below use these scheme colors.
+        CustomizationSchemePicker(
+          :scheme='themeScheme',
+          :selected-ref='activeSlotRef',
+          @select='toggleSlotEditor'
+        )
+
+        .customization-toolbar__slot-editor(v-if='activeSlot')
+          .customization-toolbar__slot-editor-top
+            .customization-toolbar__label-row
+              span.customization-toolbar__label-text(v-html='activeSlotName')
+              span.customization-toolbar__hex(v-if='!activeSlotGradientEnabled' v-html='activeSlotHex')
+            button.customization-toolbar__slot-close(
+              type='button',
+              aria-label='Close color editor',
+              @click='closeSlotEditor'
+            )
+              span(aria-hidden='true') &times;
+
+          template(v-if='activeSlotLocked')
+            p.customization-toolbar__hint White and black are fixed anchors of every scheme. Copy them onto other swatches instead.
+            .customization-toolbar__controls.customization-toolbar__controls--locked
+              button.customization-toolbar__copy-button(
+                type='button',
+                :aria-label='copyButtonLabel()',
+                @click='copySlotColor'
+              ) Copy
+
+          template(v-else)
+            .customization-toolbar__segmented(
+              v-if='activeSlotAllowsGradient',
+              role='group',
+              :aria-label='`Fill style for ${activeSlotName}`'
+            )
+              button.customization-toolbar__segmented-button(
+                v-for='mode in fillModeOptions',
+                :key='`slot-mode-${mode.value}`',
+                type='button',
+                :class="{ 'customization-toolbar__segmented-button--active': activeSlotGradientEnabled === mode.value }",
+                :aria-pressed='(activeSlotGradientEnabled === mode.value).toString()',
+                @click='setSlotGradientEnabled(mode.value)',
+                v-html='mode.label'
+              )
+            .customization-toolbar__controls(v-if='!activeSlotGradientEnabled')
+              input.customization-toolbar__input(
+                id='customization-toolbar-slot-input',
+                type='color',
+                :value='activeSlotHex',
+                :aria-label='`Color for ${activeSlotName}`',
+                @input='handleSchemeColorInput($event.target.value)'
+              )
+              button.customization-toolbar__copy-button(
+                type='button',
+                :aria-label='copyButtonLabel()',
+                @click='copySlotColor'
+              ) Copy
+              button.customization-toolbar__apply-button(
+                type='button',
+                :aria-label='applyButtonLabel()',
+                :disabled='!copiedColor',
+                @click='applyCopiedColor'
+              ) Apply
+            .customization-toolbar__gradient-editor(v-else)
+              .customization-toolbar__gradient-preview(
+                :style='slotGradientPreviewStyle()',
+                aria-hidden='true'
+              )
+              .customization-toolbar__select-row
+                span.customization-toolbar__select-label Style
+                .customization-toolbar__segmented(role='group' :aria-label='`Gradient type for ${activeSlotName}`')
+                  button.customization-toolbar__segmented-button(
+                    v-for='gradientType in gradientTypeOptions',
+                    :key='`slot-type-${gradientType.value}`',
+                    type='button',
+                    :class="{ 'customization-toolbar__segmented-button--active': activeSlotGradient.type === gradientType.value }",
+                    :aria-pressed='(activeSlotGradient.type === gradientType.value).toString()',
+                    @click='setSlotGradientType(gradientType.value)',
+                    v-html='gradientType.label'
+                  )
+              .customization-toolbar__slider-row(v-if="activeSlotGradient.type === 'linear'")
+                span.customization-toolbar__select-label Direction
+                input.customization-toolbar__angle-slider(
+                  type='range',
+                  min='0',
+                  max='360',
+                  step='5',
+                  :value='activeSlotGradient.angle',
+                  :aria-label='`Gradient direction for ${activeSlotName} in degrees`',
+                  @input='handleSlotGradientAngleInput($event.target.value)'
+                )
+                span.customization-toolbar__angle-value(v-html='`${activeSlotGradient.angle}&deg;`')
+              label.customization-toolbar__select-row(v-else)
+                span.customization-toolbar__select-label Focus point
+                select.customization-toolbar__select(
+                  :value='activeSlotGradient.position',
+                  @change='handleSlotGradientPositionInput($event.target.value)'
+                )
+                  option(
+                    v-for='position in radialPositionOptions',
+                    :key='position.value',
+                    :value='position.value',
+                    v-html='position.label'
+                  )
+              .customization-toolbar__gradient-stops
+                .customization-toolbar__gradient-stop(
+                  v-for='(stop, stopIndex) in activeSlotGradient.colors',
+                  :key='`slot-stop-${stopIndex}`'
+                )
+                  input.customization-toolbar__stop-input(
+                    type='color',
+                    :value='stop',
+                    :aria-label='`Gradient color ${stopIndex + 1} for ${activeSlotName}`',
+                    @input='handleSlotGradientStopInput(stopIndex, $event.target.value)'
+                  )
+                  button.customization-toolbar__stop-remove(
+                    v-if='canRemoveSlotGradientStop()',
+                    type='button',
+                    :aria-label='`Remove gradient color ${stopIndex + 1} from ${activeSlotName}`',
+                    @click='removeSlotGradientStop(stopIndex)'
+                  )
+                    span(aria-hidden='true') &times;
+                button.customization-toolbar__stop-add(
+                  v-if='canAddSlotGradientStop()',
+                  type='button',
+                  :aria-label='`Add a gradient color to ${activeSlotName}`',
+                  @click='addSlotGradientStop()'
+                ) + Color
+
+      .customization-toolbar__defaults
+        h3.customization-toolbar__section-title Element colors
+        .customization-toolbar__category-tabs(role='group' aria-label='Element color categories')
+          button.customization-toolbar__category-button(
+            v-for='category in roleCategories',
+            :key='category.key',
+            type='button',
+            :class="{ 'customization-toolbar__category-button--active': activeRoleCategory === category.key }",
+            :aria-pressed='(activeRoleCategory === category.key).toString()',
+            @click='setRoleCategory(category.key)',
+            v-html='category.label'
+          )
+        template(v-if="activeRoleCategory === 'logo'")
+          .customization-toolbar__default(v-for='paint in logoPaintRows', :key='paint.key')
+            button.customization-toolbar__default-row(
+              type='button',
+              :class="{ 'customization-toolbar__default-row--active': activeLogoPaintKey === paint.key }",
+              :aria-expanded='(activeLogoPaintKey === paint.key).toString()',
+              :aria-label='`Edit ${paint.name} logo paint`',
+              @click='toggleLogoPaintEditor(paint.key)'
+            )
+              span.customization-toolbar__default-info
+                span.customization-toolbar__label-text(v-html='paint.name')
+                span.customization-toolbar__description(v-html='paint.description')
+              span.customization-toolbar__default-value
+                span.customization-toolbar__logo-paint-meta(v-html='`${paint.source === "theme" ? "Theme" : "Custom"} / ${paint.mode === "gradient" ? "Gradient" : "Solid"}`')
+                span.customization-toolbar__default-chip(:style='paint.chipStyle' aria-hidden='true')
+
+            .customization-toolbar__logo-paint-editor(v-if='activeLogoPaintKey === paint.key')
+              .customization-toolbar__select-row
+                span.customization-toolbar__select-label Source
+                .customization-toolbar__segmented(role='group' :aria-label='`Color source for ${paint.name}`')
+                  button.customization-toolbar__segmented-button(
+                    v-for='option in logoSourceOptions',
+                    :key='`${paint.key}-source-${option.value}`',
+                    type='button',
+                    :class="{ 'customization-toolbar__segmented-button--active': paint.source === option.value }",
+                    :aria-pressed='(paint.source === option.value).toString()',
+                    @click='setLogoPaintSource(option.value)',
+                    v-html='option.label'
+                  )
+              .customization-toolbar__select-row
+                span.customization-toolbar__select-label Fill
+                .customization-toolbar__segmented(role='group' :aria-label='`Fill mode for ${paint.name}`')
+                  button.customization-toolbar__segmented-button(
+                    v-for='option in logoFillModeOptions',
+                    :key='`${paint.key}-mode-${option.value}`',
+                    type='button',
+                    :class="{ 'customization-toolbar__segmented-button--active': paint.mode === option.value }",
+                    :aria-pressed='(paint.mode === option.value).toString()',
+                    @click='setLogoPaintMode(option.value)',
+                    v-html='option.label'
+                  )
+
+              .customization-toolbar__logo-color-list
+                .customization-toolbar__logo-color-row(v-for='colorIndex in activeLogoColorIndexes', :key='`${paint.key}-color-${colorIndex}`')
+                  span.customization-toolbar__logo-color-label(v-html='paint.mode === "gradient" ? `Stop ${colorIndex + 1}` : "Color"')
+                  CustomizationSchemePicker(
+                    v-if="paint.source === 'theme'",
+                    :scheme='themeScheme',
+                    :selected-ref='paint.themeRefs[colorIndex]',
+                    compact,
+                    @select='setLogoThemeRef(colorIndex, $event)'
+                  )
+                  input.customization-toolbar__stop-input.customization-toolbar__logo-custom-input(
+                    v-else,
+                    type='color',
+                    :value='paint.customColors[colorIndex]',
+                    :aria-label='`${paint.name} ${paint.mode === "gradient" ? `gradient stop ${colorIndex + 1}` : "color"}`',
+                    @input='setLogoCustomColor(colorIndex, $event.target.value)'
+                  )
+        template(v-else)
+          +element-color-rows('visibleRoleRows')
+
+    .customization-toolbar__header-settings(v-else-if="activeTab === 'header' && themeHeader")
+      label.customization-toolbar__toggle-row
+        span.customization-toolbar__toggle-label Show topbar
+        input.customization-toolbar__toggle-input(
+          type='checkbox',
+          :checked='themeHeader.enable_top_bar',
+          @change="updateThemeHeader({ enable_top_bar: $event.target.checked }, 'header:enable', true)"
+        )
+
+      template(v-if='themeHeader.enable_top_bar')
+        label.customization-toolbar__select-row
+          span.customization-toolbar__select-label Content type
+          select.customization-toolbar__select(
+            :value='themeHeader.type',
+            @change="updateThemeHeader({ type: $event.target.value }, 'header:type', true)"
+          )
+            option(
+              v-for='option in headerTypeOptions',
+              :key='option.value',
+              :value='option.value',
+              v-html='option.label'
+            )
+
+        label.customization-toolbar__select-row
+          span.customization-toolbar__select-label Style
+          select.customization-toolbar__select(
+            :value='themeHeader.theme',
+            @change="updateThemeHeader({ theme: $event.target.value }, 'header:theme', true)"
+          )
+            option(
+              v-for='option in headerThemeOptions',
+              :key='option.value',
+              :value='option.value',
+              v-html='option.label'
+            )
+
+        .customization-toolbar__select-row
+          span.customization-toolbar__select-label Alignment
+          .customization-toolbar__alignment-buttons(role='group' aria-label='Topbar content alignment')
+            button.customization-toolbar__alignment-button(
+              v-for='option in headerAlignmentOptions',
+              :key='option.value',
+              type='button',
+              :class="{ 'customization-toolbar__alignment-button--active': themeHeader.content_alignment === option.value }",
+              :aria-pressed='(themeHeader.content_alignment === option.value).toString()',
+              :aria-label='`Align topbar content ${option.value}`',
+              :title='option.label',
+              @click="updateThemeHeader({ content_alignment: option.value }, 'header:alignment', true)"
+            )
+              BaseIcon.customization-toolbar__alignment-icon(:name='`toolbar-align-${option.value}`')
+
+        .customization-toolbar__defaults
+          h3.customization-toolbar__section-title Top bar colors
+          +element-color-rows('topbarRoleRows')
+
+        template(v-if="themeHeader.type === 'links'")
+          .customization-toolbar__link-card(v-for='(link, i) in topbarLinks', :key='`topbar-link-${i}`')
+            .customization-toolbar__link-card-top
+              span.customization-toolbar__link-card-title(v-html='`Link ${i + 1}`')
+              button.customization-toolbar__remove-button(
+                type='button',
+                :aria-label='`Remove link ${i + 1}`',
+                @click='removeTopbarLink(i)'
+              ) Remove
+            label.customization-toolbar__text-field
+              span.customization-toolbar__text-field-label Text
+              input.customization-toolbar__text-input(
+                type='text',
+                :value='link.text',
+                @input='updateTopbarLink(i, { text: $event.target.value, label: $event.target.value }, `header:link-${i}-text`)'
+              )
+            label.customization-toolbar__text-field
+              span.customization-toolbar__text-field-label Link (URL, tel: or mailto:)
+              input.customization-toolbar__text-input(
+                type='text',
+                :value='link.href',
+                @input='updateTopbarLink(i, { href: $event.target.value }, `header:link-${i}-href`)'
+              )
+            label.customization-toolbar__select-row
+              span.customization-toolbar__select-label Icon
+              select.customization-toolbar__select(
+                :value='link.icon',
+                @change='updateTopbarLink(i, { icon: $event.target.value }, `header:link-${i}-icon`, true)'
+              )
+                option(
+                  v-for='option in headerIconOptions',
+                  :key='option.value',
+                  :value='option.value',
+                  v-html='option.label'
+                )
+            label.customization-toolbar__check-field
+              input.customization-toolbar__check-input(
+                type='checkbox',
+                :checked='link.new_window',
+                @change='updateTopbarLink(i, { new_window: $event.target.checked }, `header:link-${i}-window`, true)'
+              )
+              span.customization-toolbar__check-label Open in new window
+          button.customization-toolbar__add-button(
+            type='button',
+            @click='addTopbarLink'
+          ) + Add link
+
+        template(v-else-if="themeHeader.type === 'announcement'")
+          label.customization-toolbar__select-row
+            span.customization-toolbar__select-label Icon
+            select.customization-toolbar__select(
+              :value='headerAnnouncement.icon',
+              @change="updateAnnouncement({ icon: $event.target.value }, 'header:announcement-icon', true)"
+            )
+              option(
+                v-for='option in headerIconOptions',
+                :key='option.value',
+                :value='option.value',
+                v-html='option.label'
+              )
+          label.customization-toolbar__text-field
+            span.customization-toolbar__text-field-label Text
+            input.customization-toolbar__text-input(
+              type='text',
+              :value='headerAnnouncement.text',
+              @input="updateAnnouncement({ text: $event.target.value, label: $event.target.value }, 'header:announcement-text')"
+            )
+          label.customization-toolbar__text-field
+            span.customization-toolbar__text-field-label Mobile text
+            input.customization-toolbar__text-input(
+              type='text',
+              :value='headerAnnouncement.mobile_text',
+              @input="updateAnnouncement({ mobile_text: $event.target.value }, 'header:announcement-mobile-text')"
+            )
+          label.customization-toolbar__toggle-row
+            span.customization-toolbar__toggle-label Open pop-up when clicked
+            input.customization-toolbar__toggle-input(
+              type='checkbox',
+              :checked='headerAnnouncement.open_popup',
+              @change="updateAnnouncement({ open_popup: $event.target.checked }, 'header:announcement-popup', true)"
+            )
+          p.customization-toolbar__hint Edit the pop-up content in the Pop-Up tab.
+
+    .customization-toolbar__popup-settings(v-else-if="activeTab === 'popup' && themePopup")
+      label.customization-toolbar__toggle-row
+        span.customization-toolbar__toggle-label Show pop-up
+        input.customization-toolbar__toggle-input(
+          type='checkbox',
+          :checked='themePopup.enable_popup',
+          @change="updateThemePopup({ enable_popup: $event.target.checked }, 'popup:enable', true)"
+        )
+
+      .customization-toolbar__matrix(v-if='themePopup.enable_popup' role='radiogroup' aria-label='When to show the pop-up')
+        span.customization-toolbar__matrix-corner(aria-hidden='true')
+        span.customization-toolbar__matrix-col-label(
+          v-for='col in popupFrequencyOptions',
+          :key='`popup-col-${col.value}`',
+          v-html='col.label'
+        )
+        template(v-for='row in popupPageOptions')
+          span.customization-toolbar__matrix-row-label(:key='`popup-row-${row.value}`' v-html='row.label')
+          label.customization-toolbar__matrix-cell(
+            v-for='col in popupFrequencyOptions',
+            :key='`popup-cell-${row.value}-${col.value}`'
+          )
+            input.customization-toolbar__matrix-radio(
+              type='radio',
+              name='customization-toolbar-popup-matrix',
+              :checked='popupPagesValue === row.value && popupFrequencyValue === col.value',
+              :aria-label='`Show pop-up on ${row.label.toLowerCase()}, ${col.label.toLowerCase()}`',
+              @change='updateThemePopup({ pages: row.value, frequency: col.value }, "popup:matrix", true)'
+            )
+
+      p.customization-toolbar__hint When enabled, the pop-up opens automatically based on the settings above. It can also open from the topbar announcement &mdash; see the Header tab.
+
+      label.customization-toolbar__text-field
+        span.customization-toolbar__text-field-label Title
+        input.customization-toolbar__text-input(
+          type='text',
+          :value='themePopup.title',
+          @input="updateThemePopup({ title: $event.target.value }, 'popup:title')"
+        )
+      label.customization-toolbar__text-field
+        span.customization-toolbar__text-field-label Text
+        textarea.customization-toolbar__textarea(
+          rows='5',
+          :value='themePopup.text',
+          @input="updateThemePopup({ text: $event.target.value }, 'popup:text')"
+        )
+
+      .customization-toolbar__defaults
+        h3.customization-toolbar__section-title Pop-up colors
+        +element-color-rows('popupRoleRows')
+
+  .customization-toolbar__rail
+    BaseIcon.customization-toolbar__logo(name='rg-logo-purple')
+    button.customization-toolbar__toggle(
+      type='button',
+      aria-controls='customization-toolbar-panel',
+      :aria-expanded='isOpen.toString()',
+      :aria-label="isOpen ? 'Close theme panel' : 'Open theme panel'",
+      @click='toggleToolbar'
+    )
+      BaseIcon.customization-toolbar__toggle-icon(name='toolbar-caret')

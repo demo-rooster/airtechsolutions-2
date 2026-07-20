@@ -1,13 +1,15 @@
 <template lang='pug' src='./index.pug'></template>
 
 <script>
-import { bodyScroll, removeFocus, trapFocus } from '~/resources/mixins'
+import Popup from '~/components/popup'
+import { removeFocus } from '~/resources/mixins'
 
 export default {
+  components: {
+    Popup
+  },
   mixins: [
-    bodyScroll,
-    removeFocus,
-    trapFocus
+    removeFocus
   ],
   props: {
     props: {
@@ -19,6 +21,21 @@ export default {
     modalOpen: false,
     windowWidth: null
   }),
+  computed: {
+    popupContent () {
+      return this.$store.state.theme?.popup || this.props.announcement?.modal || null
+    },
+    canOpenPopup () {
+      return this.props.type === 'announcement' && !!this.props.announcement?.open_popup && !!this.popupContent
+    },
+    barClasses () {
+      return [
+        `topbar__bar--${this.props.theme}`,
+        `topbar__bar--${this.props.type}`,
+        { 'topbar__bar--clickable': this.canOpenPopup }
+      ]
+    }
+  },
   mounted () {
     this.setWindowWidth()
     window.addEventListener('resize', this.setWindowWidth)
@@ -32,7 +49,6 @@ export default {
     },
     openModal () {
       this.modalOpen = true
-      this.$_stopBodyScroll()
       this.$_removeFocus()
     }
   }

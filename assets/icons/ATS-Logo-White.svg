@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 254.79">
   <defs>
-    <linearGradient id="ats-logo-green-gradient" x1="0" y1="0" x2="360" y2="254.79" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#d4ef73"/>
-      <stop offset="0.48" stop-color="#8ab73d"/>
-      <stop offset="1" stop-color="#4f7f22"/>
+    <linearGradient id="ats-logo-base-gradient" x1="0" y1="0" x2="360" y2="254.79" gradientUnits="userSpaceOnUse">
+      <stop class="ats-logo-base-1" offset="0"/>
+      <stop class="ats-logo-base-2" offset="0.5"/>
+      <stop class="ats-logo-base-3" offset="1"/>
+    </linearGradient>
+    <linearGradient id="ats-logo-lettering-gradient" x1="0" y1="0" x2="360" y2="254.79" gradientUnits="userSpaceOnUse">
+      <stop class="ats-logo-lettering-1" offset="0"/>
+      <stop class="ats-logo-lettering-2" offset="0.48"/>
+      <stop class="ats-logo-lettering-3" offset="1"/>
     </linearGradient>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: url(#ats-logo-base-gradient);
       }
 
       .ats-logo-text .cls-1 {
-        fill: url(#ats-logo-green-gradient);
+        fill: url(#ats-logo-lettering-gradient);
+      }
+
+      .ats-logo-base-1 {
+        stop-color: var(--logo-base-1, #fff);
+      }
+
+      .ats-logo-base-2 {
+        stop-color: var(--logo-base-2, #fff);
+      }
+
+      .ats-logo-base-3 {
+        stop-color: var(--logo-base-3, #fff);
+      }
+
+      .ats-logo-lettering-1 {
+        stop-color: var(--logo-lettering-1, #d4ef73);
+      }
+
+      .ats-logo-lettering-2 {
+        stop-color: var(--logo-lettering-2, #8ab73d);
+      }
+
+      .ats-logo-lettering-3 {
+        stop-color: var(--logo-lettering-3, #4f7f22);
       }
     </style>
   </defs>

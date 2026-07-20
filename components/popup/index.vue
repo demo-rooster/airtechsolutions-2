@@ -17,6 +17,17 @@ export default {
   mounted () {
     this.$_stopBodyScroll()
     this.popupActive = true
+  },
+  beforeDestroy () {
+    if (this.popupActive) {
+      this.$_resetBodyScroll()
+    }
+  },
+  methods: {
+    handleClose (value) {
+      this.popupActive = value
+      this.$emit('closemodal', value)
+    }
   }
 }
 </script>

@@ -1,0 +1,95 @@
+.customization-context-menu
+  --toolbar-purple: #4d4ec1
+  --toolbar-purple-soft: rgba(77, 78, 193, .12)
+  --toolbar-text: #28262f
+  display: grid
+  position: fixed
+  z-index: 720
+  gap: rem-calc(8)
+  border: rem-calc(1) solid var(--toolbar-purple-soft)
+  border-radius: rem-calc(8)
+  box-shadow: 0 rem-calc(14) rem-calc(36) rgba($black, .2)
+  background: $white
+  padding: rem-calc(10)
+  width: rem-calc(248)
+  max-height: calc(100vh - #{rem-calc(16)})
+  overflow-y: auto
+  font-family: var(--font)
+
+  &__header
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    gap: rem-calc(8)
+
+  &__role
+    color: var(--toolbar-text)
+    font-size: rem-calc(12)
+    font-weight: 800
+
+  &__section
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    color: rgba($black, .48)
+    font-size: rem-calc(10)
+    font-weight: 700
+
+  &__modes
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    border: rem-calc(1) solid var(--toolbar-purple-soft)
+    border-radius: rem-calc(4)
+    background: rgba($black, .035)
+    padding: rem-calc(2)
+
+  &__mode
+    border: 0
+    border-radius: rem-calc(3)
+    background: transparent
+    cursor: pointer
+    padding: rem-calc(6) rem-calc(8)
+    color: rgba($black, .58)
+    font-family: var(--font)
+    font-size: rem-calc(10.5)
+    font-weight: 800
+
+    &--active
+      box-shadow: 0 rem-calc(1) rem-calc(3) rgba($black, .14)
+      background: $white
+      color: var(--toolbar-purple)
+
+  &__role-editor
+    display: grid
+    gap: rem-calc(6)
+
+    & + &
+      border-top: rem-calc(1) solid var(--toolbar-purple-soft)
+      padding-top: rem-calc(8)
+
+  &__role-editor-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: rem-calc(8)
+
+  &__role-name
+    color: var(--toolbar-text)
+    font-size: rem-calc(11.5)
+    font-weight: 800
+
+  &__reset
+    border: 0
+    border-radius: rem-calc(999)
+    background: var(--toolbar-purple-soft)
+    cursor: pointer
+    padding: rem-calc(6) rem-calc(8)
+    min-height: rem-calc(28)
+    color: var(--toolbar-purple)
+    font-family: var(--font)
+    font-size: rem-calc(10.5)
+    font-weight: 800
+
+    &:disabled
+      opacity: .42
+      cursor: not-allowed

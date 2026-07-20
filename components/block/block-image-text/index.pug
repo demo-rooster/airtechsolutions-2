@@ -27,9 +27,9 @@ article.block-image-text(:class="props.background && props.has_background ? 'blo
       BaseIcon.block-image-text__video-button-icon(name='play-button')
   .block-image-text__container(:class="{ 'block-image-text__container--reverse': props.reverse }")
     .block-image-text__left(v-if='!props.large_image')
-      .block-image-text__image-container(:style="{ height: contentHeight }")
+      .block-image-text__image-container(:class="{ 'block-image-text__image-container--logos': props.logos && props.logos.length }", :style="{ height: contentHeight }")
         BaseImage.block-image-text__image(
-          v-if='!props.is_dynamic',
+          v-if='!props.is_dynamic && !(props.logos && props.logos.length)',
           :src='props.image.src',
           :webp='props.image.webp',
           :alt='props.image.alt',
@@ -37,6 +37,13 @@ article.block-image-text(:class="props.background && props.has_background ? 'blo
           imageBackground, :object-position="'center top'",
           :bgColor='props.image.loading_mask ? props.image.loading_mask : null'
         )
+        .block-image-text__logo-column(v-if='props.logos && props.logos.length')
+          img.block-image-text__logo(
+            v-for='(logo, i) in props.logos',
+            :key='`image-text-logo-${i}`',
+            :src='logo.src',
+            :alt='logo.alt'
+          )
         .block-image-text__dynamic-images(v-if='props.is_dynamic')
           BaseImage.block-image-text__image(
             v-for='(accordion, i) in props.accordion',

@@ -8,16 +8,16 @@
 
   &__cta
     @include hover-supported
-      border: 2px solid var(--text)
-      background: transparent
-      color: var(--text)
+      border: 2px solid var(--btn-hover-text)
+      background: var(--btn-hover-background)
+      color: var(--btn-hover-text)
     display: block
     transition: color .2s ease, background .2s ease, border .2s ease
-    border: 2px solid var(--btn-bg, var(--secondary))
-    background: var(--btn-bg, var(--secondary))
+    border: 2px solid var(--btn-background)
+    background: var(--btn-background)
     padding: rem-calc(10) rem-calc(28)
     text-transform: uppercase
-    color: var(--btn-text, #ffffff)
+    color: var(--btn-text)
     font-size: rem-calc(15)
     font-weight: 600
     -webkit-tap-highlight-color: transparent

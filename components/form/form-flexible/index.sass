@@ -305,20 +305,20 @@
     @include focus
     position: relative
     transition: background .2s ease, color .2s ease, border-color .2s ease
-    border: solid rem-calc(2) var(--secondary)
-    background: var(--secondary)
+    border: solid rem-calc(2) var(--btn-background)
+    background: var(--btn-background)
     cursor: pointer
     padding: 0
     overflow: hidden
-    color: $black
+    color: var(--btn-text)
 
     &:active
       outline: transparent
 
     &:hover
-      border-color: var(--text)
-      background: transparent
-      color: var(--text)
+      border-color: var(--btn-hover-text)
+      background: var(--btn-hover-background)
+      color: var(--btn-hover-text)
 
     &--sending
       background: $gray

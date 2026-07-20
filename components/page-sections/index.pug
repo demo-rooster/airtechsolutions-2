@@ -2,9 +2,10 @@
   .page-sections__section-container(
     v-for='(section, i) in props',
     :key='`section-${i}`',
-    :class='[(section.has_background || section.background_type === "has_background") && section.background ? `bg--${section.background}` : null]'
+    :class='[(section.has_background || section.background_type === "has_background") && section.background ? `bg--${section.background}` : null]',
+    :style='sectionStyle(section, i)'
   )
-    .page-sections__section(:id='section.component_options && section.component_options.hash ? section.component_options.hash : `${section.acf_fc_layout}-${i}`')
+    .page-sections__section(:id='sectionId(section, i)')
       div(v-if='section.acf_fc_layout === null')
       BlockAccordionFull(v-else-if='section.acf_fc_layout === "accordion" && !section.hide_component',
         :class='`component-padding--` + section.component_padding',

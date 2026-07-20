@@ -272,15 +272,6 @@
     .base-button__cta
       color: $white
 
-    .block-button__button
-      border-color: #8ab73d
-      background: #8ab73d
-
-      @include hover-supported
-        background: #8ab73d
-        border-color: #8ab73d
-        color: $white
-
   &__service-icons
     --service-icons-bottom-space: 1rem
     position: absolute
@@ -347,7 +338,7 @@
       transform: translateY(rem-calc(-3))
 
       .hero-main__service-icon-image
-        background: rgb(138, 183, 61)
+        background: var(--secondary)
 
     &:focus-visible
       outline: rem-calc(2) solid $white

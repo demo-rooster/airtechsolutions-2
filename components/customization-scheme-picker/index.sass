@@ -1,0 +1,81 @@
+.customization-scheme-picker
+  --scheme-picker-accent: #4d4ec1
+  display: grid
+  gap: rem-calc(6)
+
+  &--compact
+    gap: rem-calc(4)
+
+    .customization-scheme-picker__row
+      gap: rem-calc(4)
+
+    .customization-scheme-picker__row-label
+      flex: 0 0 rem-calc(28)
+      font-size: rem-calc(9)
+
+    .customization-scheme-picker__swatch
+      height: rem-calc(24)
+
+    .customization-scheme-picker__transparent
+      min-height: rem-calc(26)
+
+  &__row
+    display: flex
+    align-items: center
+    gap: rem-calc(6)
+
+  &__row-label
+    flex: 0 0 rem-calc(32)
+    text-transform: uppercase
+    letter-spacing: rem-calc(.5)
+    color: rgba($black, .52)
+    font-size: rem-calc(9.5)
+    font-weight: 800
+
+  &__swatch
+    display: flex
+    position: relative
+    flex: 1
+    align-items: center
+    justify-content: center
+    border: rem-calc(1) solid rgba($black, .16)
+    border-radius: rem-calc(6)
+    cursor: pointer
+    padding: 0
+    min-width: 0
+    height: rem-calc(30)
+
+    &--selected
+      outline: rem-calc(2) solid var(--scheme-picker-accent)
+      outline-offset: rem-calc(1)
+
+    &--locked
+      color: rgba($black, .35)
+
+    &--disabled
+      cursor: not-allowed
+
+  &__lock
+    width: rem-calc(10)
+    height: rem-calc(10)
+    mix-blend-mode: difference
+    color: $white
+
+  &__transparent
+    border: rem-calc(1) solid rgba($black, .16)
+    border-radius: rem-calc(6)
+    background-color: $white
+    background-image: linear-gradient(45deg, rgba($black, .12) 25%, transparent 25%, transparent 75%, rgba($black, .12) 75%), linear-gradient(45deg, rgba($black, .12) 25%, transparent 25%, transparent 75%, rgba($black, .12) 75%)
+    background-position: 0 0, rem-calc(5) rem-calc(5)
+    background-size: rem-calc(10) rem-calc(10)
+    cursor: pointer
+    padding: rem-calc(5) rem-calc(10)
+    min-height: rem-calc(30)
+    color: rgba($black, .62)
+    font-family: var(--font)
+    font-size: rem-calc(10.5)
+    font-weight: 800
+
+    &--selected
+      outline: rem-calc(2) solid var(--scheme-picker-accent)
+      outline-offset: rem-calc(1)
