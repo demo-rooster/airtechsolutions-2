@@ -27,7 +27,7 @@
 
   &__title
     margin-bottom: rem-calc(10)
-    color: var(--primary)
+    color: var(--section-override-headers, var(--primary))
 
   &__text
     margin: 0 auto
@@ -62,16 +62,16 @@
     min-width: 0
     text-align: center
     text-decoration: none
-    color: var(--primary)
+    color: var(--section-override-text, var(--primary))
     @include phone-lg
       flex-basis: auto
     @include hover-supported
       transform: translateY(rem-calc(-4))
-      color: var(--secondary)
+      color: var(--section-override-text, var(--secondary))
 
       .block-service-navigation__icon
-        border-color: var(--secondary)
-        background-color: var(--secondary)
+        border-color: var(--section-override-text, var(--secondary))
+        background-color: var(--section-override-text, var(--secondary))
 
     &:focus-visible
       outline: rem-calc(2) solid var(--primary)
@@ -80,9 +80,9 @@
   &__icon
     display: block
     transition: border-color .2s ease, background-color .2s ease
-    border: rem-calc(1) solid rgba(var(--primary-rgb), .24)
+    border: rem-calc(1) solid rgba(var(--section-override-text-rgb, var(--primary-rgb)), .24)
     border-radius: 50%
-    background-color: var(--primary)
+    background-color: var(--section-override-text, var(--primary))
     width: rem-calc(88)
     height: rem-calc(88)
     -webkit-mask: var(--service-icon-src) center / 72% no-repeat

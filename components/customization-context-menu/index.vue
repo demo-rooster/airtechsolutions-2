@@ -104,8 +104,8 @@ export default {
       this.buttonContext = !!target.closest(buttonSelector)
       this.buttonMode = 'default'
       this.role = this.detectRole(target)
-      this.sectionKey = this.getSectionKey(container)
-      this.sectionLabel = this.getSectionLabel(container)
+      this.sectionKey = this.getSectionKey(container, target)
+      this.sectionLabel = this.getSectionLabel(container, target)
       this.x = event.clientX
       this.y = event.clientY
       this.visible = true
@@ -127,14 +127,22 @@ export default {
 
       return 'background'
     },
-    getSectionKey (container) {
+    getSectionKey (container, target) {
       const section = container.querySelector('.page-sections__section[id]')
       const sectionId = section ? section.id : 'section'
+      const customizationTarget = target.closest('[data-customization-key]')
+      const customizationKey = customizationTarget && customizationTarget.dataset.customizationKey
 
-      return `${this.$route.path}::${sectionId}`
+      return `${this.$route.path}::${sectionId}${customizationKey ? `::${customizationKey}` : ''}`
     },
-    getSectionLabel (container) {
+    getSectionLabel (container, target) {
       const section = container.querySelector('.page-sections__section[id]')
+      const customizationTarget = target.closest('[data-customization-key]')
+      const customizationKey = customizationTarget && customizationTarget.dataset.customizationKey
+
+      if (customizationKey) {
+        return customizationKey.replace(/[-_]/g, ' ')
+      }
 
       return section ? section.id.replace(/[-_]/g, ' ') : 'this section'
     },

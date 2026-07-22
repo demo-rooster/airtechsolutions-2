@@ -71,7 +71,8 @@
         :props='section')
       TheHero(v-else-if='section.acf_fc_layout === "hero" && !section.hide_component',
         :class='`component-padding--` + section.component_padding',
-        :props='section')
+        :props='section',
+        :customization-section-key='sectionId(section, i)')
       // devMode is toggled in the global custom-post in the API and is only effective when the site is run locally.
       DevModeOverlay(
         v-if='$store.state.devInspector'

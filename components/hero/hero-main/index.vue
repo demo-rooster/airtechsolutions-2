@@ -11,6 +11,10 @@ export default {
     props: {
       type: Object,
       default: () => ({})
+    },
+    customizationSectionKey: {
+      type: String,
+      default: ''
     }
   },
   data: () => ({

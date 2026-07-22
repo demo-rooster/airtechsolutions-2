@@ -2,12 +2,21 @@
 
 <script>
 import { setJSONData } from '~/resources/utils'
+import { buildSectionStyleVars } from '~/resources/theme-scheme'
 
 export default {
   props: {
     props: {
       type: Object,
       default: () => ({})
+    },
+    customizationSectionKey: {
+      type: String,
+      default: ''
+    },
+    customizationKey: {
+      type: String,
+      default: ''
     }
   },
   data: () => ({
@@ -19,12 +28,22 @@ export default {
     },
     colorStyle () {
       const colors = this.props.colors || {}
-
-      return {
+      const buttonStyle = {
         '--button-background': colors.background || null,
         '--button-text': colors.text || null,
         '--button-hover-background': colors.hover_background || null,
         '--button-hover-text': colors.hover_text || null
+      }
+
+      if (!this.customizationSectionKey || !this.customizationKey) {
+        return buttonStyle
+      }
+
+      const overrideKey = `${this.$route.path}::${this.customizationSectionKey}::${this.customizationKey}`
+
+      return {
+        ...buttonStyle,
+        ...buildSectionStyleVars(this.$store.state.theme, overrideKey)
       }
     }
   },

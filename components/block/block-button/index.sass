@@ -4,18 +4,18 @@
   &__button
     cursor: pointer
     width: fit-content
-    @include button-primary(var(--button-background, var(--btn-background)), var(--button-text, var(--btn-text)), var(--button-hover-background, var(--btn-hover-background)), var(--button-hover-text, var(--btn-hover-text)))
-    color: var(--button-text, var(--btn-text))
+    @include button-primary(var(--section-override-btn-background, var(--button-background, var(--btn-background))), var(--section-override-btn-text, var(--button-text, var(--btn-text))), var(--section-override-btn-hover-background, var(--button-hover-background, var(--btn-hover-background))), var(--section-override-btn-hover-text, var(--button-hover-text, var(--btn-hover-text))))
+    color: var(--section-override-btn-text, var(--button-text, var(--btn-text)))
 
     &--secondary
-      @include button-secondary(var(--button-background, var(--primary)), var(--button-text, #{$white}), var(--button-hover-background, var(--btn-hover-background)), var(--button-hover-text, var(--btn-hover-text)))
-      color: var(--button-text, #{$white}) !important
+      @include button-secondary(var(--section-override-btn-background, var(--button-background, var(--primary))), var(--section-override-btn-text, var(--button-text, #{$white})), var(--section-override-btn-hover-background, var(--button-hover-background, var(--btn-hover-background))), var(--section-override-btn-hover-text, var(--button-hover-text, var(--btn-hover-text))))
+      color: var(--section-override-btn-text, var(--button-text, #{$white})) !important
 
     &--underline
-      @include button-underline(var(--button-text, #{$gray}), var(--button-hover-text, var(--primary)))
+      @include button-underline(var(--section-override-btn-text, var(--button-text, #{$gray})), var(--section-override-btn-hover-text, var(--button-hover-text, var(--primary))))
 
     &--phone
-      @include button-primary(var(--button-background, transparent), var(--button-text, #{$white}), var(--button-hover-background, var(--accent)), var(--button-hover-text, #{$black}))
+      @include button-primary(var(--section-override-btn-background, var(--button-background, transparent)), var(--section-override-btn-text, var(--button-text, #{$white})), var(--section-override-btn-hover-background, var(--button-hover-background, var(--accent))), var(--section-override-btn-hover-text, var(--button-hover-text, #{$black})))
 
     &-icon
       margin-left: rem-calc(8)

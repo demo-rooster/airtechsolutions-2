@@ -4,6 +4,6 @@ nav.block-service-navigation(aria-labelledby='service-navigation-title')
       h2#service-navigation-title.block-service-navigation__title(v-html='props.title')
       p.block-service-navigation__text(v-html='props.text')
     .block-service-navigation__track
-      a.block-service-navigation__link(v-for='service in services' :key='service.hash' :href='`#${service.hash}`' :aria-label='`Learn more about ${service.label}`')
+      a.block-service-navigation__link(v-for='service in services' :key='service.hash' :href='`#${service.hash}`' :aria-label='`Learn more about ${service.label}`' @click.prevent='scrollToService(service.hash)')
         span.block-service-navigation__icon(:style='{ "--service-icon-src": `url(${service.iconSrc})` }' aria-hidden='true')
         span.block-service-navigation__label(v-html='service.label')

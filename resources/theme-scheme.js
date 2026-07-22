@@ -667,13 +667,19 @@ export const buildSectionStyleVars = (theme, sectionKey, sectionBgLabel, preferr
   const titlesRef = overrides.titles || (sectionTitlesRole !== globalTitlesRole ? assignments[sectionTitlesRole] : null)
 
   if (titlesRef) {
-    setStyleColorVar(style, 'headers', getSlotValue(scheme, titlesRef))
+    const titlesValue = getSlotValue(scheme, titlesRef)
+
+    setStyleColorVar(style, 'headers', titlesValue)
+    if (overrides.titles) {
+      setStyleColorVar(style, 'section-override-headers', titlesValue)
+    }
   }
 
   if (overrides.text) {
     const textValue = getSlotValue(scheme, overrides.text)
 
     setStyleColorVar(style, 'text', textValue)
+    setStyleColorVar(style, 'section-override-text', textValue)
 
     // Plain text inherits its color from body (which reads --text at the root),
     // so a section-scoped --text var alone never reaches it. Inline color on the
@@ -686,7 +692,10 @@ export const buildSectionStyleVars = (theme, sectionKey, sectionBgLabel, preferr
 
   buttonOverrideLabels.forEach((label) => {
     if (overrides[label]) {
-      setStyleColorVar(style, label, getSlotValue(scheme, overrides[label]))
+      const value = getSlotValue(scheme, overrides[label])
+
+      setStyleColorVar(style, label, value)
+      setStyleColorVar(style, `section-override-${label}`, value)
     }
   })
 

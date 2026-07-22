@@ -9,6 +9,28 @@ const logoPaletteRoleKeys = [
   'logo-blue'
 ]
 
+describe('site theme presets', () => {
+  test('uses the saved customization as the Theme 2 baseline', () => {
+    const theme = normalizeTheme(themeData.secondary)
+
+    expect(theme.assignments).toMatchObject({
+      'titles-light': 'quinary.dark',
+      'btn-background': 'secondary.dark',
+      'header-footer': 'primary.dark'
+    })
+    expect(theme.scheme.find(family => family.key === 'primary').dark.hex).toBe('#7988A6')
+    expect(theme.logo.wave1).toMatchObject({ source: 'custom', mode: 'solid' })
+    expect(theme.sectionOverrides['/::hero-0']).toEqual({
+      background: 'secondary.dark',
+      'btn-background': 'tertiary.dark'
+    })
+    expect(theme.sectionOverrides['/services::service_navigation-1']).toEqual({
+      titles: 'quinary.dark',
+      text: 'quinary.dark'
+    })
+  })
+})
+
 describe('logo theme colors', () => {
   test('exposes semantic paint names in the Logo category', () => {
     const logoCategory = elementRoleCategories.find(category => category.key === 'logo')
@@ -84,7 +106,11 @@ describe('section button colors', () => {
       '--btn-background': 'rgba(0, 57, 112, 1)',
       '--btn-text': 'rgba(255, 255, 255, 1)',
       '--btn-hover-background': 'rgba(255, 255, 255, 0)',
-      '--btn-hover-text': 'rgba(138, 183, 61, 1)'
+      '--btn-hover-text': 'rgba(138, 183, 61, 1)',
+      '--section-override-btn-background': 'rgba(0, 57, 112, 1)',
+      '--section-override-btn-text': 'rgba(255, 255, 255, 1)',
+      '--section-override-btn-hover-background': 'rgba(255, 255, 255, 0)',
+      '--section-override-btn-hover-text': 'rgba(138, 183, 61, 1)'
     })
   })
 })
@@ -108,7 +134,8 @@ describe('section title colors', () => {
     })
 
     expect(buildSectionStyleVars(overriddenTheme, sectionKey, null, 'titles-dark')).toMatchObject({
-      '--headers': 'rgba(0, 57, 112, 1)'
+      '--headers': 'rgba(0, 57, 112, 1)',
+      '--section-override-headers': 'rgba(0, 57, 112, 1)'
     })
   })
 })

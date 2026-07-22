@@ -287,5 +287,360 @@
       "is_light": false
     },
     "favicon_url": "/favicon.ico"
+  },
+  "secondary": {
+    "colors": [
+      {
+        "label": "headers",
+        "name": "Titles",
+        "description": "Headings and titles site-wide",
+        "color": { "red": 2, "green": 67, "blue": 127, "alpha": 1 },
+        "hex": "#02437f"
+      },
+      {
+        "label": "text",
+        "name": "Body",
+        "description": "Body copy, paragraphs, links",
+        "color": { "red": 2, "green": 67, "blue": 127, "alpha": 1 },
+        "hex": "#02437f"
+      },
+      {
+        "label": "btn-background",
+        "name": "Button background",
+        "description": "CTA, form and block buttons",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "btn-text",
+        "name": "Button text",
+        "description": "Text on buttons",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "btn-hover-background",
+        "name": "Hover background",
+        "description": "Button background on hover (transparent by default)",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 0 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "btn-hover-text",
+        "name": "Hover text",
+        "description": "Button text and border on hover",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "header-footer",
+        "name": "Header & footer",
+        "description": "Navigation bar and footer background",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "primary",
+        "name": "Brand accent",
+        "description": "Links, icons, borders, hero overlay",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "secondary",
+        "name": "Highlight",
+        "description": "Green accents: banner tints, hovers, gallery highlights",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "accent",
+        "name": "Soft accent",
+        "description": "Light fills: cards, tags, nav hovers",
+        "color": { "red": 173, "green": 200, "blue": 232, "alpha": 1 },
+        "hex": "#adc8e8"
+      },
+      {
+        "label": "accent-2",
+        "name": "Contact accent",
+        "description": "Contact page text, buttons, icons",
+        "color": { "red": 50, "green": 133, "blue": 203, "alpha": 1 },
+        "hex": "#3285cb"
+      },
+      {
+        "label": "logo-base",
+        "name": "Logo base",
+        "description": "Main logo mark and light details",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "logo-green-light",
+        "name": "Logo green (light)",
+        "description": "Light end of the logo text gradient",
+        "color": { "red": 212, "green": 239, "blue": 115, "alpha": 1 },
+        "hex": "#d4ef73"
+      },
+      {
+        "label": "logo-green",
+        "name": "Logo green",
+        "description": "Logo text and green wave",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "logo-green-dark",
+        "name": "Logo green (dark)",
+        "description": "Dark end of the logo text gradient",
+        "color": { "red": 111, "green": 127, "blue": 153, "alpha": 1 },
+        "hex": "#6F7F99"
+      },
+      {
+        "label": "logo-blue",
+        "name": "Logo blue",
+        "description": "Blue logo wave",
+        "color": { "red": 2, "green": 67, "blue": 127, "alpha": 1 },
+        "hex": "#02437f"
+      },
+      {
+        "label": "bg-1",
+        "name": "Background 1",
+        "description": "Main page background",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "bg-2",
+        "name": "Background 2",
+        "description": "Alternate section background",
+        "color": { "red": 240, "green": 245, "blue": 250, "alpha": 1 },
+        "hex": "#f0f5fa"
+      },
+      {
+        "label": "topbar-light",
+        "name": "Top bar (light)",
+        "description": "Top utility bar light background",
+        "color": { "red": 242, "green": 242, "blue": 242, "alpha": 1 },
+        "hex": "#f2f2f2"
+      },
+      {
+        "label": "topbar-dark",
+        "name": "Top bar (dark)",
+        "description": "Top utility bar dark background",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "titles-light",
+        "name": "Titles (Light)",
+        "description": "Title color on light section backgrounds",
+        "color": { "red": 2, "green": 67, "blue": 127, "alpha": 1 },
+        "hex": "#02437f"
+      },
+      {
+        "label": "titles-dark",
+        "name": "Titles (Dark)",
+        "description": "Title color on dark section backgrounds",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "popup-background",
+        "name": "Background",
+        "description": "Pop-up window background",
+        "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 },
+        "hex": "#ffffff"
+      },
+      {
+        "label": "popup-titles",
+        "name": "Title",
+        "description": "Pop-up title text",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      },
+      {
+        "label": "popup-text",
+        "name": "Body",
+        "description": "Pop-up body copy",
+        "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 },
+        "hex": "#7988A6"
+      }
+    ],
+    "typography": [
+      { "label": "font", "font": "'Open Sans', helvetica, arial, sans-serif" },
+      { "label": "font-title", "font": "'Archivo', sans-serif" }
+    ],
+    "logo_url": "",
+    "logo_config": { "type": "svg", "variant": "dark", "url": "" },
+    "logo_colors": {
+      "colors": [
+        { "hex": "#003970", "luminosity_percent": 4, "count": 200 },
+        { "hex": "#adc8e8", "luminosity_percent": 56, "count": 100 },
+        { "hex": "#6f81a0", "luminosity_percent": 22, "count": 80 },
+        { "hex": "#ffffff", "luminosity_percent": 100, "count": 50 }
+      ],
+      "dominant_color": "#003970",
+      "avg_luminosity": 20.5,
+      "is_light": false
+    },
+    "favicon_url": "/favicon.ico",
+    "header": {
+      "enable_top_bar": false,
+      "type": "links",
+      "theme": "dark",
+      "content_alignment": "right",
+      "links": [],
+      "announcement": {
+        "icon": "phone",
+        "label": "",
+        "text": "",
+        "mobile_text": "",
+        "modal": { "title": "", "text": "" },
+        "open_popup": false
+      }
+    },
+    "popup": {
+      "enable_popup": false,
+      "title": "",
+      "text": "",
+      "image": {
+        "src": "",
+        "webp": "",
+        "alt": "",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": null
+      },
+      "pages": "home",
+      "frequency": "every"
+    },
+    "scheme": [
+      {
+        "key": "neutral",
+        "name": "Neutral",
+        "locked": true,
+        "light": { "hex": "#ffffff", "color": { "red": 255, "green": 255, "blue": 255, "alpha": 1 } },
+        "dark": { "hex": "#000000", "color": { "red": 0, "green": 0, "blue": 0, "alpha": 1 } }
+      },
+      {
+        "key": "primary",
+        "name": "Primary",
+        "light": { "hex": "#adc8e8", "color": { "red": 173, "green": 200, "blue": 232, "alpha": 1 } },
+        "dark": { "hex": "#7988A6", "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 } }
+      },
+      {
+        "key": "secondary",
+        "name": "Secondary",
+        "light": { "hex": "#d4ef73", "color": { "red": 212, "green": 239, "blue": 115, "alpha": 1 } },
+        "dark": { "hex": "#7988A6", "color": { "red": 121, "green": 136, "blue": 166, "alpha": 1 } }
+      },
+      {
+        "key": "tertiary",
+        "name": "Tertiary",
+        "light": { "hex": "#D6E7F5", "color": { "red": 214, "green": 231, "blue": 245, "alpha": 1 } },
+        "dark": { "hex": "#3285cb", "color": { "red": 50, "green": 133, "blue": 203, "alpha": 1 } }
+      },
+      {
+        "key": "quaternary",
+        "name": "Quaternary",
+        "light": { "hex": "#DCE5D3", "color": { "red": 220, "green": 229, "blue": 211, "alpha": 1 } },
+        "dark": { "hex": "#6F7F99", "color": { "red": 111, "green": 127, "blue": 153, "alpha": 1 } }
+      },
+      {
+        "key": "quinary",
+        "name": "Quinary",
+        "light": { "hex": "#CCD9E5", "color": { "red": 204, "green": 217, "blue": 229, "alpha": 1 } },
+        "dark": { "hex": "#02437f", "color": { "red": 2, "green": 67, "blue": 127, "alpha": 1 } }
+      },
+      {
+        "key": "senary",
+        "name": "Senary",
+        "light": { "hex": "#f0f5fa", "color": { "red": 240, "green": 245, "blue": 250, "alpha": 1 } },
+        "dark": { "hex": "#303132", "color": { "red": 48, "green": 49, "blue": 50, "alpha": 1 } }
+      },
+      {
+        "key": "septenary",
+        "name": "Septenary",
+        "light": { "hex": "#f2f2f2", "color": { "red": 242, "green": 242, "blue": 242, "alpha": 1 } },
+        "dark": { "hex": "#303030", "color": { "red": 48, "green": 48, "blue": 48, "alpha": 1 } }
+      }
+    ],
+    "assignments": {
+      "titles-light": "quinary.dark",
+      "text": "quinary.dark",
+      "btn-background": "secondary.dark",
+      "btn-text": "neutral.light",
+      "btn-hover-background": "transparent",
+      "btn-hover-text": "primary.dark",
+      "header-footer": "primary.dark",
+      "primary": "primary.dark",
+      "secondary": "secondary.dark",
+      "accent": "primary.light",
+      "accent-2": "tertiary.dark",
+      "logo-base": "neutral.light",
+      "logo-green-light": "secondary.light",
+      "logo-green": "secondary.dark",
+      "logo-green-dark": "quaternary.dark",
+      "logo-blue": "quinary.dark",
+      "bg-1": "neutral.light",
+      "bg-2": "senary.light",
+      "topbar-light": "septenary.light",
+      "topbar-dark": "primary.dark",
+      "titles-dark": "neutral.light",
+      "popup-background": "neutral.light",
+      "popup-titles": "primary.dark",
+      "popup-text": "primary.dark"
+    },
+    "logo": {
+      "base": {
+        "source": "theme",
+        "mode": "solid",
+        "themeRefs": ["neutral.light", "neutral.light", "neutral.light"],
+        "customColors": ["#FFFFFF", "#FFFFFF", "#FFFFFF"]
+      },
+      "lettering": {
+        "source": "theme",
+        "mode": "solid",
+        "themeRefs": ["neutral.light", "secondary.dark", "quaternary.dark"],
+        "customColors": ["#D4EF73", "#8AB73D", "#4F7F22"]
+      },
+      "wave1": {
+        "source": "custom",
+        "mode": "solid",
+        "themeRefs": ["quinary.light", "secondary.dark", "secondary.dark"],
+        "customColors": ["#B1CFFB", "#8089B3", "#8089B3"]
+      },
+      "wave2": {
+        "source": "theme",
+        "mode": "solid",
+        "themeRefs": ["quinary.dark", "quinary.dark", "quinary.dark"],
+        "customColors": ["#02437F", "#02437F", "#02437F"]
+      }
+    },
+    "sectionOverrides": {
+      "/::hero-0": { "background": "secondary.dark", "btn-background": "tertiary.dark" },
+      "/::multi_item_row-2": { "titles": "quinary.dark" },
+      "/commercial-window-cleaning-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/commercial-office-exterior-cleaning-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/professional-commercial-exterior-cleaning-boston-ma::hero-0": { "titles": "neutral.light" },
+      "/commercial-dryer-vent-cleaning-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/commercial-bathroom-exhaust-cleaning-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/faq::hero-0": { "titles": "neutral.light" },
+      "/contact::hero-0": { "titles": "neutral.light" },
+      "/commercial-soft-washing-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/commercial-sealing-services-boston-west-newton-ma::hero-0": { "titles": "neutral.light" },
+      "/services::service_navigation-1": { "titles": "quinary.dark", "text": "quinary.dark" },
+      "/::hero-0::primary-cta": { "btn-background": "quinary.dark", "btn-text": "neutral.light" },
+      "/::hero-0::phone-cta": {
+        "btn-background": "primary.light",
+        "btn-text": "neutral.dark",
+        "btn-hover-background": "tertiary.dark"
+      }
+    }
   }
 }
