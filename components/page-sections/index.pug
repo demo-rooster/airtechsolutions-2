@@ -52,6 +52,8 @@
       BlockSingleVideoSlider(v-else-if='section.acf_fc_layout === "single_video_slider" && !section.hide_component',
         :class='`component-padding--` + section.component_padding',
         :props='section')
+      BlockServiceNavigation(v-else-if='section.acf_fc_layout === "service_navigation" && !section.hide_component',
+        :props='section')
       BlockSmileGallery(v-else-if='section.acf_fc_layout === "smile_gallery" && !section.hide_component',
         :class='`component-padding--` + section.component_padding',
         :props='section')

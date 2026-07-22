@@ -18,6 +18,7 @@ import BlockMultiTestimonial from '~/components/block/block-multi-testimonial'
 import BlockSingleImageSlider from '~/components/block/block-single-image-slider'
 import BlockSingleTestimonial from '~/components/block/block-single-testimonial'
 import BlockSingleVideoSlider from '~/components/block/block-single-video-slider'
+import BlockServiceNavigation from '~/components/block/block-service-navigation'
 import BlockTabs from '~/components/block/block-tabs'
 import BlockTextFH from '~/components/block/block-text-fh'
 import BlockTextSimple from '~/components/block/block-text-simple'
@@ -48,6 +49,7 @@ export default {
     BlockSingleImageSlider,
     BlockSingleTestimonial,
     BlockSingleVideoSlider,
+    BlockServiceNavigation,
     BlockTabs,
     BlockTextFH,
     BlockTextSimple,

@@ -1,0 +1,97 @@
+.block-service-navigation
+  position: relative
+  border-top: rem-calc(5) solid var(--secondary)
+  background: var(--bg-1)
+  padding: rem-calc(52) 0 rem-calc(58)
+  @include desktop
+    padding: rem-calc(62) 0 rem-calc(68)
+  @include tablet
+    padding: rem-calc(42) 0 rem-calc(48)
+
+  &__container
+    @include container
+
+  &__intro,
+  &__track
+    @include col (10)
+    @include col--offset (1)
+    @include tablet-lg
+      margin-left: 0
+      width: 100%
+
+  &__intro
+    margin-bottom: rem-calc(34)
+    text-align: center
+    @include tablet
+      margin-bottom: rem-calc(28)
+
+  &__title
+    margin-bottom: rem-calc(10)
+    color: var(--primary)
+
+  &__text
+    margin: 0 auto
+    max-width: rem-calc(650)
+
+  &__track
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: rem-calc(34) rem-calc(16)
+    @include phone-lg
+      display: grid
+      grid-auto-columns: rem-calc(132)
+      grid-auto-flow: column
+      grid-template-columns: none
+      justify-content: start
+      gap: rem-calc(12)
+      overflow-x: auto
+      padding: rem-calc(8) rem-calc(4) rem-calc(18)
+      scroll-padding: rem-calc(4)
+      -webkit-overflow-scrolling: touch
+      scrollbar-color: rgba(var(--primary-rgb), .35) transparent
+      scrollbar-width: thin
+
+  &__link
+    display: flex
+    flex: 0 0 calc((100% - #{rem-calc(64)}) / 5)
+    flex-direction: column
+    align-items: center
+    gap: rem-calc(12)
+    transition: color .2s ease, transform .2s ease
+    min-width: 0
+    text-align: center
+    text-decoration: none
+    color: var(--primary)
+    @include phone-lg
+      flex-basis: auto
+    @include hover-supported
+      transform: translateY(rem-calc(-4))
+      color: var(--secondary)
+
+      .block-service-navigation__icon
+        border-color: var(--secondary)
+        background-color: var(--secondary)
+
+    &:focus-visible
+      outline: rem-calc(2) solid var(--primary)
+      outline-offset: rem-calc(6)
+
+  &__icon
+    display: block
+    transition: border-color .2s ease, background-color .2s ease
+    border: rem-calc(1) solid rgba(var(--primary-rgb), .24)
+    border-radius: 50%
+    background-color: var(--primary)
+    width: rem-calc(88)
+    height: rem-calc(88)
+    -webkit-mask: var(--service-icon-src) center / 72% no-repeat
+    mask: var(--service-icon-src) center / 72% no-repeat
+    @include tablet-lg
+      width: rem-calc(78)
+      height: rem-calc(78)
+
+  &__label
+    line-height: 1.25
+    font-size: rem-calc(15)
+    font-weight: 700

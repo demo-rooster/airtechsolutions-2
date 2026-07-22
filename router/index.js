@@ -70,6 +70,10 @@ const router = [
         path: '/commercial-soft-washing-boston-west-newton-ma'
       },
       {
+        name: 'Drone Cleaning',
+        path: '/commercial-drone-cleaning-boston-west-newton-ma'
+      },
+      {
         name: 'Dryer Vent Cleaning',
         path: '/commercial-dryer-vent-cleaning-boston-west-newton-ma'
       },

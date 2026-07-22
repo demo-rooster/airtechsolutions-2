@@ -16,6 +16,16 @@ export default {
   computed: {
     displayLabel () {
       return ['Contact Us', 'Call Now'].includes(this.props?.label) ? 'Schedule Now' : this.props?.label
+    },
+    colorStyle () {
+      const colors = this.props.colors || {}
+
+      return {
+        '--button-background': colors.background || null,
+        '--button-text': colors.text || null,
+        '--button-hover-background': colors.hover_background || null,
+        '--button-hover-text': colors.hover_text || null
+      }
     }
   },
   async fetch () {

@@ -17,8 +17,8 @@ export default {
     useGoogleMap: false,
     googleMapsApiKey: '',
     mapImage: {
-      src: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-area.jpg',
-      webp: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-area.webp',
+      src: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-map.jpg',
+      webp: 'https://d20dg8rmreapkm.cloudfront.net/contact/service-map.webp',
       alt: 'Air Tech Solutions service area map'
     }
   }),

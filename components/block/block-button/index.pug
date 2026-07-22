@@ -1,4 +1,4 @@
-.block-button(:class=`'block-button--' + props.color` ref='button')
+.block-button(:class=`'block-button--' + props.color` :style='colorStyle' ref='button')
   //- Nuxt Link ============================================
   nuxt-link.block-button__button(
     v-if='props.type === `nuxt`',

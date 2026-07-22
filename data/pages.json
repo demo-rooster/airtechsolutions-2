@@ -15,7 +15,29 @@
         "external": false,
         "include_icon": false,
         "icon": "pencil",
-        "color": "black"
+        "color": "black",
+        "colors": {
+          "background": "#8AB73D",
+          "text": "#000000",
+          "hover_background": "rgba(0, 57, 112, 1)",
+          "hover_text": "#FFFFFF"
+        }
+      },
+      "phone_button": {
+        "type": "anchor",
+        "style": "secondary",
+        "label": "508.441.0081",
+        "aria_label": "Call Air Tech Solutions at 508-441-0081",
+        "href": "tel:+15084410081",
+        "external": false,
+        "include_icon": false,
+        "color": "black",
+        "colors": {
+          "background": "#003970",
+          "text": "#FFFFFF",
+          "hover_background": "#ADC8E8",
+          "hover_text": "#000000"
+        }
       },
       "media_type": "image",
       "image": {
@@ -834,8 +856,8 @@
         {
           "title": "High-Capacity Air Compressors",
           "image": {
-            "src": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-2.jpg",
-            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-2.webp",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-3.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/air-compressor-3.webp",
             "alt": "High-capacity air compressor equipment used by Air Tech Solutions"
           },
           "text": "Air-powered cleaning capability for ventilation and exhaust systems.",
@@ -919,8 +941,8 @@
       ],
       "accordion": [],
       "image": {
-        "src": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.jpeg",
-        "webp": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/exterior-window-cleaning.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/before-after.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/before-after.webp",
         "alt": "Placeholder for Air Tech Solutions before and after cleaning results",
         "aria_hidden": false,
         "bgColor": "",
@@ -965,7 +987,7 @@
         {
           "has_heading": false,
           "heading": "",
-          "text": "We serve commercial properties within a 100-mile radius of West Newton, Massachusetts. Our service area covers all of Massachusetts and all of Rhode Island, along with northern Connecticut, southern New Hampshire, Maine, and Vermont."
+          "text": "We serve commercial properties within a 100-mile radius of West Newton, Massachusetts. Our service area covers all of Massachusetts and all of Rhode Island, along with northern and southern Connecticut, southern New Hampshire, Maine, and Vermont."
         }
       ],
       "accordion": [],
@@ -1134,7 +1156,7 @@
           "og_meta": {
             "title": "About Air Tech Solutions | New England Commercial Property Services",
             "description": "Learn about Air Tech Solutions, a New England exterior cleaning, ventilation, and air quality company serving commercial properties since 2010.",
-            "image": "https://licensed-adobe-assets.s3.us-west-2.amazonaws.com/adobe-stock-images/about-hero.jpg"
+            "image": "https://d20dg8rmreapkm.cloudfront.net/opengraph.jpg"
           }
         }
       }
@@ -1181,6 +1203,58 @@
         "title": ""
       },
       "small": true
+    },
+    {
+      "acf_fc_layout": "service_navigation",
+      "title": "Explore Our Services",
+      "text": "Select a service below to learn more about how we can support your property.",
+      "items": [
+        {
+          "icon": "exterior-soft-wash.png",
+          "label": "Soft Washing",
+          "hash": "commercial-exterior-soft-washing"
+        },
+        {
+          "icon": "surface-powerwashing.png",
+          "label": "Power Washing",
+          "hash": "professional-commercial-exterior-cleaning"
+        },
+        {
+          "icon": "window.png",
+          "label": "Window Cleaning",
+          "hash": "commercial-window-cleaning"
+        },
+        {
+          "icon": "gutter.png",
+          "label": "Gutter Cleaning",
+          "hash": "commercial-gutter-cleaning"
+        },
+        {
+          "icon": "dryer-vent-cleaning.png",
+          "label": "Dryer Vent Cleaning",
+          "hash": "commercial-dryer-vent-cleaning"
+        },
+        {
+          "icon": "bathroom-exhaust.png",
+          "label": "Bathroom Exhaust",
+          "hash": "commercial-bathroom-exhaust-cleaning"
+        },
+        {
+          "icon": "hvac.png",
+          "label": "HVAC Cleaning",
+          "hash": "commercial-hvac-cleaning"
+        },
+        {
+          "icon": "air-quality.png",
+          "label": "Air Quality Testing",
+          "hash": "commercial-air-quality-testing"
+        },
+        {
+          "icon": "caulking.png",
+          "label": "Sealing & Caulking",
+          "hash": "commercial-caulking-services"
+        }
+      ]
     },
     {
       "acf_fc_layout": "image_text",
@@ -1242,6 +1316,83 @@
       ],
       "component_options": {
         "hash": "commercial-window-cleaning",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "reverse": true,
+      "has_buttons": true,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
+      "add_texture": false,
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
+    },
+    {
+      "acf_fc_layout": "image_text",
+      "title": "Drone Cleaning",
+      "paragraphs": [
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "Drone cleaning is a safer, faster way to clean the high and hard-to-reach areas of a building's exterior. Using a commercial cleaning drone, we soft wash facades, roofs, and upper surfaces from the ground, without putting a crew on lifts or ladders for every job."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "The drone applies cleaning solution and rinses at a controlled pressure, reaching tall facades, steep roofs, and awkward areas that are difficult or unsafe to access by traditional methods. That means less setup, less disruption, and a faster turnaround on large and multi-story properties."
+        },
+        {
+          "has_heading": false,
+          "heading": "",
+          "text": "We own and operate our own cleaning drone, along with the boom lifts and rope access equipment to back it up, so we can service complex properties in-house without subcontracting the work. Every job is handled by a trained, fully insured team that leaves your building cleaner and your property looking its best."
+        }
+      ],
+      "accordion": [],
+      "image": {
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.webp",
+        "alt": "Commercial drone cleaning a hard-to-reach building exterior",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Services"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [
+        {
+          "button": {
+            "type": "nuxt",
+            "style": "primary",
+            "label": "LEARN MORE",
+            "aria_label": "Learn more about Drone Cleaning",
+            "href": "",
+            "path": "/commercial-drone-cleaning-boston-west-newton-ma",
+            "hash": "",
+            "external": false,
+            "include_icon": false,
+            "icon": "",
+            "color": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "commercial-drone-cleaning",
         "component_padding": "half",
         "component_margins": "none",
         "hide_component": false
@@ -1862,7 +2013,7 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "reverse": true,
+      "reverse": false,
       "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
@@ -1939,7 +2090,7 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "reverse": false,
+      "reverse": true,
       "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
@@ -2017,7 +2168,7 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "reverse": true,
+      "reverse": false,
       "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
@@ -2094,7 +2245,7 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "reverse": false,
+      "reverse": true,
       "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
@@ -2172,7 +2323,7 @@
         "component_margins": "none",
         "hide_component": false
       },
-      "reverse": true,
+      "reverse": false,
       "has_buttons": true,
       "has_accordion": false,
       "is_dynamic": false,
@@ -2757,6 +2908,340 @@
       }
     }
   ],
+  "commercial-drone-cleaning-boston-west-newton-ma": [
+    {
+      "acf_fc_layout": "hero",
+      "title": "Drone Cleaning",
+      "text": "High-reach exterior cleaning from the air, no lifts or ladders required.",
+      "button": {
+        "type": "anchor",
+        "style": "primary",
+        "label": "Call Now",
+        "aria_label": "Call Air Tech Solutions at 508-441-0081",
+        "href": "tel:+15084410081",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": true,
+        "icon": "phone",
+        "color": "primary"
+      },
+      "media_type": "image",
+      "image": {
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.webp",
+        "alt": "Commercial cleaning drone washing a high building exterior",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Service Hero"
+        }
+      },
+      "video": {
+        "src": "",
+        "webm": "",
+        "title": ""
+      },
+      "small": false
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "Cleaning Your Building from the Sky",
+      "paragraphs": [
+        {
+          "text": "Drone cleaning is a safer, faster way to clean the high and hard-to-reach areas of a building's exterior. Using a commercial cleaning drone, we soft wash facades, roofs, and upper surfaces from the ground, without putting a crew on lifts or ladders for every job. It is one of the most efficient ways to keep tall and complex properties clean, and it is especially well suited to the large multi-family and commercial buildings we serve across New England."
+        }
+      ],
+      "component_options": {
+        "hash": "cleaning-from-the-sky",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "How Drone Cleaning Works",
+      "paragraphs": [
+        {
+          "text": "Our cleaning drone carries a cleaning solution and applies it at a controlled, low pressure that lifts dirt, algae, and grime without the risk of high-pressure damage. The operator guides the drone across the surface from the ground, treating the facade or roof section by section, then rinsing to reveal a clean result."
+        },
+        {
+          "text": "Because the whole process happens from the air, there is far less equipment to set up and far less disruption to residents, tenants, and daily operations. What once required scaffolding or multiple lifts can often be handled in a fraction of the time."
+        }
+      ],
+      "component_options": {
+        "hash": "how-drone-cleaning-works",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "The Benefits of Drone Cleaning",
+      "paragraphs": [
+        {
+          "text": "Drone cleaning offers real advantages for property managers:<ul><li>Safer work at height, with fewer people on lifts and ladders</li><li>Faster service on tall and multi-story buildings</li><li>Less setup and disruption for residents and tenants</li><li>Reach for steep roofs, tall facades, and awkward areas</li><li>A gentle, low-pressure clean that protects surfaces</li></ul>"
+        }
+      ],
+      "component_options": {
+        "hash": "benefits-of-drone-cleaning",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "What We Clean with Our Drone",
+      "paragraphs": [
+        {
+          "text": "We use our drone to soft wash building facades, roofs, upper windows, and other high exterior surfaces where traditional access is difficult or unsafe. For areas that need hands-on work, we back the drone up with our own boom lifts and rope access equipment, so every part of your building gets the attention it needs."
+        }
+      ],
+      "component_options": {
+        "hash": "what-we-clean",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "block_text_simple",
+      "title": "Why Choose Air Tech Solutions",
+      "paragraphs": [
+        {
+          "text": "We own and operate our own cleaning drone, along with the full range of equipment to support it, so we handle complex properties in-house without subcontracting the work. Our team is trained, certified, and fully insured, and we have been serving New England's property managers since 2012. Whatever the height or layout of your building, we have the tools and experience to get it clean safely and efficiently."
+        }
+      ],
+      "component_options": {
+        "hash": "why-choose-air-tech-solutions",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "large_title": false,
+      "center_title": false,
+      "one_column": true,
+      "add_texture": false,
+      "background": "",
+      "linear_gradient": ""
+    },
+    {
+      "acf_fc_layout": "accordion",
+      "title": "Frequently Asked Questions",
+      "paragraphs": [],
+      "accordion": [
+        {
+          "header": "Is drone cleaning safe for my building?",
+          "paragraphs": [
+            {
+              "text": "Yes. The drone cleans at a controlled, low pressure that is gentle on siding, roofing, and finished surfaces, and it removes the need to put a crew at height for every job."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "What kinds of buildings is drone cleaning best for?",
+          "paragraphs": [
+            {
+              "text": "It works especially well on tall, large, and multi-story commercial and multi-family properties where facades and roofs are hard to reach safely by traditional methods."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Will drone cleaning disrupt my residents or tenants?",
+          "paragraphs": [
+            {
+              "text": "Very little. Because the work is done from the air with minimal setup, there is far less noise, equipment, and disruption than traditional exterior cleaning."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        },
+        {
+          "header": "Do you handle areas the drone cannot reach?",
+          "paragraphs": [
+            {
+              "text": "Yes. We back the drone up with our own boom lifts and rope access equipment, so we can clean any area that needs hands-on work."
+            }
+          ],
+          "has_media": false,
+          "media_type": "image",
+          "image": {
+            "src": "",
+            "webp": "",
+            "alt": "",
+            "aria_hidden": false,
+            "bgColor": "",
+            "imageBackground": false,
+            "addLoader": false,
+            "objectPosition": "",
+            "forceAlt": "",
+            "loading_mask": "",
+            "image_selection_hints": null
+          },
+          "video": {
+            "type": "embedded",
+            "src": ""
+          }
+        }
+      ],
+      "component_options": {
+        "hash": "faqs",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      }
+    },
+    {
+      "acf_fc_layout": "multi_use_banner",
+      "title": "Ready to schedule a service?",
+      "content_block": "text_block",
+      "text": "",
+      "social_links": [],
+      "email": "",
+      "button": {
+        "type": "anchor",
+        "style": "primary",
+        "label": "Call Now",
+        "aria_label": "Call Air Tech Solutions at 508-441-0081",
+        "href": "tel:+15084410081",
+        "path": "",
+        "hash": "",
+        "external": false,
+        "include_icon": true,
+        "icon": "phone",
+        "color": ""
+      },
+      "component_options": {
+        "hash": "contact-air-tech-solutions",
+        "component_padding": "half",
+        "component_margins": "none",
+        "hide_component": false
+      },
+      "background_type": "has_background",
+      "background": "bg2",
+      "add_texture": false,
+      "linear_gradient": "",
+      "image": {
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.webp",
+        "alt": "Air Tech Solutions commercial cleaning drone in operation",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": null
+      },
+      "reversed": false,
+      "centered": true,
+      "large_title": true,
+      "text_color": "primary"
+    },
+    {
+      "seo": {
+        "page_title": "Commercial Drone Cleaning Boston & West Newton MA",
+        "page_description": "Safe, efficient commercial drone cleaning for high facades, roofs, and hard-to-reach exterior surfaces across New England.",
+        "page_keywords": "commercial drone cleaning, drone exterior cleaning, high-rise soft washing, facade cleaning, roof cleaning, Boston, West Newton MA, New England",
+        "additional_settings": false,
+        "social_meta": {
+          "og_meta": {
+            "title": "Commercial Drone Cleaning Boston & West Newton MA",
+            "description": "High-reach exterior cleaning from the air, no lifts or ladders required.",
+            "image": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg"
+          }
+        }
+      }
+    }
+  ],
   "commercial-window-cleaning-boston-west-newton-ma": [
     {
       "acf_fc_layout": "hero",
@@ -3021,8 +3506,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg",
-        "webp": "https://ik.imagekit.io/9ry3lupe5/licensed-adobe-assets/189479952_Cincinnati_Ohio_USA.jpg?tr=f-webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-office-ext-cleaning-hero.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-office-ext-cleaning-hero.webp",
         "alt": "Office exterior cleaning for commercial property",
         "aria_hidden": false,
         "bgColor": "",
@@ -3757,8 +4242,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_297678759.jpeg",
-        "webp": "https://d1tbkv3r7iprho.cloudfront.net/AdobeStock_297678759.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/services/services-dryer-vent-cleaning-3.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/services/services-dryer-vent-cleaning-3.webp",
         "alt": "Commercial ventilation vents on a building exterior",
         "aria_hidden": false,
         "bgColor": "",
@@ -5720,8 +6205,8 @@
       },
       "media_type": "image",
       "image": {
-        "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family.jpg",
-        "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family.webp",
+        "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family-3.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-multi-family-3.webp",
         "alt": "Multi-family property exterior served by Air Tech Solutions",
         "aria_hidden": false,
         "bgColor": "",
@@ -6703,7 +7188,7 @@
       "text": "Heavy-duty cleaning for demanding environments.",
       "button": { "type": "anchor", "style": "primary", "label": "Call Now", "aria_label": "Call Air Tech Solutions at 508-441-0081", "href": "tel:+15084410081", "path": "", "hash": "", "external": false, "include_icon": false, "icon": "phone", "color": "" },
       "media_type": "image",
-      "image": { "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.jpg", "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-building.webp", "alt": "Industrial property exterior served by Air Tech Solutions", "aria_hidden": false, "bgColor": "", "imageBackground": false, "addLoader": false, "objectPosition": "center", "forceAlt": "", "loading_mask": "", "image_selection_hints": { "context_category": "Properties We Serve" } },
+      "image": { "src": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-3.jpg", "webp": "https://d20dg8rmreapkm.cloudfront.net/properties/properties-industrial-3.webp", "alt": "Industrial property exterior served by Air Tech Solutions", "aria_hidden": false, "bgColor": "", "imageBackground": false, "addLoader": false, "objectPosition": "center", "forceAlt": "", "loading_mask": "", "image_selection_hints": { "context_category": "Properties We Serve" } },
       "video": { "src": "", "webm": "", "title": "" },
       "small": false
     },
