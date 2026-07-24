@@ -886,8 +886,8 @@
         {
           "title": "MIO Rolling Roof Rig",
           "image": {
-            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-2.jpg",
-            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-2.webp",
+            "src": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-3.jpg",
+            "webp": "https://d20dg8rmreapkm.cloudfront.net/about/rolling-roof-3.webp",
             "alt": "MIO rolling roof rig used for complex rooftop access"
           },
           "text": "Stable rooftop work support for complex access conditions.",
@@ -2950,25 +2950,55 @@
       "small": false
     },
     {
-      "acf_fc_layout": "block_text_simple",
+      "acf_fc_layout": "image_text",
       "title": "Cleaning Your Building from the Sky",
       "paragraphs": [
         {
+          "has_heading": false,
+          "heading": "",
           "text": "Drone cleaning is a safer, faster way to clean the high and hard-to-reach areas of a building's exterior. Using a commercial cleaning drone, we soft wash facades, roofs, and upper surfaces from the ground, without putting a crew on lifts or ladders for every job. It is one of the most efficient ways to keep tall and complex properties clean, and it is especially well suited to the large multi-family and commercial buildings we serve across New England."
         }
       ],
+      "accordion": [],
+      "image": {
+        "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.jpg",
+        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone.webp",
+        "alt": "Commercial cleaning drone washing a high building exterior",
+        "aria_hidden": false,
+        "bgColor": "",
+        "imageBackground": false,
+        "addLoader": false,
+        "objectPosition": "center",
+        "forceAlt": "",
+        "loading_mask": "",
+        "image_selection_hints": {
+          "context_category": "Service Content"
+        }
+      },
+      "video": {
+        "type": "embedded",
+        "src": ""
+      },
+      "buttons": [],
       "component_options": {
         "hash": "cleaning-from-the-sky",
         "component_padding": "half",
         "component_margins": "none",
         "hide_component": false
       },
-      "large_title": false,
-      "center_title": false,
-      "one_column": true,
+      "reverse": false,
+      "has_buttons": false,
+      "has_accordion": false,
+      "is_dynamic": false,
+      "use_video": false,
+      "large_image": false,
+      "has_background": false,
+      "background": "bg1",
+      "linear_gradient": "",
       "add_texture": false,
-      "background": "",
-      "linear_gradient": ""
+      "large_title": false,
+      "title_color": "text",
+      "title_underline_color": "none"
     },
     {
       "acf_fc_layout": "block_text_simple",
@@ -3209,9 +3239,9 @@
       "add_texture": false,
       "linear_gradient": "",
       "image": {
-        "src": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.jpg",
-        "webp": "https://d20dg8rmreapkm.cloudfront.net/about/cleaning-drone-2.webp",
-        "alt": "Air Tech Solutions commercial cleaning drone in operation",
+        "src": "",
+        "webp": "",
+        "alt": "",
         "aria_hidden": false,
         "bgColor": "",
         "imageBackground": false,

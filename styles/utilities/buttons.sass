@@ -12,7 +12,7 @@
 
   font-weight: 700
 
-@mixin button-primary($background: var(--btn-background), $text: var(--btn-text), $hover: var(--btn-hover-background), $hover-text: var(--btn-hover-text), $hover-border: $hover)
+@mixin button-primary($background: var(--btn-background), $text: var(--btn-text), $hover: var(--btn-hover-background), $hover-text: var(--btn-hover-text), $hover-border: $hover-text)
   @extend %button
   @include hover-supported
     background: $hover
@@ -28,7 +28,7 @@
   @extend %button
   @include hover-supported
     background: $hover
-    border: 2px solid $hover
+    border: 2px solid $hover-text
     color: $hover-text !important
   position: relative
   z-index: 5
