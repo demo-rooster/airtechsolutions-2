@@ -33,15 +33,15 @@
       }
 
       .ats-logo-lettering-1 {
-        stop-color: var(--logo-lettering-1, #d4ef73);
+        stop-color: var(--logo-lettering-1, #d6e7f5);
       }
 
       .ats-logo-lettering-2 {
-        stop-color: var(--logo-lettering-2, #8ab73d);
+        stop-color: var(--logo-lettering-2, #adc8e8);
       }
 
       .ats-logo-lettering-3 {
-        stop-color: var(--logo-lettering-3, #4f7f22);
+        stop-color: var(--logo-lettering-3, #7fa4cc);
       }
     </style>
   </defs>

@@ -44,12 +44,12 @@ describe('logo theme colors', () => {
 
     expect(theme.logo.base).toMatchObject({ source: 'theme', mode: 'solid' })
     expect(theme.logo.lettering).toMatchObject({ source: 'theme', mode: 'gradient' })
-    expect(getLogoPaintColors(theme, 'lettering')).toEqual(['#D4EF73', '#8AB73D', '#4F7F22'])
+    expect(getLogoPaintColors(theme, 'lettering')).toEqual(['#D6E7F5', '#ADC8E8', '#7FA4CC'])
     expect(buildLogoStyleVars(theme)).toMatchObject({
       '--logo-base-1': 'rgba(255, 255, 255, 1)',
-      '--logo-lettering-1': 'rgba(212, 239, 115, 1)',
-      '--logo-lettering-2': 'rgba(138, 183, 61, 1)',
-      '--logo-lettering-3': 'rgba(79, 127, 34, 1)',
+      '--logo-lettering-1': 'rgba(214, 231, 245, 1)',
+      '--logo-lettering-2': 'rgba(173, 200, 232, 1)',
+      '--logo-lettering-3': 'rgba(127, 164, 204, 1)',
       '--logo-wave-2-1': 'rgba(2, 67, 127, 1)'
     })
   })
@@ -97,7 +97,7 @@ describe('section button colors', () => {
           'btn-background': 'primary.dark',
           'btn-text': 'neutral.light',
           'btn-hover-background': 'transparent',
-          'btn-hover-text': 'secondary.dark'
+          'btn-hover-text': 'primary.light'
         }
       }
     })
@@ -106,11 +106,11 @@ describe('section button colors', () => {
       '--btn-background': 'rgba(0, 57, 112, 1)',
       '--btn-text': 'rgba(255, 255, 255, 1)',
       '--btn-hover-background': 'rgba(255, 255, 255, 0)',
-      '--btn-hover-text': 'rgba(138, 183, 61, 1)',
+      '--btn-hover-text': 'rgba(173, 200, 232, 1)',
       '--section-override-btn-background': 'rgba(0, 57, 112, 1)',
       '--section-override-btn-text': 'rgba(255, 255, 255, 1)',
       '--section-override-btn-hover-background': 'rgba(255, 255, 255, 0)',
-      '--section-override-btn-hover-text': 'rgba(138, 183, 61, 1)'
+      '--section-override-btn-hover-text': 'rgba(173, 200, 232, 1)'
     })
   })
 })

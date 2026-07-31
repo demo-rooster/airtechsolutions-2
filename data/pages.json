@@ -17,10 +17,10 @@
         "icon": "pencil",
         "color": "black",
         "colors": {
-          "background": "#8AB73D",
-          "text": "#000000",
-          "hover_background": "rgba(0, 57, 112, 1)",
-          "hover_text": "#FFFFFF"
+          "background": "#003970",
+          "text": "#FFFFFF",
+          "hover_background": "#ADC8E8",
+          "hover_text": "#000000"
         }
       },
       "phone_button": {
@@ -33,10 +33,10 @@
         "include_icon": false,
         "color": "black",
         "colors": {
-          "background": "#003970",
-          "text": "#FFFFFF",
-          "hover_background": "#ADC8E8",
-          "hover_text": "#000000"
+          "background": "#ADC8E8",
+          "text": "#000000",
+          "hover_background": "#003970",
+          "hover_text": "#FFFFFF"
         }
       },
       "media_type": "image",

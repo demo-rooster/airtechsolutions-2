@@ -88,11 +88,14 @@
       .block-button__button
         border-color: var(--secondary)
         background: var(--secondary)
+        // The light highlight background needs dark text to stay legible; the
+        // secondary button variant sets its color with !important
+        color: $black !important
 
         @include hover-supported
           border-color: var(--secondary)
           background: var(--secondary)
-          color: $white
+          color: $black !important
 
   &__title
     margin-bottom: 1.5rem
